@@ -1,0 +1,715 @@
+============================================
+  EMG-ACT Simulation Pipeline
+============================================
+Node: clip10.umiacs.umd.edu
+Date: Sat May  9 14:12:27 EDT 2026
+Job ID: 6797950
+
+Working directory: /nfshomes/adnan16/emg_project/files
+Python: /nfshomes/adnan16/emg_project/files/emg_sim_env/bin/python3
+
+No checkpoint found — running in DEMO mode
+(This is fine! The pipeline works without a trained model)
+
+============================================
+  STEP 1: Loading EMG Model
+============================================
+============================================================
+  STEP 1: Load EMG Model & Test Inference
+============================================================
+No checkpoint found — using random weights (demo mode)
+
+Testing with synthetic EMG signals:
+------------------------------------------------------------
+
+  Input: power_grasp (all zones)
+  Probs: [0.48, 0.49, 0.49, 0.52, 0.49, 0.53, 0.5 , 0.52, 0.53, 0.51]
+  Predicted active: ['index_seg']
+
+  Input: precision_pinch (thumb+index_tip)
+  Probs: [0.48, 0.49, 0.49, 0.52, 0.49, 0.53, 0.5 , 0.52, 0.53, 0.51]
+  Predicted active: ['index_seg']
+
+  Input: tripod (thumb+index_tip+middle_tip)
+  Probs: [0.48, 0.49, 0.49, 0.52, 0.49, 0.53, 0.5 , 0.52, 0.53, 0.51]
+  Predicted active: ['index_seg']
+
+  Input: rest (no zones)
+  Probs: [0.48, 0.49, 0.49, 0.52, 0.49, 0.53, 0.5 , 0.52, 0.53, 0.51]
+  Predicted active: ['index_seg']
+
+  Input: index_only
+  Probs: [0.48, 0.49, 0.49, 0.52, 0.49, 0.53, 0.5 , 0.52, 0.53, 0.51]
+  Predicted active: ['index_seg']
+
+============================================================
+  Step 1 COMPLETE — Model loaded and inference working!
+============================================================
+
+  Next: Run step2_zone_to_grasp.py
+
+============================================
+  STEP 2: Object & Action Recognition
+============================================
+============================================================
+  STEP 2: Object & Action Recognition from Zone Patterns
+============================================================
+
+────────────────────────────────────────────────────────────
+  PART A: Object Recognition (Static Patterns)
+────────────────────────────────────────────────────────────
+
+  Input: all zones active
+  Grasp: power_grasp (conf=100%)
+  Object: mug
+  Force: high
+
+  Input: thumb + index_tip
+  Grasp: precision_pinch (conf=100%)
+  Object: coin
+  Force: low
+
+  Input: thumb + index_tip + middle_tip
+  Grasp: tripod_grip (conf=100%)
+  Object: pen
+  Force: low
+
+  Input: thumb + index_seg
+  Grasp: lateral_pinch (conf=100%)
+  Object: key
+  Force: medium
+
+  Input: no zones
+  Grasp: rest (conf=100%)
+  Object: nothing (hand open/relaxed)
+  Force: none
+
+  Input: palm + tips only
+  Grasp: spherical_grasp (conf=100%)
+  Object: ball
+  Force: medium
+
+  Input: fingers without thumb
+  Grasp: hook_grasp (conf=100%)
+  Object: bag handle
+  Force: medium
+
+────────────────────────────────────────────────────────────
+  PART B: Action Recognition (Temporal Sequences)
+────────────────────────────────────────────────────────────
+
+  Simulating: PICK UP a mug
+  t=3: zones=['thumb', 'index_tip', 'middle_tip']
+         action=write phase=grip_pen conf=85% object=pen
+  t=4: zones=['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg']
+         action=write phase=grip_pen conf=78% object=jar lid
+  t=5: zones=['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg', 'ring_tip', 'ring_seg', 'pinky_tip', 'pinky_seg']
+         action=pick_up phase=grasp conf=78% object=mug
+  t=6: zones=['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg', 'ring_tip', 'ring_seg', 'pinky_tip', 'pinky_seg']
+         action=pick_up phase=grasp conf=90% object=mug
+  t=7: zones=['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg', 'ring_tip', 'ring_seg', 'pinky_tip', 'pinky_seg']
+         action=pick_up phase=grasp conf=90% object=mug
+
+  Simulating: TWIST KEY
+  t=3: zones=['thumb', 'index_seg'] → action=twist_key phase=pinch conf=85%
+  t=4: zones=['thumb', 'index_tip', 'index_seg'] → action=twist_key phase=rotate_cw conf=82%
+  t=5: zones=['thumb', 'index_seg'] → action=twist_key phase=pinch conf=85%
+  t=6: zones=['rest'] → action=twist_key phase=release conf=90%
+
+────────────────────────────────────────────────────────────
+  SUMMARY: What Your EMG Model Can Recognize
+────────────────────────────────────────────────────────────
+
+  Grasp types:  10
+  Object types: 40
+  Action types: 6
+
+  Grasp taxonomy:
+    power_grasp                    → mug, bottle, can
+    power_grasp_no_pinky           → large mug, jar, bottle
+    precision_pinch                → coin, pill, small bead
+    tripod_grip                    → pen, pencil, marker
+    lateral_pinch                  → key, credit card, paper sheet
+    hook_grasp                     → bag handle, bucket, briefcase
+    spherical_grasp                → ball, apple, orange
+    disc_grasp                     → jar lid, bottle cap, plate
+    platform_grasp                 → plate, tray, book (flat)
+    rest                           → nothing (hand open/relaxed)
+
+============================================================
+  Step 2 COMPLETE — Object & Action Recognition working!
+============================================================
+
+  Next: Run step3_myosuite_synthetic.py
+
+============================================
+  STEP 3: Synthetic EMG from MyoSuite
+============================================
+============================================================
+  STEP 3: Generate Synthetic EMG from MyoSuite
+============================================================
+MyoSuite:> Registering Myo Envs
+
+  Running MyoSuite task: myoHandKeyTurnFixed-v0
+  Episodes: 5, Max steps: 100
+    MyoSuite: A contact-rich simulation suite for musculoskeletal motor control
+        Vittorio Caggiano, Huawei Wang, Guillaume Durandau, Massimo Sartori, Vikash Kumar
+        L4DC-2019 | https://sites.google.com/view/myosuite
+    
+  Episode 1/5: 100 steps, reward=-367.33
+  Episode 2/5: 59 steps, reward=-1607.24
+  Episode 3/5: 100 steps, reward=-2519.52
+  Episode 4/5: 100 steps, reward=-268.89
+  Episode 5/5: 54 steps, reward=-1677.45
+
+  Saved 413 samples to synthetic_data/synthetic_myoHandKeyTurnFixed_v0.npz
+
+============================================================
+  Step 3 COMPLETE — Synthetic EMG data generated!
+============================================================
+
+  Next: Run step4_mujoco_hand_control.py
+
+============================================
+  STEP 4: MuJoCo Hand Simulation
+============================================
+============================================================
+  STEP 4: MuJoCo Hand Control from Zone Predictions
+============================================================
+
+────────────────────────────────────────────────────────────
+  Task: pick_up_mug
+────────────────────────────────────────────────────────────
+
+  Running simulation (6 phases)...
+  Phase 1: rest (zones: ['rest'], 50 steps)
+  Phase 2: approach (zones: ['thumb', 'index_tip'], 30 steps)
+  Phase 3: pre_grasp (zones: ['thumb', 'index_tip', 'middle_tip'], 20 steps)
+  Phase 4: grasp (zones: ['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg', 'ring_tip', 'ring_seg'], 30 steps)
+  Phase 5: full_grasp (zones: ['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg', 'ring_tip', 'ring_seg', 'pinky_tip', 'pinky_seg'], 50 steps)
+  Phase 6: lift (zones: ['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg', 'ring_tip', 'ring_seg', 'pinky_tip', 'pinky_seg'], 30 steps)
+
+  Trajectory saved: simulation_output/pick_up_mug/trajectory.json (210 states)
+
+────────────────────────────────────────────────────────────
+  Task: precision_pick_coin
+────────────────────────────────────────────────────────────
+
+  Running simulation (5 phases)...
+  Phase 1: rest (zones: ['rest'], 50 steps)
+  Phase 2: thumb_extend (zones: ['thumb'], 30 steps)
+  Phase 3: pinch (zones: ['thumb', 'index_tip'], 40 steps)
+  Phase 4: hold (zones: ['thumb', 'index_tip'], 50 steps)
+  Phase 5: lift (zones: ['thumb', 'index_tip'], 30 steps)
+
+  Trajectory saved: simulation_output/precision_pick_coin/trajectory.json (200 states)
+
+────────────────────────────────────────────────────────────
+  Task: write_with_pen
+────────────────────────────────────────────────────────────
+
+  Running simulation (5 phases)...
+  Phase 1: rest (zones: ['rest'], 30 steps)
+  Phase 2: tripod_grip (zones: ['thumb', 'index_tip', 'middle_tip'], 40 steps)
+  Phase 3: writing (zones: ['thumb', 'index_tip', 'middle_tip'], 60 steps)
+  Phase 4: lift_pen (zones: ['thumb', 'index_tip'], 20 steps)
+  Phase 5: writing_more (zones: ['thumb', 'index_tip', 'middle_tip'], 60 steps)
+
+  Trajectory saved: simulation_output/write_with_pen/trajectory.json (210 states)
+
+────────────────────────────────────────────────────────────
+  Task: turn_key
+────────────────────────────────────────────────────────────
+
+  Running simulation (5 phases)...
+  Phase 1: rest (zones: ['rest'], 30 steps)
+  Phase 2: lateral_pinch (zones: ['thumb', 'index_seg'], 40 steps)
+  Phase 3: rotate (zones: ['thumb', 'index_tip', 'index_seg'], 30 steps)
+  Phase 4: back (zones: ['thumb', 'index_seg'], 30 steps)
+  Phase 5: release (zones: ['rest'], 30 steps)
+
+  Trajectory saved: simulation_output/turn_key/trajectory.json (160 states)
+
+────────────────────────────────────────────────────────────
+  Task: pour_water
+────────────────────────────────────────────────────────────
+
+  Running simulation (4 phases)...
+  Phase 1: grasp_bottle (zones: ['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg', 'ring_tip', 'ring_seg', 'pinky_tip', 'pinky_seg'], 50 steps)
+  Phase 2: tilt (zones: ['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg'], 40 steps)
+  Phase 3: pouring (zones: ['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg'], 60 steps)
+  Phase 4: upright (zones: ['palm', 'thumb', 'index_tip', 'index_seg', 'middle_tip', 'middle_seg', 'ring_tip', 'ring_seg', 'pinky_tip', 'pinky_seg'], 40 steps)
+
+  Trajectory saved: simulation_output/pour_water/trajectory.json (190 states)
+
+  All demonstrations saved: simulation_output/all_demonstrations.json
+
+============================================================
+  SUMMARY
+============================================================
+  pick_up_mug: 210 states, 6 phases
+  precision_pick_coin: 200 states, 5 phases
+  write_with_pen: 210 states, 5 phases
+  turn_key: 160 states, 5 phases
+  pour_water: 190 states, 4 phases
+
+============================================================
+  Step 4 COMPLETE — Hand simulations recorded!
+============================================================
+
+  Next: Run step5_imitation_learning.py
+
+============================================
+  STEP 5: Imitation Learning
+============================================
+============================================================
+  STEP 5: Imitation Learning — Teach Once, Robot Repeats
+============================================================
+  Loaded 970 demonstration steps from 5 tasks
+  Observation dim: 22
+  Action dim: 17
+
+  Training Behavioral Cloning Policy
+  ──────────────────────────────────────────────────
+  Train: 776 | Val: 194
+  Obs dim: 22 | Act dim: 17
+  Epochs: 100 | Batch: 32 | LR: 0.001
+  Epoch    1 | Train: 0.082831 | Val: 0.009867 | Best: 0.009867
+  Epoch   20 | Train: 0.000853 | Val: 0.000370 | Best: 0.000370
+  Epoch   40 | Train: 0.000396 | Val: 0.000285 | Best: 0.000283
+  Epoch   60 | Train: 0.000257 | Val: 0.000184 | Best: 0.000184
+  Epoch   80 | Train: 0.000193 | Val: 0.000183 | Best: 0.000178
+  Epoch  100 | Train: 0.000187 | Val: 0.000212 | Best: 0.000155
+
+  Training complete! Best val loss: 0.000155
+
+  Evaluating policy reproduction quality...
+  ──────────────────────────────────────────────────
+
+  Task: pick_up_mug
+    MSE: 0.000074 | MAE: 0.0054 | Max Error: 0.0563
+    Accuracy (within 10%): 100.0%
+    Steps: 210
+
+  Task: pour_water
+    MSE: 0.000070 | MAE: 0.0061 | Max Error: 0.0325
+    Accuracy (within 10%): 100.0%
+    Steps: 190
+
+  Task: precision_pick_coin
+    MSE: 0.000053 | MAE: 0.0036 | Max Error: 0.1180
+    Accuracy (within 10%): 99.9%
+    Steps: 200
+
+  Task: turn_key
+    MSE: 0.000177 | MAE: 0.0030 | Max Error: 0.4425
+    Accuracy (within 10%): 99.9%
+    Steps: 160
+
+  Task: write_with_pen
+    MSE: 0.000040 | MAE: 0.0042 | Max Error: 0.0274
+    Accuracy (within 10%): 100.0%
+    Steps: 210
+
+  Overall MSE: 0.000079
+
+  Replaying learned policy for: pick_up_mug
+  ──────────────────────────────────────────────────
+
+============================================
+  STEP 6: Full Pipeline Demo
+============================================
+============================================================
+  STEP 6: Complete EMG → Simulation Pipeline
+============================================================
+
+  Pipeline flow:
+  EMG Signal → Zone Prediction → Object Recognition
+  → Action Recognition → Hand Control → Imitation Learning
+No checkpoint found — using random weights (demo mode)
+
+════════════════════════════════════════════════════════════
+  FULL PIPELINE: pick_up_mug
+════════════════════════════════════════════════════════════
+
+  ── Phase 1: rest ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (1/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 2: approach ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (2/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 3: pre_grasp ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (3/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 4: grasp ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 5: full_grasp ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 6: lift ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Running MuJoCo Simulation ──
+
+  Running simulation (6 phases)...
+  Phase 1: rest (zones: ['palm'], 40 steps)
+  Phase 2: approach (zones: ['palm'], 40 steps)
+  Phase 3: pre_grasp (zones: ['palm'], 40 steps)
+  Phase 4: grasp (zones: ['palm'], 40 steps)
+  Phase 5: full_grasp (zones: ['palm'], 40 steps)
+  Phase 6: lift (zones: ['palm'], 40 steps)
+
+  Trajectory saved: pipeline_output/pick_up_mug/trajectory.json (240 states)
+
+════════════════════════════════════════════════════════════
+  PIPELINE SUMMARY
+════════════════════════════════════════════════════════════
+
+  Task: pick_up_mug
+  Phases: 6
+  Trajectory: 240 states
+  Zone prediction accuracy: 45.0%
+
+  Phase-by-phase results:
+    ✗ rest            → nothing (hand open/relaxed) (rest)
+    ✗ approach        → nothing (hand open/relaxed) (rest)
+    ✗ pre_grasp       → nothing (hand open/relaxed) (rest)
+    ✗ grasp           → nothing (hand open/relaxed) (rest)
+    ✗ full_grasp      → nothing (hand open/relaxed) (rest)
+    ✗ lift            → nothing (hand open/relaxed) (rest)
+
+  Results saved: pipeline_output/pick_up_mug/pipeline_results.json
+
+════════════════════════════════════════════════════════════
+  FULL PIPELINE: precision_pick_coin
+════════════════════════════════════════════════════════════
+
+  ── Phase 1: rest ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (1/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 2: thumb_extend ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (2/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 3: pinch ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (3/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 4: hold ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 5: lift ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Running MuJoCo Simulation ──
+
+  Running simulation (5 phases)...
+  Phase 1: rest (zones: ['palm'], 40 steps)
+  Phase 2: thumb_extend (zones: ['palm'], 40 steps)
+  Phase 3: pinch (zones: ['palm'], 40 steps)
+  Phase 4: hold (zones: ['palm'], 40 steps)
+  Phase 5: lift (zones: ['palm'], 40 steps)
+
+  Trajectory saved: pipeline_output/precision_pick_coin/trajectory.json (200 states)
+
+════════════════════════════════════════════════════════════
+  PIPELINE SUMMARY
+════════════════════════════════════════════════════════════
+
+  Task: precision_pick_coin
+  Phases: 5
+  Trajectory: 200 states
+  Zone prediction accuracy: 76.0%
+
+  Phase-by-phase results:
+    ✗ rest            → nothing (hand open/relaxed) (rest)
+    ✗ thumb_extend    → nothing (hand open/relaxed) (rest)
+    ✗ pinch           → nothing (hand open/relaxed) (rest)
+    ✗ hold            → nothing (hand open/relaxed) (rest)
+    ✗ lift            → nothing (hand open/relaxed) (rest)
+
+  Results saved: pipeline_output/precision_pick_coin/pipeline_results.json
+
+════════════════════════════════════════════════════════════
+  FULL PIPELINE: write_with_pen
+════════════════════════════════════════════════════════════
+
+  ── Phase 1: rest ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (1/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 2: tripod_grip ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (2/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 3: writing ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (3/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 4: lift_pen ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 5: writing_more ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Running MuJoCo Simulation ──
+
+  Running simulation (5 phases)...
+  Phase 1: rest (zones: ['palm'], 40 steps)
+  Phase 2: tripod_grip (zones: ['palm'], 40 steps)
+  Phase 3: writing (zones: ['palm'], 40 steps)
+  Phase 4: lift_pen (zones: ['palm'], 40 steps)
+  Phase 5: writing_more (zones: ['palm'], 40 steps)
+
+  Trajectory saved: pipeline_output/write_with_pen/trajectory.json (200 states)
+
+════════════════════════════════════════════════════════════
+  PIPELINE SUMMARY
+════════════════════════════════════════════════════════════
+
+  Task: write_with_pen
+  Phases: 5
+  Trajectory: 200 states
+  Zone prediction accuracy: 68.0%
+
+  Phase-by-phase results:
+    ✗ rest            → nothing (hand open/relaxed) (rest)
+    ✗ tripod_grip     → nothing (hand open/relaxed) (rest)
+    ✗ writing         → nothing (hand open/relaxed) (rest)
+    ✗ lift_pen        → nothing (hand open/relaxed) (rest)
+    ✗ writing_more    → nothing (hand open/relaxed) (rest)
+
+  Results saved: pipeline_output/write_with_pen/pipeline_results.json
+
+════════════════════════════════════════════════════════════
+  FULL PIPELINE: turn_key
+════════════════════════════════════════════════════════════
+
+  ── Phase 1: rest ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (1/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 2: lateral_pinch ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (2/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 3: rotate ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (3/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 4: back ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 5: release ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Running MuJoCo Simulation ──
+
+  Running simulation (5 phases)...
+  Phase 1: rest (zones: ['palm'], 40 steps)
+  Phase 2: lateral_pinch (zones: ['palm'], 40 steps)
+  Phase 3: rotate (zones: ['palm'], 40 steps)
+  Phase 4: back (zones: ['palm'], 40 steps)
+  Phase 5: release (zones: ['palm'], 40 steps)
+
+  Trajectory saved: pipeline_output/turn_key/trajectory.json (200 states)
+
+════════════════════════════════════════════════════════════
+  PIPELINE SUMMARY
+════════════════════════════════════════════════════════════
+
+  Task: turn_key
+  Phases: 5
+  Trajectory: 200 states
+  Zone prediction accuracy: 76.0%
+
+  Phase-by-phase results:
+    ✗ rest            → nothing (hand open/relaxed) (rest)
+    ✗ lateral_pinch   → nothing (hand open/relaxed) (rest)
+    ✗ rotate          → nothing (hand open/relaxed) (rest)
+    ✗ back            → nothing (hand open/relaxed) (rest)
+    ✗ release         → nothing (hand open/relaxed) (rest)
+
+  Results saved: pipeline_output/turn_key/pipeline_results.json
+
+════════════════════════════════════════════════════════════
+  FULL PIPELINE: pour_water
+════════════════════════════════════════════════════════════
+
+  ── Phase 1: grasp_bottle ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (1/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 2: tilt ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (2/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 3: pouring ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: buffering... (3/4 observations)
+  [E] Actuators: 1 active (of 17)
+
+  ── Phase 4: upright ──
+  [A] Generated EMG: shape=(500, 8)
+  [B] Predicted zones: ['palm']
+  [C] Object: nothing (hand open/relaxed) (grasp: rest, conf: 90%)
+  [D] Action: twist_key (phase: release, conf: 72%)
+  [E] Actuators: 1 active (of 17)
+
+  ── Running MuJoCo Simulation ──
+
+  Running simulation (4 phases)...
+  Phase 1: grasp_bottle (zones: ['palm'], 40 steps)
+  Phase 2: tilt (zones: ['palm'], 40 steps)
+  Phase 3: pouring (zones: ['palm'], 40 steps)
+  Phase 4: upright (zones: ['palm'], 40 steps)
+
+  Trajectory saved: pipeline_output/pour_water/trajectory.json (160 states)
+
+════════════════════════════════════════════════════════════
+  PIPELINE SUMMARY
+════════════════════════════════════════════════════════════
+
+  Task: pour_water
+  Phases: 4
+  Trajectory: 160 states
+  Zone prediction accuracy: 30.0%
+
+  Phase-by-phase results:
+    ✗ grasp_bottle    → nothing (hand open/relaxed) (rest)
+    ✗ tilt            → nothing (hand open/relaxed) (rest)
+    ✗ pouring         → nothing (hand open/relaxed) (rest)
+    ✗ upright         → nothing (hand open/relaxed) (rest)
+
+  Results saved: pipeline_output/pour_water/pipeline_results.json
+
+════════════════════════════════════════════════════════════
+  ALL TASKS COMPLETE!
+════════════════════════════════════════════════════════════
+
+  Output files in: pipeline_output/
+  Each task folder contains:
+    - trajectory.json (robot states for imitation learning)
+    - pipeline_results.json (zone/object/action predictions)
+
+  For your May 12th presentation:
+    1. Show pipeline_results.json as proof of concept
+    2. Show trajectory.json driving a simulated hand
+    3. Show the FEEL comparison table from step2
+    4. Demo the imitation learning from step5
+
+============================================
+  ALL STEPS COMPLETE!
+============================================
+Date: Sat May  9 14:13:04 EDT 2026
+
+Output files created:
+total 10280
+drwxrwxr-x. 2 adnan16 adnan16       54 May  9 14:12 .
+drwxr-xr-x. 6 adnan16 adnan16      714 May  9 14:13 ..
+-rw-rw-r--. 1 adnan16 adnan16 13249542 May  9 14:12 synthetic_myoHandKeyTurnFixed_v0.npz
+total 1216
+drwxrwxr-x. 7 adnan16 adnan16     193 May  9 14:12 .
+drwxr-xr-x. 6 adnan16 adnan16     714 May  9 14:13 ..
+-rw-rw-r--. 1 adnan16 adnan16 1706753 May  9 14:12 all_demonstrations.json
+drwxrwxr-x. 2 adnan16 adnan16      33 May  9 14:12 pick_up_mug
+drwxrwxr-x. 2 adnan16 adnan16      33 May  9 14:12 pour_water
+drwxrwxr-x. 2 adnan16 adnan16      33 May  9 14:12 precision_pick_coin
+drwxrwxr-x. 2 adnan16 adnan16      33 May  9 14:12 turn_key
+drwxrwxr-x. 2 adnan16 adnan16      33 May  9 14:12 write_with_pen
+total 224
+drwxrwxr-x. 7 adnan16 adnan16 152 May  9 14:13 .
+drwxr-xr-x. 6 adnan16 adnan16 714 May  9 14:13 ..
+drwxrwxr-x. 2 adnan16 adnan16  72 May  9 14:13 pick_up_mug
+drwxrwxr-x. 2 adnan16 adnan16  72 May  9 14:13 pour_water
+drwxrwxr-x. 2 adnan16 adnan16  72 May  9 14:13 precision_pick_coin
+drwxrwxr-x. 2 adnan16 adnan16  72 May  9 14:13 turn_key
+drwxrwxr-x. 2 adnan16 adnan16  72 May  9 14:13 write_with_pen
+
+To view results:
+  cat emg_simulation_6797950.out

@@ -1,0 +1,12 @@
+/nfshomes/adnan16/emg_project/files/emg_sim_env/lib/python3.10/site-packages/gymnasium/spaces/box.py:236: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/nfshomes/adnan16/emg_project/files/emg_sim_env/lib/python3.10/site-packages/gymnasium/spaces/box.py:306: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+Traceback (most recent call last):
+  File "/nfshomes/adnan16/emg_project/files/EMG_slurm/step5_imitation_learning.py", line 413, in <module>
+    main()
+  File "/nfshomes/adnan16/emg_project/files/EMG_slurm/step5_imitation_learning.py", line 393, in main
+    replay_policy(policy, task, demo_sequences)
+  File "/nfshomes/adnan16/emg_project/files/EMG_slurm/step5_imitation_learning.py", line 349, in replay_policy
+    print(f"  Step {step_idx:3d} [{label:15s}] "
+TypeError: unsupported format string passed to list.__format__

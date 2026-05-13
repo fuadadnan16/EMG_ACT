@@ -1,0 +1,2 @@
+audio_start_unix_time_s,audio_start_utc_iso,audio_start_local_iso,sample_rate_hz,channels,sample_width_bytes,wav_path
+1774821794.060793,2026-03-29T22:03:14.060,2026-03-29T18:03:14.060,16000,1,2,audio\audio_1.wav

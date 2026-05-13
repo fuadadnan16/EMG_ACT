@@ -1,0 +1,20 @@
+{
+  "gt_csv": "ground_truth_labeled.csv",
+  "emg_dir": "./set_1",
+  "ckpt_path": "emg2pose_model_checkpoints/tracking_vemg2pose.ckpt",
+  "emg2pose_repo": "emg2pose/",
+  "out_dir": "checkpoints_v3/",
+  "window_sec": 1.0,
+  "stride_sec": 0.25,
+  "epochs": 100,
+  "lr": 0.0003,
+  "batch_size": 64,
+  "fs": 500,
+  "dropout": 0.4,
+  "weight_decay": 0.0005,
+  "label_smooth": 0.05,
+  "n_folds": 5,
+  "filter_type": "bpf",
+  "mixup_alpha": 0.3,
+  "mc_weight": 0.5
+}

@@ -1,0 +1,2020 @@
+  63 segments, 17 valid patterns
+  Train: 50 segs | Val: 13 segs
+
+  Running 108 configurations...
+
+  ── Config 1/108 ──
+    win=250 lr=0.0003 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.326 thresh=0.702 snap=0.701) Exact=0.114 ★
+    E  2 | Val F1=0.736 (basic=0.431 thresh=0.727 snap=0.736) Exact=0.204 ★
+    E  3 | Val F1=0.769 (basic=0.603 thresh=0.769 snap=0.769) Exact=0.265 ★
+    E  4 | Val F1=0.775 (basic=0.658 thresh=0.775 snap=0.775) Exact=0.299 ★
+    E  9 | Val F1=0.788 (basic=0.675 thresh=0.788 snap=0.786) Exact=0.386 ★
+    E 19 | Val F1=0.790 (basic=0.683 thresh=0.790 snap=0.786) Exact=0.380 ★
+    E 20 | Val F1=0.781 (basic=0.682 thresh=0.781 snap=0.773) Exact=0.346
+    E 28 | Val F1=0.794 (basic=0.712 thresh=0.794 snap=0.787) Exact=0.338 ★
+    E 30 | Val F1=0.802 (basic=0.740 thresh=0.802 snap=0.798) Exact=0.387 ★
+    E 40 | Val F1=0.783 (basic=0.717 thresh=0.783 snap=0.778) Exact=0.330
+    E 60 | Val F1=0.805 (basic=0.748 thresh=0.805 snap=0.802) Exact=0.430 ★
+    E 75 | Val F1=0.807 (basic=0.750 thresh=0.807 snap=0.800) Exact=0.410 ★
+    E 80 | Val F1=0.771 (basic=0.663 thresh=0.771 snap=0.767) Exact=0.358
+    E100 | Val F1=0.791 (basic=0.744 thresh=0.791 snap=0.787) Exact=0.361
+    Result: F1=0.8071 Exact=0.410 (210s)
+    ★ NEW BEST OVERALL
+
+  ── Config 2/108 ──
+    win=250 lr=0.0003 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.351 thresh=0.703 snap=0.702) Exact=0.117 ★
+    E  2 | Val F1=0.755 (basic=0.509 thresh=0.755 snap=0.749) Exact=0.252 ★
+    E  3 | Val F1=0.748 (basic=0.532 thresh=0.748 snap=0.745) Exact=0.247
+    E  4 | Val F1=0.760 (basic=0.649 thresh=0.760 snap=0.751) Exact=0.216 ★
+    E  6 | Val F1=0.762 (basic=0.676 thresh=0.762 snap=0.758) Exact=0.296 ★
+    E  7 | Val F1=0.783 (basic=0.652 thresh=0.783 snap=0.778) Exact=0.311 ★
+    E  8 | Val F1=0.788 (basic=0.699 thresh=0.788 snap=0.782) Exact=0.369 ★
+    E 12 | Val F1=0.793 (basic=0.693 thresh=0.793 snap=0.788) Exact=0.356 ★
+    E 14 | Val F1=0.796 (basic=0.709 thresh=0.796 snap=0.783) Exact=0.318 ★
+    E 20 | Val F1=0.795 (basic=0.722 thresh=0.795 snap=0.788) Exact=0.358
+    E 21 | Val F1=0.804 (basic=0.729 thresh=0.804 snap=0.798) Exact=0.396 ★
+    E 30 | Val F1=0.805 (basic=0.742 thresh=0.805 snap=0.796) Exact=0.377 ★
+    E 35 | Val F1=0.809 (basic=0.758 thresh=0.809 snap=0.805) Exact=0.392 ★
+    E 38 | Val F1=0.814 (basic=0.752 thresh=0.814 snap=0.810) Exact=0.428 ★
+    E 40 | Val F1=0.799 (basic=0.730 thresh=0.799 snap=0.791) Exact=0.351
+    E 60 | Val F1=0.805 (basic=0.749 thresh=0.805 snap=0.797) Exact=0.375
+    Result: F1=0.8139 Exact=0.428 (134s)
+    ★ NEW BEST OVERALL
+
+  ── Config 3/108 ──
+    win=250 lr=0.0003 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.526 thresh=0.702 snap=0.702) Exact=0.119 ★
+    E  2 | Val F1=0.705 (basic=0.529 thresh=0.705 snap=0.705) Exact=0.095 ★
+    E  3 | Val F1=0.726 (basic=0.571 thresh=0.726 snap=0.726) Exact=0.138 ★
+    E  4 | Val F1=0.734 (basic=0.584 thresh=0.734 snap=0.731) Exact=0.150 ★
+    E  5 | Val F1=0.735 (basic=0.591 thresh=0.735 snap=0.731) Exact=0.174 ★
+    E  6 | Val F1=0.755 (basic=0.678 thresh=0.755 snap=0.748) Exact=0.258 ★
+    E  7 | Val F1=0.757 (basic=0.670 thresh=0.757 snap=0.751) Exact=0.305 ★
+    E  8 | Val F1=0.780 (basic=0.692 thresh=0.780 snap=0.773) Exact=0.327 ★
+    E 13 | Val F1=0.784 (basic=0.697 thresh=0.784 snap=0.778) Exact=0.321 ★
+    E 20 | Val F1=0.773 (basic=0.672 thresh=0.773 snap=0.757) Exact=0.243
+    E 33 | Val F1=0.786 (basic=0.721 thresh=0.786 snap=0.782) Exact=0.331 ★
+    E 37 | Val F1=0.796 (basic=0.728 thresh=0.796 snap=0.785) Exact=0.316 ★
+    E 39 | Val F1=0.797 (basic=0.726 thresh=0.797 snap=0.788) Exact=0.322 ★
+    E 40 | Val F1=0.781 (basic=0.687 thresh=0.781 snap=0.766) Exact=0.264
+    E 46 | Val F1=0.799 (basic=0.711 thresh=0.799 snap=0.793) Exact=0.332 ★
+    E 60 | Val F1=0.784 (basic=0.726 thresh=0.784 snap=0.776) Exact=0.299
+    E 71 | Val F1=0.799 (basic=0.724 thresh=0.799 snap=0.795) Exact=0.323 ★
+    E 78 | Val F1=0.802 (basic=0.738 thresh=0.802 snap=0.798) Exact=0.351 ★
+    E 80 | Val F1=0.794 (basic=0.735 thresh=0.794 snap=0.792) Exact=0.355
+    E100 | Val F1=0.792 (basic=0.728 thresh=0.792 snap=0.788) Exact=0.358
+    Result: F1=0.8022 Exact=0.351 (198s)
+
+  ── Config 4/108 ──
+    win=250 lr=0.0003 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.429 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.704 (basic=0.544 thresh=0.704 snap=0.690) Exact=0.086 ★
+    E  3 | Val F1=0.720 (basic=0.596 thresh=0.720 snap=0.713) Exact=0.093 ★
+    E  4 | Val F1=0.737 (basic=0.502 thresh=0.737 snap=0.735) Exact=0.160 ★
+    E  6 | Val F1=0.758 (basic=0.515 thresh=0.758 snap=0.757) Exact=0.227 ★
+    E 13 | Val F1=0.768 (basic=0.687 thresh=0.768 snap=0.755) Exact=0.287 ★
+    E 16 | Val F1=0.769 (basic=0.692 thresh=0.769 snap=0.750) Exact=0.267 ★
+    E 18 | Val F1=0.781 (basic=0.710 thresh=0.781 snap=0.765) Exact=0.281 ★
+    E 20 | Val F1=0.773 (basic=0.694 thresh=0.773 snap=0.762) Exact=0.280
+    E 26 | Val F1=0.801 (basic=0.702 thresh=0.801 snap=0.786) Exact=0.316 ★
+    E 31 | Val F1=0.803 (basic=0.671 thresh=0.803 snap=0.793) Exact=0.316 ★
+    E 32 | Val F1=0.811 (basic=0.761 thresh=0.811 snap=0.807) Exact=0.450 ★
+    E 33 | Val F1=0.816 (basic=0.776 thresh=0.816 snap=0.811) Exact=0.375 ★
+    E 36 | Val F1=0.823 (basic=0.761 thresh=0.823 snap=0.816) Exact=0.406 ★
+    E 40 | Val F1=0.803 (basic=0.746 thresh=0.803 snap=0.793) Exact=0.349
+    E 60 | Val F1=0.798 (basic=0.746 thresh=0.798 snap=0.795) Exact=0.397
+    Result: F1=0.8225 Exact=0.406 (132s)
+    ★ NEW BEST OVERALL
+
+  ── Config 5/108 ──
+    win=250 lr=0.0003 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.477 thresh=0.702 snap=0.702) Exact=0.117 ★
+    E  2 | Val F1=0.716 (basic=0.486 thresh=0.716 snap=0.710) Exact=0.126 ★
+    E  3 | Val F1=0.779 (basic=0.640 thresh=0.777 snap=0.779) Exact=0.303 ★
+    E  4 | Val F1=0.784 (basic=0.678 thresh=0.783 snap=0.784) Exact=0.293 ★
+    E 16 | Val F1=0.792 (basic=0.691 thresh=0.792 snap=0.786) Exact=0.396 ★
+    E 20 | Val F1=0.789 (basic=0.682 thresh=0.789 snap=0.778) Exact=0.359
+    E 29 | Val F1=0.795 (basic=0.658 thresh=0.795 snap=0.783) Exact=0.338 ★
+    E 30 | Val F1=0.803 (basic=0.705 thresh=0.803 snap=0.797) Exact=0.402 ★
+    E 34 | Val F1=0.811 (basic=0.705 thresh=0.811 snap=0.799) Exact=0.375 ★
+    E 40 | Val F1=0.812 (basic=0.727 thresh=0.812 snap=0.801) Exact=0.371 ★
+    E 50 | Val F1=0.816 (basic=0.746 thresh=0.816 snap=0.806) Exact=0.395 ★
+    E 60 | Val F1=0.802 (basic=0.714 thresh=0.802 snap=0.793) Exact=0.348
+    E 80 | Val F1=0.811 (basic=0.724 thresh=0.811 snap=0.804) Exact=0.380
+    Result: F1=0.8161 Exact=0.395 (158s)
+
+  ── Config 6/108 ──
+    win=250 lr=0.0003 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.415 thresh=0.703 snap=0.699) Exact=0.108 ★
+    E  2 | Val F1=0.703 (basic=0.379 thresh=0.703 snap=0.701) Exact=0.112 ★
+    E  3 | Val F1=0.749 (basic=0.497 thresh=0.749 snap=0.749) Exact=0.136 ★
+    E  4 | Val F1=0.751 (basic=0.599 thresh=0.751 snap=0.748) Exact=0.215 ★
+    E  9 | Val F1=0.767 (basic=0.662 thresh=0.767 snap=0.765) Exact=0.298 ★
+    E 13 | Val F1=0.778 (basic=0.662 thresh=0.778 snap=0.773) Exact=0.313 ★
+    E 20 | Val F1=0.775 (basic=0.654 thresh=0.775 snap=0.761) Exact=0.301
+    E 23 | Val F1=0.781 (basic=0.645 thresh=0.781 snap=0.771) Exact=0.334 ★
+    E 31 | Val F1=0.785 (basic=0.680 thresh=0.785 snap=0.778) Exact=0.370 ★
+    E 33 | Val F1=0.793 (basic=0.687 thresh=0.793 snap=0.791) Exact=0.389 ★
+    E 38 | Val F1=0.800 (basic=0.696 thresh=0.800 snap=0.797) Exact=0.329 ★
+    E 40 | Val F1=0.794 (basic=0.714 thresh=0.794 snap=0.786) Exact=0.317
+    E 44 | Val F1=0.804 (basic=0.717 thresh=0.804 snap=0.800) Exact=0.344 ★
+    E 59 | Val F1=0.810 (basic=0.760 thresh=0.810 snap=0.804) Exact=0.397 ★
+    E 60 | Val F1=0.797 (basic=0.749 thresh=0.797 snap=0.792) Exact=0.349
+    E 80 | Val F1=0.800 (basic=0.745 thresh=0.800 snap=0.794) Exact=0.391
+    Result: F1=0.8100 Exact=0.397 (175s)
+
+  ── Config 7/108 ──
+    win=250 lr=0.0003 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.491 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.703 (basic=0.459 thresh=0.703 snap=0.702) Exact=0.115 ★
+    E  3 | Val F1=0.711 (basic=0.473 thresh=0.711 snap=0.709) Exact=0.076 ★
+    E  4 | Val F1=0.734 (basic=0.560 thresh=0.734 snap=0.723) Exact=0.135 ★
+    E  5 | Val F1=0.743 (basic=0.633 thresh=0.743 snap=0.743) Exact=0.213 ★
+    E  6 | Val F1=0.756 (basic=0.633 thresh=0.756 snap=0.750) Exact=0.196 ★
+    E  9 | Val F1=0.758 (basic=0.660 thresh=0.758 snap=0.755) Exact=0.210 ★
+    E 12 | Val F1=0.764 (basic=0.712 thresh=0.764 snap=0.747) Exact=0.276 ★
+    E 14 | Val F1=0.768 (basic=0.682 thresh=0.768 snap=0.755) Exact=0.283 ★
+    E 17 | Val F1=0.768 (basic=0.671 thresh=0.768 snap=0.752) Exact=0.280 ★
+    E 18 | Val F1=0.777 (basic=0.693 thresh=0.777 snap=0.759) Exact=0.305 ★
+    E 20 | Val F1=0.777 (basic=0.703 thresh=0.777 snap=0.756) Exact=0.293
+    E 27 | Val F1=0.779 (basic=0.700 thresh=0.779 snap=0.758) Exact=0.292 ★
+    E 29 | Val F1=0.794 (basic=0.709 thresh=0.794 snap=0.782) Exact=0.336 ★
+    E 30 | Val F1=0.805 (basic=0.666 thresh=0.805 snap=0.796) Exact=0.329 ★
+    E 39 | Val F1=0.811 (basic=0.760 thresh=0.811 snap=0.804) Exact=0.386 ★
+    E 40 | Val F1=0.813 (basic=0.768 thresh=0.813 snap=0.803) Exact=0.409 ★
+    E 60 | Val F1=0.785 (basic=0.690 thresh=0.785 snap=0.774) Exact=0.292
+    Result: F1=0.8130 Exact=0.409 (138s)
+
+  ── Config 8/108 ──
+    win=250 lr=0.0003 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.502 thresh=0.702 snap=0.701) Exact=0.116 ★
+    E  2 | Val F1=0.703 (basic=0.560 thresh=0.703 snap=0.701) Exact=0.113 ★
+    E  3 | Val F1=0.717 (basic=0.603 thresh=0.717 snap=0.705) Exact=0.102 ★
+    E  4 | Val F1=0.742 (basic=0.630 thresh=0.742 snap=0.729) Exact=0.132 ★
+    E  5 | Val F1=0.755 (basic=0.618 thresh=0.755 snap=0.752) Exact=0.175 ★
+    E  6 | Val F1=0.762 (basic=0.576 thresh=0.759 snap=0.762) Exact=0.249 ★
+    E  9 | Val F1=0.769 (basic=0.686 thresh=0.769 snap=0.767) Exact=0.325 ★
+    E 11 | Val F1=0.770 (basic=0.708 thresh=0.770 snap=0.749) Exact=0.254 ★
+    E 13 | Val F1=0.786 (basic=0.728 thresh=0.786 snap=0.779) Exact=0.319 ★
+    E 15 | Val F1=0.797 (basic=0.704 thresh=0.797 snap=0.777) Exact=0.321 ★
+    E 20 | Val F1=0.786 (basic=0.715 thresh=0.786 snap=0.766) Exact=0.307
+    E 33 | Val F1=0.808 (basic=0.754 thresh=0.808 snap=0.808) Exact=0.437 ★
+    E 40 | Val F1=0.802 (basic=0.758 thresh=0.802 snap=0.799) Exact=0.406
+    E 42 | Val F1=0.810 (basic=0.760 thresh=0.810 snap=0.795) Exact=0.341 ★
+    E 60 | Val F1=0.810 (basic=0.752 thresh=0.810 snap=0.804) Exact=0.411 ★
+    E 68 | Val F1=0.812 (basic=0.756 thresh=0.812 snap=0.811) Exact=0.428 ★
+    E 69 | Val F1=0.812 (basic=0.749 thresh=0.812 snap=0.810) Exact=0.422 ★
+    E 70 | Val F1=0.813 (basic=0.759 thresh=0.813 snap=0.811) Exact=0.436 ★
+    E 71 | Val F1=0.815 (basic=0.768 thresh=0.815 snap=0.812) Exact=0.441 ★
+    E 73 | Val F1=0.819 (basic=0.773 thresh=0.818 snap=0.819) Exact=0.497 ★
+    E 80 | Val F1=0.809 (basic=0.758 thresh=0.809 snap=0.807) Exact=0.424
+    E100 | Val F1=0.808 (basic=0.750 thresh=0.808 snap=0.802) Exact=0.410
+    Result: F1=0.8189 Exact=0.497 (198s)
+
+  ── Config 9/108 ──
+    win=250 lr=0.0003 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.433 thresh=0.702 snap=0.702) Exact=0.117 ★
+    E  2 | Val F1=0.702 (basic=0.337 thresh=0.702 snap=0.702) Exact=0.118
+    E  3 | Val F1=0.703 (basic=0.364 thresh=0.703 snap=0.702) Exact=0.113 ★
+    E  4 | Val F1=0.724 (basic=0.407 thresh=0.722 snap=0.724) Exact=0.185 ★
+    E  5 | Val F1=0.759 (basic=0.466 thresh=0.759 snap=0.757) Exact=0.260 ★
+    E 13 | Val F1=0.760 (basic=0.640 thresh=0.760 snap=0.745) Exact=0.268 ★
+    E 14 | Val F1=0.777 (basic=0.636 thresh=0.777 snap=0.762) Exact=0.301 ★
+    E 20 | Val F1=0.770 (basic=0.661 thresh=0.770 snap=0.758) Exact=0.307
+    E 28 | Val F1=0.798 (basic=0.724 thresh=0.798 snap=0.794) Exact=0.388 ★
+    E 33 | Val F1=0.799 (basic=0.687 thresh=0.799 snap=0.795) Exact=0.375 ★
+    E 40 | Val F1=0.784 (basic=0.675 thresh=0.784 snap=0.770) Exact=0.305
+    E 44 | Val F1=0.802 (basic=0.685 thresh=0.802 snap=0.793) Exact=0.356 ★
+    E 48 | Val F1=0.807 (basic=0.711 thresh=0.807 snap=0.796) Exact=0.350 ★
+    E 60 | Val F1=0.793 (basic=0.692 thresh=0.793 snap=0.782) Exact=0.340
+    Result: F1=0.8066 Exact=0.350 (151s)
+
+  ── Config 10/108 ──
+    win=250 lr=0.0003 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.465 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.422 thresh=0.702 snap=0.702) Exact=0.118
+    E  3 | Val F1=0.702 (basic=0.388 thresh=0.702 snap=0.702) Exact=0.116 ★
+    E  4 | Val F1=0.706 (basic=0.406 thresh=0.706 snap=0.706) Exact=0.127 ★
+    E  5 | Val F1=0.741 (basic=0.503 thresh=0.741 snap=0.733) Exact=0.136 ★
+    E  7 | Val F1=0.744 (basic=0.616 thresh=0.744 snap=0.743) Exact=0.220 ★
+    E  8 | Val F1=0.751 (basic=0.596 thresh=0.751 snap=0.739) Exact=0.238 ★
+    E  9 | Val F1=0.758 (basic=0.640 thresh=0.757 snap=0.758) Exact=0.280 ★
+    E 12 | Val F1=0.764 (basic=0.645 thresh=0.764 snap=0.759) Exact=0.271 ★
+    E 19 | Val F1=0.772 (basic=0.667 thresh=0.772 snap=0.757) Exact=0.254 ★
+    E 20 | Val F1=0.758 (basic=0.630 thresh=0.758 snap=0.747) Exact=0.227
+    E 34 | Val F1=0.787 (basic=0.665 thresh=0.787 snap=0.775) Exact=0.313 ★
+    E 35 | Val F1=0.788 (basic=0.642 thresh=0.788 snap=0.783) Exact=0.315 ★
+    E 37 | Val F1=0.789 (basic=0.641 thresh=0.789 snap=0.783) Exact=0.307 ★
+    E 39 | Val F1=0.791 (basic=0.669 thresh=0.791 snap=0.777) Exact=0.288 ★
+    E 40 | Val F1=0.780 (basic=0.677 thresh=0.780 snap=0.773) Exact=0.311
+    E 41 | Val F1=0.806 (basic=0.701 thresh=0.806 snap=0.796) Exact=0.360 ★
+    E 60 | Val F1=0.797 (basic=0.699 thresh=0.797 snap=0.788) Exact=0.350
+    E 66 | Val F1=0.807 (basic=0.722 thresh=0.807 snap=0.804) Exact=0.375 ★
+    E 80 | Val F1=0.797 (basic=0.722 thresh=0.797 snap=0.789) Exact=0.314
+    Result: F1=0.8072 Exact=0.375 (188s)
+
+  ── Config 11/108 ──
+    win=250 lr=0.0003 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.493 thresh=0.703 snap=0.702) Exact=0.113 ★
+    E  2 | Val F1=0.702 (basic=0.462 thresh=0.702 snap=0.702) Exact=0.118
+    E  3 | Val F1=0.703 (basic=0.482 thresh=0.703 snap=0.693) Exact=0.099 ★
+    E  4 | Val F1=0.706 (basic=0.501 thresh=0.706 snap=0.696) Exact=0.099 ★
+    E  6 | Val F1=0.741 (basic=0.597 thresh=0.741 snap=0.728) Exact=0.166 ★
+    E  7 | Val F1=0.758 (basic=0.629 thresh=0.758 snap=0.754) Exact=0.250 ★
+    E 20 | Val F1=0.754 (basic=0.666 thresh=0.754 snap=0.736) Exact=0.249
+    E 26 | Val F1=0.760 (basic=0.659 thresh=0.760 snap=0.739) Exact=0.262 ★
+    E 29 | Val F1=0.772 (basic=0.663 thresh=0.772 snap=0.759) Exact=0.272 ★
+    E 30 | Val F1=0.778 (basic=0.684 thresh=0.778 snap=0.758) Exact=0.281 ★
+    E 35 | Val F1=0.784 (basic=0.684 thresh=0.784 snap=0.769) Exact=0.280 ★
+    E 37 | Val F1=0.790 (basic=0.671 thresh=0.790 snap=0.776) Exact=0.280 ★
+    E 38 | Val F1=0.798 (basic=0.689 thresh=0.798 snap=0.790) Exact=0.352 ★
+    E 40 | Val F1=0.774 (basic=0.606 thresh=0.774 snap=0.766) Exact=0.222
+    E 53 | Val F1=0.799 (basic=0.714 thresh=0.799 snap=0.786) Exact=0.306 ★
+    E 60 | Val F1=0.788 (basic=0.690 thresh=0.788 snap=0.780) Exact=0.272
+    E 80 | Val F1=0.786 (basic=0.716 thresh=0.786 snap=0.776) Exact=0.297
+    Result: F1=0.7994 Exact=0.306 (163s)
+
+  ── Config 12/108 ──
+    win=250 lr=0.0003 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.507 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.489 thresh=0.702 snap=0.701) Exact=0.114 ★
+    E  3 | Val F1=0.702 (basic=0.503 thresh=0.702 snap=0.702) Exact=0.118
+    E  4 | Val F1=0.704 (basic=0.551 thresh=0.704 snap=0.702) Exact=0.116 ★
+    E  5 | Val F1=0.713 (basic=0.566 thresh=0.713 snap=0.711) Exact=0.103 ★
+    E  6 | Val F1=0.741 (basic=0.694 thresh=0.741 snap=0.733) Exact=0.130 ★
+    E  8 | Val F1=0.742 (basic=0.703 thresh=0.742 snap=0.741) Exact=0.224 ★
+    E 12 | Val F1=0.761 (basic=0.642 thresh=0.761 snap=0.756) Exact=0.269 ★
+    E 20 | Val F1=0.755 (basic=0.633 thresh=0.755 snap=0.754) Exact=0.244
+    E 27 | Val F1=0.763 (basic=0.693 thresh=0.763 snap=0.761) Exact=0.244 ★
+    E 28 | Val F1=0.766 (basic=0.714 thresh=0.766 snap=0.749) Exact=0.241 ★
+    E 29 | Val F1=0.782 (basic=0.693 thresh=0.782 snap=0.766) Exact=0.297 ★
+    E 32 | Val F1=0.786 (basic=0.647 thresh=0.786 snap=0.768) Exact=0.291 ★
+    E 39 | Val F1=0.786 (basic=0.706 thresh=0.786 snap=0.766) Exact=0.299 ★
+    E 40 | Val F1=0.769 (basic=0.702 thresh=0.769 snap=0.753) Exact=0.286
+    E 48 | Val F1=0.794 (basic=0.688 thresh=0.794 snap=0.786) Exact=0.311 ★
+    E 60 | Val F1=0.774 (basic=0.696 thresh=0.774 snap=0.756) Exact=0.240
+    E 68 | Val F1=0.796 (basic=0.721 thresh=0.796 snap=0.784) Exact=0.322 ★
+    E 71 | Val F1=0.798 (basic=0.731 thresh=0.798 snap=0.782) Exact=0.321 ★
+    E 79 | Val F1=0.802 (basic=0.764 thresh=0.802 snap=0.790) Exact=0.348 ★
+    E 80 | Val F1=0.796 (basic=0.721 thresh=0.796 snap=0.780) Exact=0.295
+    E 87 | Val F1=0.806 (basic=0.703 thresh=0.806 snap=0.792) Exact=0.331 ★
+    E100 | Val F1=0.798 (basic=0.740 thresh=0.798 snap=0.787) Exact=0.325
+    Result: F1=0.8059 Exact=0.331 (197s)
+
+  ── Config 13/108 ──
+    win=250 lr=0.0005 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.706 (basic=0.388 thresh=0.706 snap=0.697) Exact=0.099 ★
+    E  2 | Val F1=0.767 (basic=0.545 thresh=0.767 snap=0.761) Exact=0.234 ★
+    E  3 | Val F1=0.756 (basic=0.586 thresh=0.756 snap=0.755) Exact=0.239
+    E  4 | Val F1=0.770 (basic=0.629 thresh=0.770 snap=0.764) Exact=0.255 ★
+    E  5 | Val F1=0.773 (basic=0.588 thresh=0.773 snap=0.771) Exact=0.264 ★
+    E 18 | Val F1=0.781 (basic=0.722 thresh=0.781 snap=0.777) Exact=0.290 ★
+    E 20 | Val F1=0.773 (basic=0.697 thresh=0.773 snap=0.754) Exact=0.260
+    E 27 | Val F1=0.788 (basic=0.734 thresh=0.788 snap=0.783) Exact=0.340 ★
+    E 30 | Val F1=0.803 (basic=0.741 thresh=0.803 snap=0.800) Exact=0.409 ★
+    E 40 | Val F1=0.740 (basic=0.661 thresh=0.740 snap=0.731) Exact=0.261
+    E 60 | Val F1=0.771 (basic=0.712 thresh=0.771 snap=0.765) Exact=0.312
+    Result: F1=0.8027 Exact=0.409 (117s)
+
+  ── Config 14/108 ──
+    win=250 lr=0.0005 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.706 (basic=0.444 thresh=0.706 snap=0.696) Exact=0.077 ★
+    E  2 | Val F1=0.740 (basic=0.499 thresh=0.740 snap=0.737) Exact=0.179 ★
+    E  3 | Val F1=0.760 (basic=0.639 thresh=0.760 snap=0.758) Exact=0.289 ★
+    E  4 | Val F1=0.786 (basic=0.676 thresh=0.786 snap=0.784) Exact=0.336 ★
+    E 10 | Val F1=0.791 (basic=0.689 thresh=0.791 snap=0.784) Exact=0.350 ★
+    E 12 | Val F1=0.811 (basic=0.733 thresh=0.811 snap=0.801) Exact=0.389 ★
+    E 20 | Val F1=0.788 (basic=0.718 thresh=0.788 snap=0.779) Exact=0.346
+    E 29 | Val F1=0.811 (basic=0.729 thresh=0.811 snap=0.806) Exact=0.402 ★
+    E 40 | Val F1=0.817 (basic=0.765 thresh=0.817 snap=0.811) Exact=0.430 ★
+    E 60 | Val F1=0.793 (basic=0.735 thresh=0.793 snap=0.784) Exact=0.354
+    Result: F1=0.8172 Exact=0.430 (137s)
+
+  ── Config 15/108 ──
+    win=250 lr=0.0005 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.705 (basic=0.455 thresh=0.705 snap=0.701) Exact=0.100 ★
+    E  2 | Val F1=0.747 (basic=0.538 thresh=0.747 snap=0.746) Exact=0.219 ★
+    E  3 | Val F1=0.744 (basic=0.467 thresh=0.744 snap=0.738) Exact=0.214
+    E  4 | Val F1=0.768 (basic=0.628 thresh=0.768 snap=0.763) Exact=0.316 ★
+    E  6 | Val F1=0.797 (basic=0.688 thresh=0.797 snap=0.789) Exact=0.383 ★
+    E 11 | Val F1=0.801 (basic=0.743 thresh=0.801 snap=0.791) Exact=0.347 ★
+    E 20 | Val F1=0.791 (basic=0.702 thresh=0.791 snap=0.783) Exact=0.287
+    E 31 | Val F1=0.812 (basic=0.764 thresh=0.812 snap=0.807) Exact=0.400 ★
+    E 34 | Val F1=0.824 (basic=0.766 thresh=0.824 snap=0.816) Exact=0.400 ★
+    E 40 | Val F1=0.787 (basic=0.694 thresh=0.787 snap=0.781) Exact=0.319
+    E 60 | Val F1=0.797 (basic=0.708 thresh=0.797 snap=0.794) Exact=0.306
+    Result: F1=0.8237 Exact=0.400 (126s)
+    ★ NEW BEST OVERALL
+
+  ── Config 16/108 ──
+    win=250 lr=0.0005 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.353 thresh=0.702 snap=0.702) Exact=0.117 ★
+    E  2 | Val F1=0.712 (basic=0.468 thresh=0.712 snap=0.694) Exact=0.108 ★
+    E  3 | Val F1=0.756 (basic=0.625 thresh=0.754 snap=0.756) Exact=0.271 ★
+    E  5 | Val F1=0.772 (basic=0.660 thresh=0.772 snap=0.767) Exact=0.330 ★
+    E  8 | Val F1=0.793 (basic=0.726 thresh=0.793 snap=0.788) Exact=0.310 ★
+    E 13 | Val F1=0.798 (basic=0.745 thresh=0.798 snap=0.796) Exact=0.386 ★
+    E 20 | Val F1=0.803 (basic=0.748 thresh=0.803 snap=0.800) Exact=0.368 ★
+    E 37 | Val F1=0.806 (basic=0.749 thresh=0.806 snap=0.792) Exact=0.324 ★
+    E 40 | Val F1=0.791 (basic=0.738 thresh=0.791 snap=0.774) Exact=0.322
+    E 60 | Val F1=0.802 (basic=0.739 thresh=0.802 snap=0.793) Exact=0.321
+    Result: F1=0.8063 Exact=0.324 (132s)
+
+  ── Config 17/108 ──
+    win=250 lr=0.0005 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.705 (basic=0.455 thresh=0.705 snap=0.701) Exact=0.102 ★
+    E  2 | Val F1=0.772 (basic=0.615 thresh=0.772 snap=0.769) Exact=0.280 ★
+    E  3 | Val F1=0.747 (basic=0.612 thresh=0.747 snap=0.745) Exact=0.189
+    E  7 | Val F1=0.792 (basic=0.678 thresh=0.792 snap=0.789) Exact=0.403 ★
+    E  8 | Val F1=0.796 (basic=0.708 thresh=0.796 snap=0.792) Exact=0.376 ★
+    E  9 | Val F1=0.797 (basic=0.687 thresh=0.797 snap=0.789) Exact=0.375 ★
+    E 11 | Val F1=0.813 (basic=0.722 thresh=0.813 snap=0.809) Exact=0.428 ★
+    E 20 | Val F1=0.799 (basic=0.723 thresh=0.799 snap=0.792) Exact=0.377
+    E 40 | Val F1=0.803 (basic=0.749 thresh=0.803 snap=0.796) Exact=0.396
+    Result: F1=0.8128 Exact=0.428 (81s)
+
+  ── Config 18/108 ──
+    win=250 lr=0.0005 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.463 thresh=0.703 snap=0.699) Exact=0.111 ★
+    E  2 | Val F1=0.748 (basic=0.496 thresh=0.745 snap=0.748) Exact=0.281 ★
+    E  3 | Val F1=0.764 (basic=0.657 thresh=0.764 snap=0.762) Exact=0.240 ★
+    E  7 | Val F1=0.772 (basic=0.684 thresh=0.772 snap=0.771) Exact=0.303 ★
+    E  8 | Val F1=0.789 (basic=0.667 thresh=0.789 snap=0.786) Exact=0.376 ★
+    E 11 | Val F1=0.796 (basic=0.683 thresh=0.796 snap=0.793) Exact=0.381 ★
+    E 20 | Val F1=0.770 (basic=0.669 thresh=0.770 snap=0.759) Exact=0.238
+    E 31 | Val F1=0.798 (basic=0.717 thresh=0.798 snap=0.796) Exact=0.338 ★
+    E 36 | Val F1=0.799 (basic=0.747 thresh=0.799 snap=0.795) Exact=0.380 ★
+    E 38 | Val F1=0.806 (basic=0.743 thresh=0.806 snap=0.803) Exact=0.414 ★
+    E 40 | Val F1=0.776 (basic=0.715 thresh=0.776 snap=0.759) Exact=0.280
+    E 58 | Val F1=0.807 (basic=0.739 thresh=0.807 snap=0.800) Exact=0.414 ★
+    E 60 | Val F1=0.793 (basic=0.741 thresh=0.793 snap=0.783) Exact=0.357
+    E 68 | Val F1=0.807 (basic=0.747 thresh=0.807 snap=0.803) Exact=0.415 ★
+    E 80 | Val F1=0.797 (basic=0.729 thresh=0.797 snap=0.784) Exact=0.356
+    Result: F1=0.8073 Exact=0.415 (193s)
+
+  ── Config 19/108 ──
+    win=250 lr=0.0005 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.508 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.707 (basic=0.546 thresh=0.707 snap=0.704) Exact=0.079 ★
+    E  3 | Val F1=0.751 (basic=0.624 thresh=0.751 snap=0.748) Exact=0.244 ★
+    E  7 | Val F1=0.772 (basic=0.706 thresh=0.772 snap=0.768) Exact=0.301 ★
+    E  8 | Val F1=0.776 (basic=0.653 thresh=0.776 snap=0.775) Exact=0.301 ★
+    E 12 | Val F1=0.776 (basic=0.687 thresh=0.776 snap=0.748) Exact=0.252 ★
+    E 13 | Val F1=0.787 (basic=0.666 thresh=0.787 snap=0.768) Exact=0.264 ★
+    E 20 | Val F1=0.782 (basic=0.696 thresh=0.782 snap=0.771) Exact=0.274
+    E 27 | Val F1=0.797 (basic=0.739 thresh=0.797 snap=0.787) Exact=0.325 ★
+    E 30 | Val F1=0.808 (basic=0.746 thresh=0.808 snap=0.804) Exact=0.371 ★
+    E 40 | Val F1=0.781 (basic=0.694 thresh=0.781 snap=0.775) Exact=0.255
+    E 60 | Val F1=0.791 (basic=0.723 thresh=0.791 snap=0.784) Exact=0.312
+    Result: F1=0.8085 Exact=0.371 (118s)
+
+  ── Config 20/108 ──
+    win=250 lr=0.0005 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.444 thresh=0.702 snap=0.702) Exact=0.115 ★
+    E  2 | Val F1=0.710 (basic=0.515 thresh=0.707 snap=0.710) Exact=0.144 ★
+    E  3 | Val F1=0.745 (basic=0.648 thresh=0.745 snap=0.742) Exact=0.212 ★
+    E  6 | Val F1=0.752 (basic=0.571 thresh=0.752 snap=0.751) Exact=0.207 ★
+    E  8 | Val F1=0.770 (basic=0.611 thresh=0.770 snap=0.766) Exact=0.254 ★
+    E  9 | Val F1=0.788 (basic=0.717 thresh=0.788 snap=0.783) Exact=0.276 ★
+    E 11 | Val F1=0.796 (basic=0.721 thresh=0.796 snap=0.781) Exact=0.338 ★
+    E 20 | Val F1=0.784 (basic=0.713 thresh=0.784 snap=0.774) Exact=0.301
+    E 31 | Val F1=0.799 (basic=0.749 thresh=0.799 snap=0.792) Exact=0.319 ★
+    E 34 | Val F1=0.815 (basic=0.765 thresh=0.815 snap=0.810) Exact=0.397 ★
+    E 40 | Val F1=0.800 (basic=0.745 thresh=0.800 snap=0.788) Exact=0.352
+    E 60 | Val F1=0.789 (basic=0.745 thresh=0.789 snap=0.782) Exact=0.320
+    Result: F1=0.8155 Exact=0.397 (125s)
+
+  ── Config 21/108 ──
+    win=250 lr=0.0005 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.706 (basic=0.459 thresh=0.706 snap=0.704) Exact=0.110 ★
+    E  2 | Val F1=0.762 (basic=0.519 thresh=0.757 snap=0.762) Exact=0.330 ★
+    E  3 | Val F1=0.759 (basic=0.609 thresh=0.759 snap=0.752) Exact=0.255
+    E  6 | Val F1=0.777 (basic=0.670 thresh=0.777 snap=0.767) Exact=0.297 ★
+    E 11 | Val F1=0.783 (basic=0.696 thresh=0.783 snap=0.777) Exact=0.325 ★
+    E 14 | Val F1=0.791 (basic=0.666 thresh=0.791 snap=0.786) Exact=0.338 ★
+    E 20 | Val F1=0.787 (basic=0.677 thresh=0.787 snap=0.780) Exact=0.314
+    E 39 | Val F1=0.795 (basic=0.713 thresh=0.795 snap=0.786) Exact=0.370 ★
+    E 40 | Val F1=0.774 (basic=0.690 thresh=0.774 snap=0.760) Exact=0.281
+    E 60 | Val F1=0.775 (basic=0.712 thresh=0.775 snap=0.774) Exact=0.311
+    Result: F1=0.7950 Exact=0.370 (134s)
+
+  ── Config 22/108 ──
+    win=250 lr=0.0005 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.390 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.704 (basic=0.416 thresh=0.704 snap=0.691) Exact=0.093 ★
+    E  3 | Val F1=0.742 (basic=0.508 thresh=0.741 snap=0.742) Exact=0.255 ★
+    E  4 | Val F1=0.756 (basic=0.630 thresh=0.756 snap=0.751) Exact=0.230 ★
+    E  5 | Val F1=0.767 (basic=0.553 thresh=0.767 snap=0.765) Exact=0.282 ★
+    E  6 | Val F1=0.770 (basic=0.650 thresh=0.770 snap=0.768) Exact=0.229 ★
+    E  9 | Val F1=0.771 (basic=0.654 thresh=0.771 snap=0.763) Exact=0.243 ★
+    E 10 | Val F1=0.772 (basic=0.676 thresh=0.772 snap=0.767) Exact=0.263 ★
+    E 11 | Val F1=0.781 (basic=0.666 thresh=0.781 snap=0.779) Exact=0.319 ★
+    E 12 | Val F1=0.798 (basic=0.677 thresh=0.798 snap=0.797) Exact=0.374 ★
+    E 20 | Val F1=0.776 (basic=0.655 thresh=0.776 snap=0.768) Exact=0.262
+    E 33 | Val F1=0.803 (basic=0.725 thresh=0.803 snap=0.798) Exact=0.329 ★
+    E 34 | Val F1=0.806 (basic=0.722 thresh=0.806 snap=0.803) Exact=0.368 ★
+    E 40 | Val F1=0.809 (basic=0.741 thresh=0.809 snap=0.800) Exact=0.354 ★
+    E 51 | Val F1=0.810 (basic=0.709 thresh=0.810 snap=0.807) Exact=0.351 ★
+    E 57 | Val F1=0.811 (basic=0.744 thresh=0.811 snap=0.807) Exact=0.387 ★
+    E 58 | Val F1=0.816 (basic=0.739 thresh=0.816 snap=0.810) Exact=0.387 ★
+    E 60 | Val F1=0.807 (basic=0.733 thresh=0.807 snap=0.801) Exact=0.369
+    E 80 | Val F1=0.802 (basic=0.725 thresh=0.802 snap=0.794) Exact=0.364
+    Result: F1=0.8159 Exact=0.387 (172s)
+
+  ── Config 23/108 ──
+    win=250 lr=0.0005 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.383 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.304 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  3 | Val F1=0.702 (basic=0.384 thresh=0.702 snap=0.702) Exact=0.118
+    E  5 | Val F1=0.710 (basic=0.497 thresh=0.710 snap=0.706) Exact=0.106 ★
+    E  6 | Val F1=0.737 (basic=0.477 thresh=0.737 snap=0.735) Exact=0.194 ★
+    E  7 | Val F1=0.742 (basic=0.455 thresh=0.742 snap=0.738) Exact=0.192 ★
+    E  8 | Val F1=0.754 (basic=0.543 thresh=0.754 snap=0.735) Exact=0.205 ★
+    E 10 | Val F1=0.755 (basic=0.640 thresh=0.755 snap=0.750) Exact=0.210 ★
+    E 11 | Val F1=0.762 (basic=0.685 thresh=0.762 snap=0.761) Exact=0.247 ★
+    E 13 | Val F1=0.769 (basic=0.684 thresh=0.769 snap=0.768) Exact=0.268 ★
+    E 20 | Val F1=0.764 (basic=0.641 thresh=0.764 snap=0.748) Exact=0.265
+    E 26 | Val F1=0.776 (basic=0.677 thresh=0.776 snap=0.765) Exact=0.277 ★
+    E 32 | Val F1=0.783 (basic=0.641 thresh=0.783 snap=0.779) Exact=0.275 ★
+    E 39 | Val F1=0.784 (basic=0.680 thresh=0.784 snap=0.776) Exact=0.240 ★
+    E 40 | Val F1=0.784 (basic=0.684 thresh=0.784 snap=0.773) Exact=0.260 ★
+    E 44 | Val F1=0.785 (basic=0.686 thresh=0.785 snap=0.774) Exact=0.270 ★
+    E 46 | Val F1=0.793 (basic=0.724 thresh=0.793 snap=0.778) Exact=0.300 ★
+    E 55 | Val F1=0.794 (basic=0.751 thresh=0.794 snap=0.781) Exact=0.329 ★
+    E 56 | Val F1=0.795 (basic=0.740 thresh=0.795 snap=0.784) Exact=0.339 ★
+    E 58 | Val F1=0.797 (basic=0.734 thresh=0.797 snap=0.783) Exact=0.313 ★
+    E 60 | Val F1=0.800 (basic=0.755 thresh=0.800 snap=0.788) Exact=0.354 ★
+    E 61 | Val F1=0.801 (basic=0.739 thresh=0.801 snap=0.789) Exact=0.331 ★
+    E 66 | Val F1=0.801 (basic=0.735 thresh=0.801 snap=0.795) Exact=0.357 ★
+    E 80 | Val F1=0.803 (basic=0.739 thresh=0.803 snap=0.787) Exact=0.332 ★
+    E100 | Val F1=0.789 (basic=0.658 thresh=0.789 snap=0.782) Exact=0.288
+    Result: F1=0.8034 Exact=0.332 (196s)
+
+  ── Config 24/108 ──
+    win=250 lr=0.0005 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.337 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.356 thresh=0.702 snap=0.702) Exact=0.105 ★
+    E  3 | Val F1=0.728 (basic=0.617 thresh=0.728 snap=0.715) Exact=0.118 ★
+    E  4 | Val F1=0.732 (basic=0.541 thresh=0.732 snap=0.729) Exact=0.167 ★
+    E  6 | Val F1=0.749 (basic=0.670 thresh=0.749 snap=0.746) Exact=0.236 ★
+    E 10 | Val F1=0.771 (basic=0.706 thresh=0.771 snap=0.762) Exact=0.274 ★
+    E 20 | Val F1=0.765 (basic=0.651 thresh=0.765 snap=0.749) Exact=0.258
+    E 31 | Val F1=0.779 (basic=0.682 thresh=0.779 snap=0.771) Exact=0.305 ★
+    E 39 | Val F1=0.797 (basic=0.748 thresh=0.797 snap=0.789) Exact=0.363 ★
+    E 40 | Val F1=0.783 (basic=0.711 thresh=0.783 snap=0.776) Exact=0.288
+    E 43 | Val F1=0.800 (basic=0.713 thresh=0.800 snap=0.791) Exact=0.319 ★
+    E 56 | Val F1=0.806 (basic=0.719 thresh=0.806 snap=0.795) Exact=0.325 ★
+    E 60 | Val F1=0.794 (basic=0.689 thresh=0.794 snap=0.785) Exact=0.285
+    E 80 | Val F1=0.792 (basic=0.688 thresh=0.792 snap=0.788) Exact=0.312
+    Result: F1=0.8060 Exact=0.325 (168s)
+
+  ── Config 25/108 ──
+    win=250 lr=0.001 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.736 (basic=0.492 thresh=0.736 snap=0.730) Exact=0.187 ★
+    E  2 | Val F1=0.757 (basic=0.558 thresh=0.757 snap=0.755) Exact=0.235 ★
+    E  3 | Val F1=0.764 (basic=0.616 thresh=0.764 snap=0.751) Exact=0.271 ★
+    E  4 | Val F1=0.793 (basic=0.684 thresh=0.793 snap=0.785) Exact=0.383 ★
+    E  8 | Val F1=0.811 (basic=0.755 thresh=0.811 snap=0.811) Exact=0.410 ★
+    E 17 | Val F1=0.819 (basic=0.759 thresh=0.819 snap=0.814) Exact=0.422 ★
+    E 20 | Val F1=0.801 (basic=0.743 thresh=0.801 snap=0.789) Exact=0.346
+    E 28 | Val F1=0.823 (basic=0.763 thresh=0.823 snap=0.821) Exact=0.417 ★
+    E 40 | Val F1=0.807 (basic=0.739 thresh=0.807 snap=0.800) Exact=0.389
+    Result: F1=0.8229 Exact=0.417 (112s)
+
+  ── Config 26/108 ──
+    win=250 lr=0.001 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.709 (basic=0.384 thresh=0.709 snap=0.709) Exact=0.141 ★
+    E  2 | Val F1=0.762 (basic=0.625 thresh=0.762 snap=0.757) Exact=0.283 ★
+    E  3 | Val F1=0.751 (basic=0.558 thresh=0.751 snap=0.750) Exact=0.238
+    E  4 | Val F1=0.797 (basic=0.694 thresh=0.797 snap=0.797) Exact=0.417 ★
+    E 14 | Val F1=0.800 (basic=0.711 thresh=0.800 snap=0.796) Exact=0.367 ★
+    E 15 | Val F1=0.803 (basic=0.739 thresh=0.803 snap=0.794) Exact=0.362 ★
+    E 20 | Val F1=0.789 (basic=0.713 thresh=0.789 snap=0.784) Exact=0.359
+    E 26 | Val F1=0.809 (basic=0.741 thresh=0.809 snap=0.805) Exact=0.411 ★
+    E 27 | Val F1=0.818 (basic=0.758 thresh=0.818 snap=0.814) Exact=0.436 ★
+    E 31 | Val F1=0.822 (basic=0.764 thresh=0.822 snap=0.817) Exact=0.481 ★
+    E 36 | Val F1=0.829 (basic=0.774 thresh=0.829 snap=0.824) Exact=0.467 ★
+    E 40 | Val F1=0.788 (basic=0.726 thresh=0.788 snap=0.784) Exact=0.370
+    E 60 | Val F1=0.804 (basic=0.750 thresh=0.804 snap=0.802) Exact=0.411
+    Result: F1=0.8294 Exact=0.467 (129s)
+    ★ NEW BEST OVERALL
+
+  ── Config 27/108 ──
+    win=250 lr=0.001 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.706 (basic=0.456 thresh=0.706 snap=0.705) Exact=0.107 ★
+    E  2 | Val F1=0.757 (basic=0.668 thresh=0.757 snap=0.755) Exact=0.207 ★
+    E  3 | Val F1=0.747 (basic=0.698 thresh=0.747 snap=0.747) Exact=0.213
+    E  4 | Val F1=0.772 (basic=0.701 thresh=0.772 snap=0.768) Exact=0.282 ★
+    E  5 | Val F1=0.784 (basic=0.706 thresh=0.784 snap=0.775) Exact=0.316 ★
+    E  6 | Val F1=0.787 (basic=0.670 thresh=0.787 snap=0.774) Exact=0.286 ★
+    E  8 | Val F1=0.802 (basic=0.730 thresh=0.802 snap=0.796) Exact=0.410 ★
+    E  9 | Val F1=0.806 (basic=0.756 thresh=0.806 snap=0.800) Exact=0.349 ★
+    E 17 | Val F1=0.808 (basic=0.756 thresh=0.808 snap=0.800) Exact=0.389 ★
+    E 20 | Val F1=0.806 (basic=0.755 thresh=0.806 snap=0.797) Exact=0.357
+    E 21 | Val F1=0.810 (basic=0.760 thresh=0.810 snap=0.797) Exact=0.366 ★
+    E 30 | Val F1=0.812 (basic=0.773 thresh=0.812 snap=0.805) Exact=0.418 ★
+    E 32 | Val F1=0.821 (basic=0.782 thresh=0.821 snap=0.818) Exact=0.436 ★
+    E 40 | Val F1=0.814 (basic=0.762 thresh=0.814 snap=0.810) Exact=0.362
+    E 60 | Val F1=0.804 (basic=0.736 thresh=0.804 snap=0.792) Exact=0.341
+    Result: F1=0.8207 Exact=0.436 (122s)
+
+  ── Config 28/108 ──
+    win=250 lr=0.001 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.704 (basic=0.550 thresh=0.704 snap=0.702) Exact=0.109 ★
+    E  2 | Val F1=0.749 (basic=0.631 thresh=0.749 snap=0.746) Exact=0.216 ★
+    E  3 | Val F1=0.742 (basic=0.662 thresh=0.742 snap=0.741) Exact=0.209
+    E  4 | Val F1=0.756 (basic=0.637 thresh=0.756 snap=0.755) Exact=0.224 ★
+    E  5 | Val F1=0.809 (basic=0.731 thresh=0.809 snap=0.809) Exact=0.378 ★
+    E 20 | Val F1=0.803 (basic=0.754 thresh=0.803 snap=0.798) Exact=0.362
+    Result: F1=0.8089 Exact=0.378 (69s)
+
+  ── Config 29/108 ──
+    win=250 lr=0.001 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.767 (basic=0.552 thresh=0.767 snap=0.767) Exact=0.272 ★
+    E  2 | Val F1=0.743 (basic=0.632 thresh=0.743 snap=0.741) Exact=0.189
+    E  3 | Val F1=0.726 (basic=0.516 thresh=0.726 snap=0.720) Exact=0.157
+    E  6 | Val F1=0.772 (basic=0.682 thresh=0.772 snap=0.761) Exact=0.268 ★
+    E  7 | Val F1=0.794 (basic=0.697 thresh=0.794 snap=0.789) Exact=0.331 ★
+    E 11 | Val F1=0.800 (basic=0.669 thresh=0.800 snap=0.791) Exact=0.305 ★
+    E 18 | Val F1=0.804 (basic=0.725 thresh=0.804 snap=0.796) Exact=0.315 ★
+    E 20 | Val F1=0.802 (basic=0.745 thresh=0.802 snap=0.800) Exact=0.315
+    E 27 | Val F1=0.809 (basic=0.728 thresh=0.809 snap=0.799) Exact=0.355 ★
+    E 30 | Val F1=0.828 (basic=0.755 thresh=0.828 snap=0.823) Exact=0.408 ★
+    E 40 | Val F1=0.800 (basic=0.743 thresh=0.800 snap=0.797) Exact=0.347
+    E 60 | Val F1=0.795 (basic=0.734 thresh=0.795 snap=0.793) Exact=0.369
+    Result: F1=0.8280 Exact=0.408 (118s)
+
+  ── Config 30/108 ──
+    win=250 lr=0.001 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.715 (basic=0.413 thresh=0.711 snap=0.715) Exact=0.152 ★
+    E  2 | Val F1=0.783 (basic=0.583 thresh=0.783 snap=0.782) Exact=0.292 ★
+    E  3 | Val F1=0.773 (basic=0.668 thresh=0.773 snap=0.770) Exact=0.245
+    E  7 | Val F1=0.795 (basic=0.721 thresh=0.794 snap=0.795) Exact=0.393 ★
+    E  8 | Val F1=0.805 (basic=0.735 thresh=0.805 snap=0.803) Exact=0.387 ★
+    E 20 | Val F1=0.798 (basic=0.737 thresh=0.798 snap=0.791) Exact=0.350
+    E 21 | Val F1=0.809 (basic=0.751 thresh=0.809 snap=0.808) Exact=0.404 ★
+    E 28 | Val F1=0.815 (basic=0.750 thresh=0.815 snap=0.813) Exact=0.430 ★
+    E 30 | Val F1=0.825 (basic=0.761 thresh=0.825 snap=0.823) Exact=0.449 ★
+    E 40 | Val F1=0.823 (basic=0.776 thresh=0.823 snap=0.816) Exact=0.421
+    E 60 | Val F1=0.809 (basic=0.747 thresh=0.809 snap=0.802) Exact=0.380
+    Result: F1=0.8249 Exact=0.449 (118s)
+
+  ── Config 31/108 ──
+    win=250 lr=0.001 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.705 (basic=0.555 thresh=0.705 snap=0.705) Exact=0.111 ★
+    E  2 | Val F1=0.757 (basic=0.679 thresh=0.755 snap=0.757) Exact=0.228 ★
+    E  3 | Val F1=0.737 (basic=0.571 thresh=0.737 snap=0.736) Exact=0.218
+    E  4 | Val F1=0.795 (basic=0.698 thresh=0.795 snap=0.790) Exact=0.357 ★
+    E  8 | Val F1=0.811 (basic=0.711 thresh=0.811 snap=0.800) Exact=0.399 ★
+    E 20 | Val F1=0.798 (basic=0.732 thresh=0.798 snap=0.784) Exact=0.315
+    E 26 | Val F1=0.816 (basic=0.747 thresh=0.816 snap=0.803) Exact=0.362 ★
+    E 40 | Val F1=0.814 (basic=0.757 thresh=0.814 snap=0.806) Exact=0.377
+    E 47 | Val F1=0.823 (basic=0.779 thresh=0.823 snap=0.821) Exact=0.444 ★
+    E 60 | Val F1=0.802 (basic=0.717 thresh=0.802 snap=0.794) Exact=0.336
+    Result: F1=0.8233 Exact=0.444 (152s)
+
+  ── Config 32/108 ──
+    win=250 lr=0.001 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.418 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.726 (basic=0.610 thresh=0.722 snap=0.726) Exact=0.219 ★
+    E  3 | Val F1=0.744 (basic=0.652 thresh=0.744 snap=0.736) Exact=0.208 ★
+    E  4 | Val F1=0.775 (basic=0.705 thresh=0.775 snap=0.775) Exact=0.337 ★
+    E  5 | Val F1=0.776 (basic=0.700 thresh=0.776 snap=0.775) Exact=0.337 ★
+    E  6 | Val F1=0.780 (basic=0.709 thresh=0.780 snap=0.779) Exact=0.340 ★
+    E  7 | Val F1=0.780 (basic=0.706 thresh=0.780 snap=0.773) Exact=0.301 ★
+    E  9 | Val F1=0.798 (basic=0.734 thresh=0.793 snap=0.798) Exact=0.460 ★
+    E 10 | Val F1=0.799 (basic=0.747 thresh=0.799 snap=0.780) Exact=0.326 ★
+    E 12 | Val F1=0.809 (basic=0.728 thresh=0.809 snap=0.807) Exact=0.366 ★
+    E 14 | Val F1=0.812 (basic=0.761 thresh=0.812 snap=0.805) Exact=0.363 ★
+    E 16 | Val F1=0.814 (basic=0.763 thresh=0.814 snap=0.809) Exact=0.409 ★
+    E 20 | Val F1=0.807 (basic=0.759 thresh=0.807 snap=0.804) Exact=0.395
+    E 21 | Val F1=0.814 (basic=0.762 thresh=0.814 snap=0.809) Exact=0.393 ★
+    E 23 | Val F1=0.814 (basic=0.763 thresh=0.814 snap=0.810) Exact=0.357 ★
+    E 26 | Val F1=0.830 (basic=0.771 thresh=0.830 snap=0.828) Exact=0.489 ★
+    E 40 | Val F1=0.790 (basic=0.748 thresh=0.790 snap=0.779) Exact=0.332
+    Result: F1=0.8295 Exact=0.489 (111s)
+    ★ NEW BEST OVERALL
+
+  ── Config 33/108 ──
+    win=250 lr=0.001 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.375 thresh=0.703 snap=0.702) Exact=0.112 ★
+    E  2 | Val F1=0.741 (basic=0.583 thresh=0.741 snap=0.739) Exact=0.179 ★
+    E  3 | Val F1=0.743 (basic=0.530 thresh=0.743 snap=0.738) Exact=0.187 ★
+    E  4 | Val F1=0.755 (basic=0.655 thresh=0.754 snap=0.755) Exact=0.280 ★
+    E  5 | Val F1=0.759 (basic=0.661 thresh=0.759 snap=0.757) Exact=0.213 ★
+    E  6 | Val F1=0.761 (basic=0.686 thresh=0.761 snap=0.761) Exact=0.274 ★
+    E  7 | Val F1=0.767 (basic=0.665 thresh=0.767 snap=0.765) Exact=0.283 ★
+    E  9 | Val F1=0.784 (basic=0.665 thresh=0.784 snap=0.771) Exact=0.280 ★
+    E 11 | Val F1=0.810 (basic=0.721 thresh=0.810 snap=0.806) Exact=0.419 ★
+    E 14 | Val F1=0.812 (basic=0.714 thresh=0.812 snap=0.808) Exact=0.426 ★
+    E 20 | Val F1=0.788 (basic=0.685 thresh=0.788 snap=0.784) Exact=0.296
+    E 39 | Val F1=0.813 (basic=0.756 thresh=0.813 snap=0.810) Exact=0.391 ★
+    E 40 | Val F1=0.792 (basic=0.744 thresh=0.792 snap=0.790) Exact=0.364
+    E 60 | Val F1=0.799 (basic=0.743 thresh=0.799 snap=0.796) Exact=0.369
+    Result: F1=0.8132 Exact=0.391 (136s)
+
+  ── Config 34/108 ──
+    win=250 lr=0.001 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.435 thresh=0.703 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.749 (basic=0.531 thresh=0.749 snap=0.748) Exact=0.221 ★
+    E  3 | Val F1=0.746 (basic=0.611 thresh=0.746 snap=0.744) Exact=0.196
+    E  4 | Val F1=0.760 (basic=0.656 thresh=0.760 snap=0.759) Exact=0.291 ★
+    E  6 | Val F1=0.773 (basic=0.682 thresh=0.773 snap=0.771) Exact=0.366 ★
+    E  7 | Val F1=0.784 (basic=0.695 thresh=0.784 snap=0.777) Exact=0.330 ★
+    E 10 | Val F1=0.798 (basic=0.681 thresh=0.798 snap=0.791) Exact=0.356 ★
+    E 11 | Val F1=0.800 (basic=0.713 thresh=0.800 snap=0.795) Exact=0.356 ★
+    E 12 | Val F1=0.808 (basic=0.704 thresh=0.808 snap=0.801) Exact=0.368 ★
+    E 20 | Val F1=0.798 (basic=0.709 thresh=0.798 snap=0.792) Exact=0.400
+    E 26 | Val F1=0.811 (basic=0.746 thresh=0.811 snap=0.805) Exact=0.419 ★
+    E 29 | Val F1=0.823 (basic=0.767 thresh=0.823 snap=0.821) Exact=0.453 ★
+    E 40 | Val F1=0.795 (basic=0.738 thresh=0.795 snap=0.787) Exact=0.389
+    Result: F1=0.8230 Exact=0.453 (116s)
+
+  ── Config 35/108 ──
+    win=250 lr=0.001 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.315 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.346 thresh=0.702 snap=0.702) Exact=0.117 ★
+    E  3 | Val F1=0.741 (basic=0.642 thresh=0.741 snap=0.739) Exact=0.196 ★
+    E  4 | Val F1=0.748 (basic=0.680 thresh=0.748 snap=0.747) Exact=0.222 ★
+    E  6 | Val F1=0.763 (basic=0.640 thresh=0.763 snap=0.751) Exact=0.270 ★
+    E  7 | Val F1=0.764 (basic=0.649 thresh=0.764 snap=0.753) Exact=0.313 ★
+    E  8 | Val F1=0.771 (basic=0.698 thresh=0.771 snap=0.762) Exact=0.307 ★
+    E  9 | Val F1=0.809 (basic=0.682 thresh=0.809 snap=0.799) Exact=0.389 ★
+    E 20 | Val F1=0.799 (basic=0.713 thresh=0.799 snap=0.792) Exact=0.372
+    E 26 | Val F1=0.812 (basic=0.733 thresh=0.812 snap=0.808) Exact=0.410 ★
+    E 27 | Val F1=0.821 (basic=0.768 thresh=0.821 snap=0.819) Exact=0.437 ★
+    E 40 | Val F1=0.796 (basic=0.749 thresh=0.796 snap=0.788) Exact=0.381
+    Result: F1=0.8206 Exact=0.437 (112s)
+
+  ── Config 36/108 ──
+    win=250 lr=0.001 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.513 thresh=0.703 snap=0.703) Exact=0.116 ★
+    E  2 | Val F1=0.704 (basic=0.482 thresh=0.704 snap=0.704) Exact=0.125 ★
+    E  3 | Val F1=0.735 (basic=0.692 thresh=0.735 snap=0.730) Exact=0.172 ★
+    E  4 | Val F1=0.758 (basic=0.625 thresh=0.758 snap=0.757) Exact=0.292 ★
+    E  5 | Val F1=0.759 (basic=0.683 thresh=0.759 snap=0.744) Exact=0.261 ★
+    E  6 | Val F1=0.764 (basic=0.678 thresh=0.764 snap=0.759) Exact=0.230 ★
+    E  7 | Val F1=0.779 (basic=0.718 thresh=0.779 snap=0.779) Exact=0.308 ★
+    E  8 | Val F1=0.785 (basic=0.743 thresh=0.785 snap=0.785) Exact=0.317 ★
+    E 11 | Val F1=0.795 (basic=0.723 thresh=0.795 snap=0.794) Exact=0.378 ★
+    E 12 | Val F1=0.807 (basic=0.735 thresh=0.804 snap=0.807) Exact=0.410 ★
+    E 20 | Val F1=0.773 (basic=0.728 thresh=0.773 snap=0.758) Exact=0.274
+    E 40 | Val F1=0.794 (basic=0.733 thresh=0.794 snap=0.786) Exact=0.299
+    E 42 | Val F1=0.809 (basic=0.768 thresh=0.809 snap=0.804) Exact=0.421 ★
+    E 45 | Val F1=0.815 (basic=0.773 thresh=0.815 snap=0.812) Exact=0.412 ★
+    E 60 | Val F1=0.796 (basic=0.733 thresh=0.796 snap=0.791) Exact=0.334
+    Result: F1=0.8149 Exact=0.412 (147s)
+
+  ── Config 37/108 ──
+    win=500 lr=0.0003 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.704 (basic=0.489 thresh=0.704 snap=0.699) Exact=0.109 ★
+    E  2 | Val F1=0.706 (basic=0.395 thresh=0.706 snap=0.700) Exact=0.105 ★
+    E  3 | Val F1=0.719 (basic=0.472 thresh=0.711 snap=0.719) Exact=0.174 ★
+    E  4 | Val F1=0.744 (basic=0.534 thresh=0.738 snap=0.744) Exact=0.193 ★
+    E  5 | Val F1=0.763 (basic=0.596 thresh=0.763 snap=0.760) Exact=0.192 ★
+    E  9 | Val F1=0.773 (basic=0.630 thresh=0.773 snap=0.772) Exact=0.278 ★
+    E 20 | Val F1=0.753 (basic=0.541 thresh=0.753 snap=0.749) Exact=0.265
+    Result: F1=0.7735 Exact=0.278 (62s)
+
+  ── Config 38/108 ──
+    win=500 lr=0.0003 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.428 thresh=0.703 snap=0.702) Exact=0.112 ★
+    E  2 | Val F1=0.715 (basic=0.428 thresh=0.715 snap=0.712) Exact=0.066 ★
+    E  3 | Val F1=0.734 (basic=0.440 thresh=0.733 snap=0.734) Exact=0.192 ★
+    E  4 | Val F1=0.767 (basic=0.490 thresh=0.763 snap=0.767) Exact=0.293 ★
+    E  5 | Val F1=0.767 (basic=0.380 thresh=0.767 snap=0.766) Exact=0.205 ★
+    E  6 | Val F1=0.775 (basic=0.626 thresh=0.774 snap=0.775) Exact=0.271 ★
+    E  7 | Val F1=0.801 (basic=0.662 thresh=0.801 snap=0.801) Exact=0.337 ★
+    E  9 | Val F1=0.803 (basic=0.683 thresh=0.803 snap=0.803) Exact=0.413 ★
+    E 13 | Val F1=0.804 (basic=0.699 thresh=0.804 snap=0.795) Exact=0.385 ★
+    E 17 | Val F1=0.805 (basic=0.691 thresh=0.805 snap=0.796) Exact=0.365 ★
+    E 20 | Val F1=0.788 (basic=0.649 thresh=0.788 snap=0.768) Exact=0.322
+    E 27 | Val F1=0.806 (basic=0.625 thresh=0.806 snap=0.801) Exact=0.410 ★
+    E 28 | Val F1=0.810 (basic=0.707 thresh=0.810 snap=0.807) Exact=0.410 ★
+    E 40 | Val F1=0.799 (basic=0.716 thresh=0.799 snap=0.793) Exact=0.361
+    E 41 | Val F1=0.814 (basic=0.709 thresh=0.814 snap=0.812) Exact=0.364 ★
+    E 60 | Val F1=0.796 (basic=0.718 thresh=0.796 snap=0.783) Exact=0.314
+    E 71 | Val F1=0.815 (basic=0.768 thresh=0.815 snap=0.810) Exact=0.410 ★
+    E 80 | Val F1=0.809 (basic=0.730 thresh=0.809 snap=0.807) Exact=0.397
+    E 86 | Val F1=0.818 (basic=0.744 thresh=0.818 snap=0.815) Exact=0.430 ★
+    E 89 | Val F1=0.819 (basic=0.759 thresh=0.819 snap=0.816) Exact=0.406 ★
+    E 91 | Val F1=0.820 (basic=0.763 thresh=0.820 snap=0.817) Exact=0.428 ★
+    E100 | Val F1=0.814 (basic=0.747 thresh=0.814 snap=0.811) Exact=0.448
+    Result: F1=0.8204 Exact=0.428 (162s)
+
+  ── Config 39/108 ──
+    win=500 lr=0.0003 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.704 (basic=0.453 thresh=0.704 snap=0.699) Exact=0.111 ★
+    E  2 | Val F1=0.703 (basic=0.492 thresh=0.703 snap=0.703) Exact=0.118
+    E  3 | Val F1=0.704 (basic=0.421 thresh=0.704 snap=0.701) Exact=0.112 ★
+    E  4 | Val F1=0.706 (basic=0.425 thresh=0.706 snap=0.701) Exact=0.103 ★
+    E  5 | Val F1=0.726 (basic=0.393 thresh=0.723 snap=0.726) Exact=0.168 ★
+    E  6 | Val F1=0.746 (basic=0.512 thresh=0.743 snap=0.746) Exact=0.207 ★
+    E  7 | Val F1=0.751 (basic=0.617 thresh=0.751 snap=0.751) Exact=0.172 ★
+    E  9 | Val F1=0.761 (basic=0.611 thresh=0.761 snap=0.759) Exact=0.231 ★
+    E 10 | Val F1=0.769 (basic=0.642 thresh=0.769 snap=0.767) Exact=0.253 ★
+    E 11 | Val F1=0.787 (basic=0.700 thresh=0.787 snap=0.783) Exact=0.332 ★
+    E 14 | Val F1=0.789 (basic=0.617 thresh=0.789 snap=0.786) Exact=0.320 ★
+    E 20 | Val F1=0.788 (basic=0.595 thresh=0.788 snap=0.787) Exact=0.304
+    E 28 | Val F1=0.796 (basic=0.559 thresh=0.796 snap=0.789) Exact=0.325 ★
+    E 36 | Val F1=0.796 (basic=0.581 thresh=0.796 snap=0.790) Exact=0.305 ★
+    E 40 | Val F1=0.772 (basic=0.580 thresh=0.772 snap=0.766) Exact=0.247
+    E 60 | Val F1=0.760 (basic=0.641 thresh=0.760 snap=0.750) Exact=0.211
+    Result: F1=0.7964 Exact=0.305 (107s)
+
+  ── Config 40/108 ──
+    win=500 lr=0.0003 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.543 thresh=0.703 snap=0.702) Exact=0.111 ★
+    E  2 | Val F1=0.703 (basic=0.567 thresh=0.703 snap=0.703) Exact=0.118
+    E  3 | Val F1=0.704 (basic=0.556 thresh=0.704 snap=0.703) Exact=0.117 ★
+    E  4 | Val F1=0.706 (basic=0.557 thresh=0.706 snap=0.705) Exact=0.100 ★
+    E  5 | Val F1=0.729 (basic=0.612 thresh=0.724 snap=0.729) Exact=0.171 ★
+    E  6 | Val F1=0.762 (basic=0.649 thresh=0.762 snap=0.761) Exact=0.214 ★
+    E  9 | Val F1=0.768 (basic=0.706 thresh=0.768 snap=0.764) Exact=0.266 ★
+    E 10 | Val F1=0.773 (basic=0.591 thresh=0.773 snap=0.772) Exact=0.259 ★
+    E 13 | Val F1=0.783 (basic=0.716 thresh=0.783 snap=0.780) Exact=0.317 ★
+    E 20 | Val F1=0.776 (basic=0.692 thresh=0.776 snap=0.768) Exact=0.292
+    E 26 | Val F1=0.793 (basic=0.676 thresh=0.793 snap=0.792) Exact=0.334 ★
+    E 28 | Val F1=0.802 (basic=0.629 thresh=0.802 snap=0.787) Exact=0.334 ★
+    E 33 | Val F1=0.824 (basic=0.756 thresh=0.822 snap=0.824) Exact=0.433 ★
+    E 40 | Val F1=0.828 (basic=0.709 thresh=0.828 snap=0.825) Exact=0.338 ★
+    E 60 | Val F1=0.820 (basic=0.787 thresh=0.820 snap=0.817) Exact=0.376
+    E 69 | Val F1=0.830 (basic=0.780 thresh=0.830 snap=0.825) Exact=0.391 ★
+    E 80 | Val F1=0.826 (basic=0.788 thresh=0.826 snap=0.820) Exact=0.388
+    E 90 | Val F1=0.831 (basic=0.789 thresh=0.831 snap=0.828) Exact=0.407 ★
+    E 92 | Val F1=0.837 (basic=0.804 thresh=0.837 snap=0.829) Exact=0.427 ★
+    E100 | Val F1=0.832 (basic=0.798 thresh=0.832 snap=0.827) Exact=0.419
+    Result: F1=0.8367 Exact=0.427 (162s)
+    ★ NEW BEST OVERALL
+
+  ── Config 41/108 ──
+    win=500 lr=0.0003 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.409 thresh=0.703 snap=0.703) Exact=0.121 ★
+    E  2 | Val F1=0.703 (basic=0.466 thresh=0.703 snap=0.703) Exact=0.112 ★
+    E  3 | Val F1=0.704 (basic=0.393 thresh=0.704 snap=0.703) Exact=0.115 ★
+    E  4 | Val F1=0.719 (basic=0.465 thresh=0.715 snap=0.719) Exact=0.157 ★
+    E  5 | Val F1=0.763 (basic=0.423 thresh=0.763 snap=0.760) Exact=0.153 ★
+    E  7 | Val F1=0.772 (basic=0.638 thresh=0.772 snap=0.772) Exact=0.316 ★
+    E 10 | Val F1=0.776 (basic=0.626 thresh=0.776 snap=0.775) Exact=0.335 ★
+    E 20 | Val F1=0.749 (basic=0.556 thresh=0.749 snap=0.748) Exact=0.260
+    E 26 | Val F1=0.798 (basic=0.655 thresh=0.798 snap=0.794) Exact=0.379 ★
+    E 40 | Val F1=0.786 (basic=0.645 thresh=0.786 snap=0.784) Exact=0.304
+    E 43 | Val F1=0.798 (basic=0.666 thresh=0.798 snap=0.789) Exact=0.301 ★
+    E 53 | Val F1=0.800 (basic=0.694 thresh=0.800 snap=0.794) Exact=0.266 ★
+    E 60 | Val F1=0.778 (basic=0.624 thresh=0.778 snap=0.772) Exact=0.331
+    E 67 | Val F1=0.803 (basic=0.704 thresh=0.803 snap=0.801) Exact=0.365 ★
+    E 69 | Val F1=0.807 (basic=0.730 thresh=0.807 snap=0.806) Exact=0.374 ★
+    E 70 | Val F1=0.808 (basic=0.733 thresh=0.803 snap=0.808) Exact=0.422 ★
+    E 80 | Val F1=0.755 (basic=0.579 thresh=0.755 snap=0.747) Exact=0.344
+    E100 | Val F1=0.763 (basic=0.600 thresh=0.763 snap=0.758) Exact=0.284
+    Result: F1=0.8079 Exact=0.422 (162s)
+
+  ── Config 42/108 ──
+    win=500 lr=0.0003 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.499 thresh=0.703 snap=0.703) Exact=0.120 ★
+    E  2 | Val F1=0.703 (basic=0.487 thresh=0.703 snap=0.703) Exact=0.120
+    E  3 | Val F1=0.703 (basic=0.492 thresh=0.703 snap=0.703) Exact=0.118
+    E  4 | Val F1=0.706 (basic=0.449 thresh=0.706 snap=0.696) Exact=0.085 ★
+    E  5 | Val F1=0.729 (basic=0.527 thresh=0.729 snap=0.724) Exact=0.079 ★
+    E  6 | Val F1=0.745 (basic=0.499 thresh=0.744 snap=0.745) Exact=0.226 ★
+    E  7 | Val F1=0.768 (basic=0.559 thresh=0.768 snap=0.768) Exact=0.292 ★
+    E  8 | Val F1=0.793 (basic=0.640 thresh=0.793 snap=0.793) Exact=0.346 ★
+    E 10 | Val F1=0.795 (basic=0.687 thresh=0.795 snap=0.794) Exact=0.289 ★
+    E 20 | Val F1=0.776 (basic=0.616 thresh=0.776 snap=0.775) Exact=0.317
+    E 30 | Val F1=0.801 (basic=0.706 thresh=0.801 snap=0.793) Exact=0.383 ★
+    E 38 | Val F1=0.808 (basic=0.728 thresh=0.808 snap=0.804) Exact=0.388 ★
+    E 40 | Val F1=0.787 (basic=0.682 thresh=0.787 snap=0.782) Exact=0.308
+    E 60 | Val F1=0.782 (basic=0.717 thresh=0.782 snap=0.776) Exact=0.286
+    Result: F1=0.8078 Exact=0.388 (110s)
+
+  ── Config 43/108 ──
+    win=500 lr=0.0003 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.421 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.703 (basic=0.382 thresh=0.703 snap=0.699) Exact=0.106 ★
+    E  3 | Val F1=0.706 (basic=0.410 thresh=0.706 snap=0.700) Exact=0.102 ★
+    E  4 | Val F1=0.707 (basic=0.381 thresh=0.707 snap=0.707) Exact=0.115 ★
+    E  5 | Val F1=0.712 (basic=0.421 thresh=0.712 snap=0.709) Exact=0.109 ★
+    E  6 | Val F1=0.732 (basic=0.459 thresh=0.726 snap=0.732) Exact=0.205 ★
+    E  7 | Val F1=0.753 (basic=0.500 thresh=0.752 snap=0.753) Exact=0.251 ★
+    E  8 | Val F1=0.766 (basic=0.523 thresh=0.765 snap=0.766) Exact=0.260 ★
+    E 10 | Val F1=0.785 (basic=0.618 thresh=0.785 snap=0.784) Exact=0.295 ★
+    E 12 | Val F1=0.790 (basic=0.688 thresh=0.790 snap=0.784) Exact=0.316 ★
+    E 15 | Val F1=0.798 (basic=0.641 thresh=0.798 snap=0.797) Exact=0.349 ★
+    E 20 | Val F1=0.768 (basic=0.578 thresh=0.768 snap=0.753) Exact=0.271
+    E 28 | Val F1=0.806 (basic=0.638 thresh=0.806 snap=0.791) Exact=0.316 ★
+    E 39 | Val F1=0.808 (basic=0.662 thresh=0.808 snap=0.799) Exact=0.343 ★
+    E 40 | Val F1=0.780 (basic=0.575 thresh=0.780 snap=0.771) Exact=0.274
+    E 60 | Val F1=0.769 (basic=0.602 thresh=0.769 snap=0.750) Exact=0.156
+    Result: F1=0.8081 Exact=0.343 (112s)
+
+  ── Config 44/108 ──
+    win=500 lr=0.0003 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.492 thresh=0.703 snap=0.703) Exact=0.115 ★
+    E  2 | Val F1=0.703 (basic=0.438 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  3 | Val F1=0.705 (basic=0.447 thresh=0.705 snap=0.701) Exact=0.111 ★
+    E  4 | Val F1=0.707 (basic=0.460 thresh=0.707 snap=0.696) Exact=0.097 ★
+    E  5 | Val F1=0.708 (basic=0.479 thresh=0.708 snap=0.708) Exact=0.100 ★
+    E  6 | Val F1=0.710 (basic=0.453 thresh=0.710 snap=0.710) Exact=0.135 ★
+    E  7 | Val F1=0.716 (basic=0.421 thresh=0.716 snap=0.716) Exact=0.106 ★
+    E  8 | Val F1=0.724 (basic=0.462 thresh=0.724 snap=0.723) Exact=0.117 ★
+    E  9 | Val F1=0.752 (basic=0.569 thresh=0.749 snap=0.752) Exact=0.222 ★
+    E 11 | Val F1=0.754 (basic=0.600 thresh=0.754 snap=0.752) Exact=0.237 ★
+    E 15 | Val F1=0.755 (basic=0.563 thresh=0.755 snap=0.747) Exact=0.210 ★
+    E 19 | Val F1=0.762 (basic=0.563 thresh=0.762 snap=0.745) Exact=0.254 ★
+    E 20 | Val F1=0.748 (basic=0.555 thresh=0.748 snap=0.739) Exact=0.214
+    E 27 | Val F1=0.763 (basic=0.641 thresh=0.763 snap=0.755) Exact=0.262 ★
+    E 28 | Val F1=0.770 (basic=0.567 thresh=0.770 snap=0.759) Exact=0.302 ★
+    E 29 | Val F1=0.793 (basic=0.672 thresh=0.793 snap=0.791) Exact=0.313 ★
+    E 35 | Val F1=0.812 (basic=0.721 thresh=0.812 snap=0.808) Exact=0.400 ★
+    E 40 | Val F1=0.794 (basic=0.693 thresh=0.794 snap=0.785) Exact=0.292
+    E 60 | Val F1=0.803 (basic=0.712 thresh=0.803 snap=0.794) Exact=0.280
+    Result: F1=0.8123 Exact=0.400 (106s)
+
+  ── Config 45/108 ──
+    win=500 lr=0.0003 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.437 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.703 (basic=0.403 thresh=0.703 snap=0.702) Exact=0.118
+    E  3 | Val F1=0.706 (basic=0.380 thresh=0.706 snap=0.703) Exact=0.118 ★
+    E  4 | Val F1=0.709 (basic=0.402 thresh=0.709 snap=0.691) Exact=0.075 ★
+    E  5 | Val F1=0.735 (basic=0.428 thresh=0.735 snap=0.732) Exact=0.124 ★
+    E  6 | Val F1=0.759 (basic=0.608 thresh=0.759 snap=0.754) Exact=0.174 ★
+    E  7 | Val F1=0.775 (basic=0.380 thresh=0.775 snap=0.773) Exact=0.228 ★
+    E  9 | Val F1=0.793 (basic=0.621 thresh=0.793 snap=0.793) Exact=0.299 ★
+    E 11 | Val F1=0.804 (basic=0.673 thresh=0.803 snap=0.804) Exact=0.334 ★
+    E 20 | Val F1=0.777 (basic=0.609 thresh=0.777 snap=0.773) Exact=0.317
+    E 40 | Val F1=0.780 (basic=0.634 thresh=0.780 snap=0.772) Exact=0.320
+    E 41 | Val F1=0.814 (basic=0.669 thresh=0.814 snap=0.810) Exact=0.394 ★
+    E 60 | Val F1=0.800 (basic=0.641 thresh=0.800 snap=0.791) Exact=0.326
+    Result: F1=0.8139 Exact=0.394 (113s)
+
+  ── Config 46/108 ──
+    win=500 lr=0.0003 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.565 thresh=0.703 snap=0.703) Exact=0.117 ★
+    E  2 | Val F1=0.703 (basic=0.536 thresh=0.703 snap=0.703) Exact=0.109 ★
+    E  3 | Val F1=0.710 (basic=0.569 thresh=0.710 snap=0.708) Exact=0.069 ★
+    E  4 | Val F1=0.734 (basic=0.592 thresh=0.732 snap=0.734) Exact=0.195 ★
+    E  5 | Val F1=0.769 (basic=0.629 thresh=0.763 snap=0.769) Exact=0.246 ★
+    E  7 | Val F1=0.771 (basic=0.551 thresh=0.771 snap=0.766) Exact=0.226 ★
+    E 11 | Val F1=0.794 (basic=0.684 thresh=0.794 snap=0.792) Exact=0.316 ★
+    E 18 | Val F1=0.798 (basic=0.687 thresh=0.797 snap=0.798) Exact=0.392 ★
+    E 20 | Val F1=0.786 (basic=0.689 thresh=0.786 snap=0.785) Exact=0.299
+    E 30 | Val F1=0.798 (basic=0.691 thresh=0.798 snap=0.797) Exact=0.337 ★
+    E 40 | Val F1=0.779 (basic=0.643 thresh=0.779 snap=0.775) Exact=0.298
+    E 41 | Val F1=0.812 (basic=0.697 thresh=0.811 snap=0.812) Exact=0.433 ★
+    E 60 | Val F1=0.777 (basic=0.703 thresh=0.777 snap=0.765) Exact=0.254
+    Result: F1=0.8116 Exact=0.433 (113s)
+
+  ── Config 47/108 ──
+    win=500 lr=0.0003 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.359 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.703 (basic=0.385 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  3 | Val F1=0.703 (basic=0.389 thresh=0.703 snap=0.702) Exact=0.112 ★
+    E  8 | Val F1=0.705 (basic=0.268 thresh=0.705 snap=0.703) Exact=0.117 ★
+    E  9 | Val F1=0.706 (basic=0.287 thresh=0.706 snap=0.702) Exact=0.115 ★
+    E 10 | Val F1=0.710 (basic=0.325 thresh=0.710 snap=0.707) Exact=0.109 ★
+    E 11 | Val F1=0.717 (basic=0.343 thresh=0.716 snap=0.717) Exact=0.160 ★
+    E 12 | Val F1=0.728 (basic=0.391 thresh=0.728 snap=0.705) Exact=0.096 ★
+    E 13 | Val F1=0.756 (basic=0.418 thresh=0.750 snap=0.756) Exact=0.228 ★
+    E 14 | Val F1=0.765 (basic=0.412 thresh=0.764 snap=0.765) Exact=0.253 ★
+    E 15 | Val F1=0.775 (basic=0.440 thresh=0.775 snap=0.773) Exact=0.246 ★
+    E 20 | Val F1=0.748 (basic=0.543 thresh=0.748 snap=0.747) Exact=0.178
+    E 30 | Val F1=0.783 (basic=0.534 thresh=0.783 snap=0.776) Exact=0.275 ★
+    E 34 | Val F1=0.787 (basic=0.704 thresh=0.787 snap=0.776) Exact=0.334 ★
+    E 35 | Val F1=0.799 (basic=0.612 thresh=0.799 snap=0.781) Exact=0.302 ★
+    E 38 | Val F1=0.803 (basic=0.725 thresh=0.803 snap=0.796) Exact=0.362 ★
+    E 40 | Val F1=0.820 (basic=0.622 thresh=0.820 snap=0.809) Exact=0.356 ★
+    E 60 | Val F1=0.794 (basic=0.673 thresh=0.794 snap=0.783) Exact=0.266
+    Result: F1=0.8205 Exact=0.356 (112s)
+
+  ── Config 48/108 ──
+    win=500 lr=0.0003 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.444 thresh=0.703 snap=0.703) Exact=0.117 ★
+    E  2 | Val F1=0.703 (basic=0.443 thresh=0.703 snap=0.703) Exact=0.118
+    E  3 | Val F1=0.703 (basic=0.458 thresh=0.703 snap=0.703) Exact=0.118
+    E 12 | Val F1=0.703 (basic=0.490 thresh=0.703 snap=0.702) Exact=0.118 ★
+    E 14 | Val F1=0.706 (basic=0.536 thresh=0.706 snap=0.703) Exact=0.114 ★
+    E 15 | Val F1=0.709 (basic=0.504 thresh=0.707 snap=0.709) Exact=0.145 ★
+    E 16 | Val F1=0.718 (basic=0.579 thresh=0.714 snap=0.718) Exact=0.154 ★
+    E 17 | Val F1=0.731 (basic=0.585 thresh=0.727 snap=0.731) Exact=0.196 ★
+    E 18 | Val F1=0.751 (basic=0.604 thresh=0.743 snap=0.751) Exact=0.219 ★
+    E 20 | Val F1=0.741 (basic=0.631 thresh=0.741 snap=0.739) Exact=0.175
+    E 28 | Val F1=0.753 (basic=0.496 thresh=0.751 snap=0.753) Exact=0.319 ★
+    E 31 | Val F1=0.764 (basic=0.707 thresh=0.764 snap=0.762) Exact=0.254 ★
+    E 32 | Val F1=0.768 (basic=0.603 thresh=0.768 snap=0.759) Exact=0.216 ★
+    E 35 | Val F1=0.784 (basic=0.672 thresh=0.784 snap=0.783) Exact=0.316 ★
+    E 36 | Val F1=0.788 (basic=0.750 thresh=0.788 snap=0.782) Exact=0.323 ★
+    E 40 | Val F1=0.789 (basic=0.724 thresh=0.789 snap=0.788) Exact=0.325 ★
+    E 42 | Val F1=0.803 (basic=0.753 thresh=0.803 snap=0.802) Exact=0.398 ★
+    E 44 | Val F1=0.807 (basic=0.717 thresh=0.807 snap=0.800) Exact=0.377 ★
+    E 46 | Val F1=0.819 (basic=0.715 thresh=0.819 snap=0.815) Exact=0.403 ★
+    E 60 | Val F1=0.794 (basic=0.725 thresh=0.794 snap=0.791) Exact=0.325
+    E 70 | Val F1=0.822 (basic=0.785 thresh=0.822 snap=0.818) Exact=0.385 ★
+    E 75 | Val F1=0.823 (basic=0.780 thresh=0.823 snap=0.819) Exact=0.394 ★
+    E 80 | Val F1=0.813 (basic=0.773 thresh=0.813 snap=0.808) Exact=0.389
+    E 82 | Val F1=0.827 (basic=0.780 thresh=0.825 snap=0.827) Exact=0.442 ★
+    E 86 | Val F1=0.829 (basic=0.799 thresh=0.829 snap=0.820) Exact=0.404 ★
+    E100 | Val F1=0.816 (basic=0.777 thresh=0.816 snap=0.810) Exact=0.367
+    Result: F1=0.8287 Exact=0.404 (161s)
+
+  ── Config 49/108 ──
+    win=500 lr=0.0005 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.417 thresh=0.703 snap=0.703) Exact=0.115 ★
+    E  2 | Val F1=0.728 (basic=0.507 thresh=0.728 snap=0.718) Exact=0.114 ★
+    E  3 | Val F1=0.750 (basic=0.591 thresh=0.750 snap=0.741) Exact=0.196 ★
+    E  4 | Val F1=0.772 (basic=0.619 thresh=0.772 snap=0.766) Exact=0.237 ★
+    E  5 | Val F1=0.815 (basic=0.568 thresh=0.815 snap=0.813) Exact=0.334 ★
+    E 20 | Val F1=0.774 (basic=0.596 thresh=0.774 snap=0.766) Exact=0.229
+    E 35 | Val F1=0.817 (basic=0.746 thresh=0.817 snap=0.816) Exact=0.440 ★
+    E 40 | Val F1=0.795 (basic=0.701 thresh=0.795 snap=0.791) Exact=0.335
+    E 45 | Val F1=0.832 (basic=0.755 thresh=0.826 snap=0.832) Exact=0.485 ★
+    E 60 | Val F1=0.804 (basic=0.759 thresh=0.804 snap=0.802) Exact=0.386
+    Result: F1=0.8316 Exact=0.485 (119s)
+
+  ── Config 50/108 ──
+    win=500 lr=0.0005 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.482 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.712 (basic=0.514 thresh=0.712 snap=0.710) Exact=0.091 ★
+    E  3 | Val F1=0.760 (basic=0.550 thresh=0.760 snap=0.760) Exact=0.220 ★
+    E  5 | Val F1=0.781 (basic=0.645 thresh=0.781 snap=0.779) Exact=0.272 ★
+    E  6 | Val F1=0.800 (basic=0.654 thresh=0.800 snap=0.795) Exact=0.323 ★
+    E 20 | Val F1=0.780 (basic=0.659 thresh=0.780 snap=0.772) Exact=0.259
+    E 29 | Val F1=0.807 (basic=0.734 thresh=0.807 snap=0.797) Exact=0.346 ★
+    E 40 | Val F1=0.826 (basic=0.751 thresh=0.823 snap=0.826) Exact=0.458 ★
+    E 60 | Val F1=0.821 (basic=0.763 thresh=0.821 snap=0.817) Exact=0.382
+    Result: F1=0.8261 Exact=0.458 (111s)
+
+  ── Config 51/108 ──
+    win=500 lr=0.0005 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.467 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.704 (basic=0.479 thresh=0.704 snap=0.701) Exact=0.103 ★
+    E  3 | Val F1=0.718 (basic=0.547 thresh=0.718 snap=0.717) Exact=0.073 ★
+    E  4 | Val F1=0.760 (basic=0.594 thresh=0.753 snap=0.760) Exact=0.250 ★
+    E  7 | Val F1=0.777 (basic=0.693 thresh=0.774 snap=0.777) Exact=0.323 ★
+    E  8 | Val F1=0.784 (basic=0.671 thresh=0.784 snap=0.784) Exact=0.302 ★
+    E 10 | Val F1=0.799 (basic=0.678 thresh=0.797 snap=0.799) Exact=0.377 ★
+    E 20 | Val F1=0.782 (basic=0.695 thresh=0.782 snap=0.780) Exact=0.234
+    E 34 | Val F1=0.808 (basic=0.751 thresh=0.808 snap=0.799) Exact=0.361 ★
+    E 38 | Val F1=0.815 (basic=0.777 thresh=0.815 snap=0.809) Exact=0.389 ★
+    E 40 | Val F1=0.793 (basic=0.704 thresh=0.793 snap=0.785) Exact=0.295
+    E 42 | Val F1=0.815 (basic=0.749 thresh=0.815 snap=0.814) Exact=0.403 ★
+    E 55 | Val F1=0.818 (basic=0.770 thresh=0.818 snap=0.815) Exact=0.448 ★
+    E 60 | Val F1=0.800 (basic=0.737 thresh=0.800 snap=0.796) Exact=0.377
+    E 80 | Val F1=0.787 (basic=0.738 thresh=0.787 snap=0.784) Exact=0.391
+    Result: F1=0.8184 Exact=0.448 (135s)
+
+  ── Config 52/108 ──
+    win=500 lr=0.0005 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.494 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.705 (basic=0.516 thresh=0.705 snap=0.699) Exact=0.088 ★
+    E  3 | Val F1=0.718 (basic=0.597 thresh=0.718 snap=0.708) Exact=0.085 ★
+    E  4 | Val F1=0.762 (basic=0.679 thresh=0.762 snap=0.758) Exact=0.277 ★
+    E  5 | Val F1=0.782 (basic=0.608 thresh=0.782 snap=0.780) Exact=0.234 ★
+    E  7 | Val F1=0.790 (basic=0.704 thresh=0.789 snap=0.790) Exact=0.346 ★
+    E 13 | Val F1=0.800 (basic=0.633 thresh=0.797 snap=0.800) Exact=0.341 ★
+    E 15 | Val F1=0.805 (basic=0.676 thresh=0.805 snap=0.798) Exact=0.254 ★
+    E 20 | Val F1=0.796 (basic=0.580 thresh=0.796 snap=0.793) Exact=0.326
+    E 22 | Val F1=0.808 (basic=0.663 thresh=0.796 snap=0.808) Exact=0.431 ★
+    E 28 | Val F1=0.809 (basic=0.674 thresh=0.809 snap=0.805) Exact=0.340 ★
+    E 30 | Val F1=0.819 (basic=0.744 thresh=0.817 snap=0.819) Exact=0.410 ★
+    E 34 | Val F1=0.825 (basic=0.753 thresh=0.825 snap=0.825) Exact=0.485 ★
+    E 40 | Val F1=0.816 (basic=0.784 thresh=0.816 snap=0.812) Exact=0.397
+    E 60 | Val F1=0.818 (basic=0.754 thresh=0.818 snap=0.817) Exact=0.365
+    Result: F1=0.8252 Exact=0.485 (102s)
+
+  ── Config 53/108 ──
+    win=500 lr=0.0005 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.704 (basic=0.424 thresh=0.704 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.718 (basic=0.420 thresh=0.718 snap=0.709) Exact=0.106 ★
+    E  3 | Val F1=0.765 (basic=0.512 thresh=0.763 snap=0.765) Exact=0.253 ★
+    E  4 | Val F1=0.769 (basic=0.570 thresh=0.769 snap=0.767) Exact=0.253 ★
+    E  5 | Val F1=0.785 (basic=0.582 thresh=0.785 snap=0.785) Exact=0.331 ★
+    E 13 | Val F1=0.813 (basic=0.529 thresh=0.813 snap=0.805) Exact=0.410 ★
+    E 20 | Val F1=0.776 (basic=0.563 thresh=0.776 snap=0.764) Exact=0.304
+    E 38 | Val F1=0.825 (basic=0.722 thresh=0.825 snap=0.820) Exact=0.383 ★
+    E 40 | Val F1=0.768 (basic=0.611 thresh=0.768 snap=0.762) Exact=0.274
+    E 60 | Val F1=0.800 (basic=0.644 thresh=0.800 snap=0.796) Exact=0.400
+    Result: F1=0.8253 Exact=0.383 (108s)
+
+  ── Config 54/108 ──
+    win=500 lr=0.0005 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.704 (basic=0.396 thresh=0.704 snap=0.699) Exact=0.105 ★
+    E  2 | Val F1=0.705 (basic=0.335 thresh=0.705 snap=0.703) Exact=0.108 ★
+    E  3 | Val F1=0.711 (basic=0.364 thresh=0.711 snap=0.706) Exact=0.090 ★
+    E  4 | Val F1=0.774 (basic=0.454 thresh=0.765 snap=0.774) Exact=0.334 ★
+    E  5 | Val F1=0.783 (basic=0.540 thresh=0.781 snap=0.783) Exact=0.308 ★
+    E  8 | Val F1=0.793 (basic=0.554 thresh=0.793 snap=0.791) Exact=0.382 ★
+    E 13 | Val F1=0.799 (basic=0.619 thresh=0.799 snap=0.794) Exact=0.403 ★
+    E 20 | Val F1=0.788 (basic=0.680 thresh=0.788 snap=0.782) Exact=0.353
+    E 26 | Val F1=0.804 (basic=0.694 thresh=0.804 snap=0.799) Exact=0.365 ★
+    E 35 | Val F1=0.811 (basic=0.766 thresh=0.811 snap=0.803) Exact=0.364 ★
+    E 36 | Val F1=0.824 (basic=0.730 thresh=0.824 snap=0.817) Exact=0.380 ★
+    E 40 | Val F1=0.813 (basic=0.754 thresh=0.810 snap=0.813) Exact=0.437
+    E 49 | Val F1=0.829 (basic=0.781 thresh=0.829 snap=0.826) Exact=0.443 ★
+    E 60 | Val F1=0.795 (basic=0.670 thresh=0.795 snap=0.787) Exact=0.341
+    Result: F1=0.8294 Exact=0.443 (126s)
+
+  ── Config 55/108 ──
+    win=500 lr=0.0005 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.414 thresh=0.703 snap=0.702) Exact=0.115 ★
+    E  2 | Val F1=0.703 (basic=0.379 thresh=0.703 snap=0.703) Exact=0.112 ★
+    E  3 | Val F1=0.704 (basic=0.386 thresh=0.704 snap=0.703) Exact=0.108 ★
+    E  4 | Val F1=0.711 (basic=0.365 thresh=0.711 snap=0.711) Exact=0.111 ★
+    E  5 | Val F1=0.725 (basic=0.602 thresh=0.725 snap=0.717) Exact=0.109 ★
+    E  6 | Val F1=0.744 (basic=0.564 thresh=0.744 snap=0.742) Exact=0.157 ★
+    E  7 | Val F1=0.800 (basic=0.712 thresh=0.797 snap=0.800) Exact=0.385 ★
+    E 20 | Val F1=0.779 (basic=0.593 thresh=0.779 snap=0.765) Exact=0.314
+    E 29 | Val F1=0.813 (basic=0.693 thresh=0.813 snap=0.803) Exact=0.362 ★
+    E 31 | Val F1=0.820 (basic=0.710 thresh=0.820 snap=0.814) Exact=0.419 ★
+    E 40 | Val F1=0.797 (basic=0.674 thresh=0.797 snap=0.784) Exact=0.277
+    E 46 | Val F1=0.824 (basic=0.670 thresh=0.824 snap=0.820) Exact=0.364 ★
+    E 60 | Val F1=0.774 (basic=0.612 thresh=0.774 snap=0.765) Exact=0.260
+    Result: F1=0.8237 Exact=0.364 (121s)
+
+  ── Config 56/108 ──
+    win=500 lr=0.0005 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.376 thresh=0.703 snap=0.703) Exact=0.114 ★
+    E  2 | Val F1=0.703 (basic=0.401 thresh=0.703 snap=0.703) Exact=0.118
+    E  3 | Val F1=0.705 (basic=0.421 thresh=0.705 snap=0.698) Exact=0.106 ★
+    E  4 | Val F1=0.712 (basic=0.452 thresh=0.712 snap=0.710) Exact=0.090 ★
+    E  5 | Val F1=0.724 (basic=0.509 thresh=0.724 snap=0.721) Exact=0.142 ★
+    E  6 | Val F1=0.768 (basic=0.621 thresh=0.768 snap=0.766) Exact=0.259 ★
+    E  7 | Val F1=0.773 (basic=0.647 thresh=0.773 snap=0.763) Exact=0.283 ★
+    E  8 | Val F1=0.785 (basic=0.644 thresh=0.785 snap=0.782) Exact=0.316 ★
+    E 14 | Val F1=0.798 (basic=0.683 thresh=0.797 snap=0.798) Exact=0.365 ★
+    E 20 | Val F1=0.769 (basic=0.650 thresh=0.769 snap=0.764) Exact=0.277
+    E 28 | Val F1=0.800 (basic=0.736 thresh=0.800 snap=0.797) Exact=0.349 ★
+    E 37 | Val F1=0.811 (basic=0.739 thresh=0.811 snap=0.809) Exact=0.295 ★
+    E 38 | Val F1=0.811 (basic=0.740 thresh=0.811 snap=0.811) Exact=0.458 ★
+    E 40 | Val F1=0.785 (basic=0.718 thresh=0.785 snap=0.770) Exact=0.290
+    E 53 | Val F1=0.812 (basic=0.772 thresh=0.812 snap=0.803) Exact=0.353 ★
+    E 60 | Val F1=0.793 (basic=0.747 thresh=0.793 snap=0.781) Exact=0.301
+    E 76 | Val F1=0.812 (basic=0.784 thresh=0.812 snap=0.809) Exact=0.394 ★
+    E 80 | Val F1=0.794 (basic=0.729 thresh=0.794 snap=0.787) Exact=0.287
+    E100 | Val F1=0.789 (basic=0.745 thresh=0.789 snap=0.779) Exact=0.334
+    Result: F1=0.8117 Exact=0.394 (160s)
+
+  ── Config 57/108 ──
+    win=500 lr=0.0005 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.355 thresh=0.703 snap=0.703) Exact=0.117 ★
+    E  2 | Val F1=0.704 (basic=0.357 thresh=0.704 snap=0.703) Exact=0.111 ★
+    E  3 | Val F1=0.707 (basic=0.358 thresh=0.707 snap=0.702) Exact=0.105 ★
+    E  4 | Val F1=0.765 (basic=0.440 thresh=0.760 snap=0.765) Exact=0.314 ★
+    E  6 | Val F1=0.800 (basic=0.595 thresh=0.800 snap=0.800) Exact=0.391 ★
+    E 20 | Val F1=0.768 (basic=0.671 thresh=0.768 snap=0.762) Exact=0.316
+    E 28 | Val F1=0.812 (basic=0.687 thresh=0.812 snap=0.811) Exact=0.409 ★
+    E 40 | Val F1=0.803 (basic=0.704 thresh=0.803 snap=0.798) Exact=0.346
+    E 47 | Val F1=0.812 (basic=0.707 thresh=0.812 snap=0.809) Exact=0.338 ★
+    E 60 | Val F1=0.788 (basic=0.723 thresh=0.788 snap=0.785) Exact=0.334
+    Result: F1=0.8125 Exact=0.338 (121s)
+
+  ── Config 58/108 ──
+    win=500 lr=0.0005 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.487 thresh=0.703 snap=0.702) Exact=0.109 ★
+    E  2 | Val F1=0.706 (basic=0.497 thresh=0.706 snap=0.698) Exact=0.099 ★
+    E  3 | Val F1=0.711 (basic=0.477 thresh=0.711 snap=0.691) Exact=0.046 ★
+    E  4 | Val F1=0.749 (basic=0.527 thresh=0.748 snap=0.749) Exact=0.238 ★
+    E  5 | Val F1=0.762 (basic=0.575 thresh=0.762 snap=0.759) Exact=0.210 ★
+    E  6 | Val F1=0.773 (basic=0.582 thresh=0.773 snap=0.771) Exact=0.272 ★
+    E  8 | Val F1=0.785 (basic=0.660 thresh=0.785 snap=0.781) Exact=0.314 ★
+    E 20 | Val F1=0.756 (basic=0.684 thresh=0.756 snap=0.752) Exact=0.247
+    E 27 | Val F1=0.794 (basic=0.693 thresh=0.794 snap=0.790) Exact=0.386 ★
+    E 33 | Val F1=0.806 (basic=0.708 thresh=0.806 snap=0.805) Exact=0.422 ★
+    E 40 | Val F1=0.770 (basic=0.675 thresh=0.770 snap=0.756) Exact=0.283
+    E 60 | Val F1=0.781 (basic=0.686 thresh=0.781 snap=0.778) Exact=0.341
+    Result: F1=0.8059 Exact=0.422 (100s)
+
+  ── Config 59/108 ──
+    win=500 lr=0.0005 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.704 (basic=0.318 thresh=0.704 snap=0.703) Exact=0.109 ★
+    E  2 | Val F1=0.705 (basic=0.317 thresh=0.705 snap=0.687) Exact=0.088 ★
+    E  3 | Val F1=0.707 (basic=0.290 thresh=0.707 snap=0.693) Exact=0.091 ★
+    E  4 | Val F1=0.714 (basic=0.430 thresh=0.714 snap=0.702) Exact=0.105 ★
+    E  5 | Val F1=0.745 (basic=0.560 thresh=0.742 snap=0.745) Exact=0.199 ★
+    E  6 | Val F1=0.756 (basic=0.567 thresh=0.756 snap=0.752) Exact=0.154 ★
+    E  8 | Val F1=0.773 (basic=0.525 thresh=0.773 snap=0.771) Exact=0.235 ★
+    E 20 | Val F1=0.765 (basic=0.592 thresh=0.765 snap=0.745) Exact=0.262
+    E 26 | Val F1=0.795 (basic=0.634 thresh=0.795 snap=0.791) Exact=0.370 ★
+    E 33 | Val F1=0.812 (basic=0.598 thresh=0.812 snap=0.807) Exact=0.335 ★
+    E 34 | Val F1=0.819 (basic=0.677 thresh=0.819 snap=0.818) Exact=0.418 ★
+    E 35 | Val F1=0.829 (basic=0.664 thresh=0.826 snap=0.829) Exact=0.481 ★
+    E 40 | Val F1=0.769 (basic=0.548 thresh=0.769 snap=0.758) Exact=0.153
+    E 60 | Val F1=0.789 (basic=0.563 thresh=0.789 snap=0.786) Exact=0.290
+    Result: F1=0.8293 Exact=0.481 (104s)
+
+  ── Config 60/108 ──
+    win=500 lr=0.0005 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.473 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.704 (basic=0.501 thresh=0.704 snap=0.702) Exact=0.102 ★
+    E  3 | Val F1=0.704 (basic=0.481 thresh=0.704 snap=0.701) Exact=0.090
+    E  4 | Val F1=0.705 (basic=0.471 thresh=0.705 snap=0.702) Exact=0.112 ★
+    E  5 | Val F1=0.709 (basic=0.465 thresh=0.709 snap=0.693) Exact=0.088 ★
+    E  6 | Val F1=0.714 (basic=0.525 thresh=0.714 snap=0.694) Exact=0.088 ★
+    E  7 | Val F1=0.739 (basic=0.548 thresh=0.738 snap=0.739) Exact=0.186 ★
+    E  8 | Val F1=0.763 (basic=0.638 thresh=0.763 snap=0.762) Exact=0.175 ★
+    E 12 | Val F1=0.772 (basic=0.685 thresh=0.772 snap=0.767) Exact=0.293 ★
+    E 13 | Val F1=0.776 (basic=0.697 thresh=0.776 snap=0.739) Exact=0.210 ★
+    E 18 | Val F1=0.776 (basic=0.660 thresh=0.776 snap=0.775) Exact=0.328 ★
+    E 20 | Val F1=0.763 (basic=0.674 thresh=0.763 snap=0.748) Exact=0.251
+    E 21 | Val F1=0.778 (basic=0.681 thresh=0.778 snap=0.775) Exact=0.235 ★
+    E 24 | Val F1=0.780 (basic=0.682 thresh=0.780 snap=0.776) Exact=0.292 ★
+    E 28 | Val F1=0.795 (basic=0.715 thresh=0.795 snap=0.784) Exact=0.341 ★
+    E 30 | Val F1=0.813 (basic=0.736 thresh=0.811 snap=0.813) Exact=0.410 ★
+    E 40 | Val F1=0.791 (basic=0.671 thresh=0.791 snap=0.784) Exact=0.280
+    E 44 | Val F1=0.821 (basic=0.761 thresh=0.821 snap=0.812) Exact=0.367 ★
+    E 58 | Val F1=0.825 (basic=0.778 thresh=0.825 snap=0.821) Exact=0.422 ★
+    E 60 | Val F1=0.825 (basic=0.747 thresh=0.825 snap=0.816) Exact=0.401 ★
+    E 61 | Val F1=0.835 (basic=0.809 thresh=0.835 snap=0.829) Exact=0.442 ★
+    E 80 | Val F1=0.816 (basic=0.660 thresh=0.816 snap=0.811) Exact=0.368
+    Result: F1=0.8346 Exact=0.442 (145s)
+
+  ── Config 61/108 ──
+    win=500 lr=0.001 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.707 (basic=0.426 thresh=0.706 snap=0.707) Exact=0.120 ★
+    E  2 | Val F1=0.749 (basic=0.303 thresh=0.749 snap=0.749) Exact=0.153 ★
+    E  3 | Val F1=0.737 (basic=0.520 thresh=0.737 snap=0.736) Exact=0.198
+    E  4 | Val F1=0.800 (basic=0.657 thresh=0.800 snap=0.797) Exact=0.365 ★
+    E  5 | Val F1=0.803 (basic=0.661 thresh=0.803 snap=0.799) Exact=0.358 ★
+    E 12 | Val F1=0.804 (basic=0.653 thresh=0.804 snap=0.804) Exact=0.311 ★
+    E 13 | Val F1=0.835 (basic=0.746 thresh=0.835 snap=0.835) Exact=0.427 ★
+    E 20 | Val F1=0.798 (basic=0.684 thresh=0.798 snap=0.792) Exact=0.323
+    E 40 | Val F1=0.814 (basic=0.722 thresh=0.814 snap=0.813) Exact=0.355
+    Result: F1=0.8352 Exact=0.427 (68s)
+
+  ── Config 62/108 ──
+    win=500 lr=0.001 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.707 (basic=0.458 thresh=0.707 snap=0.704) Exact=0.112 ★
+    E  2 | Val F1=0.788 (basic=0.514 thresh=0.788 snap=0.786) Exact=0.340 ★
+    E  3 | Val F1=0.779 (basic=0.650 thresh=0.779 snap=0.776) Exact=0.278
+    E  5 | Val F1=0.794 (basic=0.642 thresh=0.794 snap=0.792) Exact=0.359 ★
+    E  6 | Val F1=0.795 (basic=0.708 thresh=0.795 snap=0.786) Exact=0.352 ★
+    E  7 | Val F1=0.799 (basic=0.717 thresh=0.799 snap=0.797) Exact=0.407 ★
+    E 20 | Val F1=0.784 (basic=0.709 thresh=0.784 snap=0.778) Exact=0.278
+    E 31 | Val F1=0.817 (basic=0.745 thresh=0.817 snap=0.810) Exact=0.394 ★
+    E 40 | Val F1=0.802 (basic=0.745 thresh=0.802 snap=0.795) Exact=0.368
+    E 60 | Val F1=0.784 (basic=0.733 thresh=0.783 snap=0.784) Exact=0.394
+    Result: F1=0.8169 Exact=0.394 (97s)
+
+  ── Config 63/108 ──
+    win=500 lr=0.001 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.704 (basic=0.448 thresh=0.704 snap=0.704) Exact=0.114 ★
+    E  2 | Val F1=0.715 (basic=0.516 thresh=0.715 snap=0.713) Exact=0.051 ★
+    E  3 | Val F1=0.786 (basic=0.651 thresh=0.783 snap=0.786) Exact=0.343 ★
+    E  4 | Val F1=0.823 (basic=0.726 thresh=0.821 snap=0.823) Exact=0.427 ★
+    E 20 | Val F1=0.794 (basic=0.730 thresh=0.794 snap=0.783) Exact=0.331
+    E 30 | Val F1=0.830 (basic=0.768 thresh=0.830 snap=0.829) Exact=0.415 ★
+    E 39 | Val F1=0.833 (basic=0.726 thresh=0.831 snap=0.833) Exact=0.451 ★
+    E 40 | Val F1=0.823 (basic=0.768 thresh=0.823 snap=0.817) Exact=0.370
+    E 42 | Val F1=0.840 (basic=0.776 thresh=0.840 snap=0.839) Exact=0.448 ★
+    E 60 | Val F1=0.818 (basic=0.714 thresh=0.818 snap=0.815) Exact=0.365
+    E 70 | Val F1=0.841 (basic=0.788 thresh=0.841 snap=0.838) Exact=0.418 ★
+    E 72 | Val F1=0.843 (basic=0.798 thresh=0.843 snap=0.843) Exact=0.443 ★
+    E 80 | Val F1=0.810 (basic=0.732 thresh=0.809 snap=0.810) Exact=0.370
+    E100 | Val F1=0.801 (basic=0.700 thresh=0.801 snap=0.801) Exact=0.356
+    Result: F1=0.8435 Exact=0.443 (160s)
+    ★ NEW BEST OVERALL
+
+  ── Config 64/108 ──
+    win=500 lr=0.001 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.447 thresh=0.703 snap=0.703) Exact=0.117 ★
+    E  2 | Val F1=0.705 (basic=0.526 thresh=0.705 snap=0.705) Exact=0.118 ★
+    E  3 | Val F1=0.752 (basic=0.657 thresh=0.752 snap=0.752) Exact=0.240 ★
+    E  6 | Val F1=0.780 (basic=0.681 thresh=0.780 snap=0.776) Exact=0.272 ★
+    E  7 | Val F1=0.787 (basic=0.648 thresh=0.787 snap=0.778) Exact=0.292 ★
+    E  8 | Val F1=0.817 (basic=0.701 thresh=0.817 snap=0.814) Exact=0.386 ★
+    E 11 | Val F1=0.819 (basic=0.679 thresh=0.819 snap=0.806) Exact=0.361 ★
+    E 17 | Val F1=0.824 (basic=0.777 thresh=0.824 snap=0.823) Exact=0.454 ★
+    E 19 | Val F1=0.826 (basic=0.776 thresh=0.826 snap=0.820) Exact=0.428 ★
+    E 20 | Val F1=0.805 (basic=0.697 thresh=0.803 snap=0.805) Exact=0.418
+    E 32 | Val F1=0.831 (basic=0.754 thresh=0.831 snap=0.827) Exact=0.409 ★
+    E 36 | Val F1=0.833 (basic=0.789 thresh=0.833 snap=0.832) Exact=0.434 ★
+    E 37 | Val F1=0.845 (basic=0.819 thresh=0.845 snap=0.843) Exact=0.449 ★
+    E 40 | Val F1=0.830 (basic=0.773 thresh=0.830 snap=0.825) Exact=0.398
+    E 60 | Val F1=0.837 (basic=0.801 thresh=0.837 snap=0.832) Exact=0.430
+    Result: F1=0.8448 Exact=0.449 (107s)
+    ★ NEW BEST OVERALL
+
+  ── Config 65/108 ──
+    win=500 lr=0.001 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.705 (basic=0.344 thresh=0.705 snap=0.704) Exact=0.109 ★
+    E  2 | Val F1=0.759 (basic=0.485 thresh=0.753 snap=0.759) Exact=0.272 ★
+    E  3 | Val F1=0.722 (basic=0.579 thresh=0.722 snap=0.717) Exact=0.135
+    E  4 | Val F1=0.781 (basic=0.499 thresh=0.781 snap=0.769) Exact=0.265 ★
+    E  5 | Val F1=0.786 (basic=0.670 thresh=0.786 snap=0.780) Exact=0.325 ★
+    E  7 | Val F1=0.791 (basic=0.634 thresh=0.791 snap=0.791) Exact=0.313 ★
+    E  9 | Val F1=0.824 (basic=0.717 thresh=0.824 snap=0.820) Exact=0.425 ★
+    E 20 | Val F1=0.800 (basic=0.675 thresh=0.800 snap=0.794) Exact=0.334
+    Result: F1=0.8238 Exact=0.425 (61s)
+
+  ── Config 66/108 ──
+    win=500 lr=0.001 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.434 thresh=0.703 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.704 (basic=0.415 thresh=0.704 snap=0.703) Exact=0.115 ★
+    E  3 | Val F1=0.764 (basic=0.503 thresh=0.764 snap=0.762) Exact=0.220 ★
+    E  4 | Val F1=0.777 (basic=0.636 thresh=0.777 snap=0.776) Exact=0.268 ★
+    E  7 | Val F1=0.796 (basic=0.691 thresh=0.795 snap=0.796) Exact=0.289 ★
+    E 10 | Val F1=0.815 (basic=0.742 thresh=0.813 snap=0.815) Exact=0.403 ★
+    E 20 | Val F1=0.806 (basic=0.706 thresh=0.806 snap=0.804) Exact=0.281
+    E 28 | Val F1=0.821 (basic=0.654 thresh=0.821 snap=0.819) Exact=0.343 ★
+    E 30 | Val F1=0.824 (basic=0.705 thresh=0.824 snap=0.818) Exact=0.346 ★
+    E 40 | Val F1=0.785 (basic=0.682 thresh=0.785 snap=0.778) Exact=0.298
+    E 41 | Val F1=0.825 (basic=0.747 thresh=0.825 snap=0.823) Exact=0.430 ★
+    E 60 | Val F1=0.812 (basic=0.758 thresh=0.812 snap=0.812) Exact=0.394
+    E 67 | Val F1=0.833 (basic=0.776 thresh=0.833 snap=0.827) Exact=0.415 ★
+    E 80 | Val F1=0.838 (basic=0.784 thresh=0.838 snap=0.838) Exact=0.466 ★
+    E 91 | Val F1=0.838 (basic=0.795 thresh=0.838 snap=0.838) Exact=0.436 ★
+    E 95 | Val F1=0.841 (basic=0.775 thresh=0.840 snap=0.841) Exact=0.490 ★
+    E100 | Val F1=0.830 (basic=0.767 thresh=0.830 snap=0.829) Exact=0.419
+    Result: F1=0.8408 Exact=0.490 (159s)
+
+  ── Config 67/108 ──
+    win=500 lr=0.001 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.349 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.704 (basic=0.472 thresh=0.704 snap=0.704) Exact=0.115 ★
+    E  3 | Val F1=0.763 (basic=0.492 thresh=0.759 snap=0.763) Exact=0.367 ★
+    E  4 | Val F1=0.790 (basic=0.656 thresh=0.789 snap=0.790) Exact=0.376 ★
+    E  9 | Val F1=0.819 (basic=0.656 thresh=0.819 snap=0.815) Exact=0.403 ★
+    E 20 | Val F1=0.795 (basic=0.717 thresh=0.795 snap=0.792) Exact=0.334
+    E 26 | Val F1=0.827 (basic=0.814 thresh=0.827 snap=0.823) Exact=0.388 ★
+    E 40 | Val F1=0.807 (basic=0.715 thresh=0.807 snap=0.801) Exact=0.266
+    Result: F1=0.8274 Exact=0.388 (89s)
+
+  ── Config 68/108 ──
+    win=500 lr=0.001 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.704 (basic=0.568 thresh=0.704 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.705 (basic=0.532 thresh=0.705 snap=0.705) Exact=0.118 ★
+    E  3 | Val F1=0.716 (basic=0.527 thresh=0.714 snap=0.716) Exact=0.175 ★
+    E  4 | Val F1=0.733 (basic=0.650 thresh=0.731 snap=0.733) Exact=0.232 ★
+    E  5 | Val F1=0.784 (basic=0.681 thresh=0.784 snap=0.783) Exact=0.301 ★
+    E 10 | Val F1=0.795 (basic=0.726 thresh=0.795 snap=0.793) Exact=0.401 ★
+    E 16 | Val F1=0.796 (basic=0.714 thresh=0.796 snap=0.785) Exact=0.335 ★
+    E 18 | Val F1=0.800 (basic=0.656 thresh=0.800 snap=0.795) Exact=0.287 ★
+    E 20 | Val F1=0.785 (basic=0.637 thresh=0.785 snap=0.774) Exact=0.262
+    E 26 | Val F1=0.808 (basic=0.687 thresh=0.808 snap=0.806) Exact=0.395 ★
+    E 28 | Val F1=0.825 (basic=0.762 thresh=0.825 snap=0.823) Exact=0.433 ★
+    E 34 | Val F1=0.840 (basic=0.802 thresh=0.840 snap=0.838) Exact=0.481 ★
+    E 40 | Val F1=0.784 (basic=0.750 thresh=0.784 snap=0.775) Exact=0.310
+    E 60 | Val F1=0.788 (basic=0.699 thresh=0.788 snap=0.787) Exact=0.265
+    Result: F1=0.8400 Exact=0.481 (102s)
+
+  ── Config 69/108 ──
+    win=500 lr=0.001 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.431 thresh=0.703 snap=0.703) Exact=0.117 ★
+    E  2 | Val F1=0.703 (basic=0.367 thresh=0.703 snap=0.703) Exact=0.118
+    E  3 | Val F1=0.706 (basic=0.422 thresh=0.706 snap=0.705) Exact=0.117 ★
+    E  4 | Val F1=0.736 (basic=0.411 thresh=0.736 snap=0.734) Exact=0.148 ★
+    E  5 | Val F1=0.782 (basic=0.669 thresh=0.781 snap=0.782) Exact=0.335 ★
+    E 12 | Val F1=0.801 (basic=0.652 thresh=0.801 snap=0.801) Exact=0.326 ★
+    E 14 | Val F1=0.806 (basic=0.701 thresh=0.805 snap=0.806) Exact=0.407 ★
+    E 20 | Val F1=0.788 (basic=0.680 thresh=0.788 snap=0.786) Exact=0.262
+    E 40 | Val F1=0.767 (basic=0.688 thresh=0.767 snap=0.760) Exact=0.244
+    Result: F1=0.8058 Exact=0.407 (70s)
+
+  ── Config 70/108 ──
+    win=500 lr=0.001 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.394 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.707 (basic=0.399 thresh=0.707 snap=0.706) Exact=0.081 ★
+    E  3 | Val F1=0.721 (basic=0.486 thresh=0.721 snap=0.719) Exact=0.067 ★
+    E  4 | Val F1=0.746 (basic=0.599 thresh=0.746 snap=0.725) Exact=0.180 ★
+    E  5 | Val F1=0.753 (basic=0.640 thresh=0.753 snap=0.746) Exact=0.180 ★
+    E  8 | Val F1=0.782 (basic=0.645 thresh=0.782 snap=0.769) Exact=0.271 ★
+    E 17 | Val F1=0.786 (basic=0.554 thresh=0.786 snap=0.782) Exact=0.325 ★
+    E 20 | Val F1=0.780 (basic=0.612 thresh=0.780 snap=0.777) Exact=0.254
+    E 26 | Val F1=0.790 (basic=0.672 thresh=0.788 snap=0.790) Exact=0.347 ★
+    E 29 | Val F1=0.809 (basic=0.642 thresh=0.809 snap=0.809) Exact=0.347 ★
+    E 40 | Val F1=0.739 (basic=0.501 thresh=0.739 snap=0.733) Exact=0.268
+    E 43 | Val F1=0.829 (basic=0.694 thresh=0.829 snap=0.821) Exact=0.391 ★
+    E 60 | Val F1=0.794 (basic=0.648 thresh=0.794 snap=0.787) Exact=0.316
+    Result: F1=0.8291 Exact=0.391 (116s)
+
+  ── Config 71/108 ──
+    win=500 lr=0.001 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.420 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.703 (basic=0.332 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  3 | Val F1=0.703 (basic=0.520 thresh=0.703 snap=0.703) Exact=0.118
+    E  4 | Val F1=0.709 (basic=0.560 thresh=0.709 snap=0.706) Exact=0.111 ★
+    E  5 | Val F1=0.754 (basic=0.589 thresh=0.754 snap=0.753) Exact=0.234 ★
+    E  6 | Val F1=0.779 (basic=0.691 thresh=0.779 snap=0.779) Exact=0.338 ★
+    E  7 | Val F1=0.810 (basic=0.634 thresh=0.810 snap=0.808) Exact=0.383 ★
+    E 10 | Val F1=0.816 (basic=0.677 thresh=0.816 snap=0.811) Exact=0.385 ★
+    E 20 | Val F1=0.810 (basic=0.741 thresh=0.810 snap=0.810) Exact=0.427
+    E 28 | Val F1=0.845 (basic=0.774 thresh=0.845 snap=0.841) Exact=0.443 ★
+    E 40 | Val F1=0.801 (basic=0.739 thresh=0.801 snap=0.794) Exact=0.326
+    Result: F1=0.8447 Exact=0.443 (92s)
+
+  ── Config 72/108 ──
+    win=500 lr=0.001 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.464 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.703 (basic=0.467 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  3 | Val F1=0.703 (basic=0.417 thresh=0.703 snap=0.703) Exact=0.118
+    E  5 | Val F1=0.703 (basic=0.552 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  6 | Val F1=0.730 (basic=0.446 thresh=0.730 snap=0.730) Exact=0.235 ★
+    E  7 | Val F1=0.772 (basic=0.535 thresh=0.772 snap=0.772) Exact=0.231 ★
+    E 10 | Val F1=0.792 (basic=0.740 thresh=0.792 snap=0.791) Exact=0.326 ★
+    E 16 | Val F1=0.796 (basic=0.732 thresh=0.796 snap=0.790) Exact=0.323 ★
+    E 20 | Val F1=0.787 (basic=0.731 thresh=0.787 snap=0.780) Exact=0.305
+    E 32 | Val F1=0.813 (basic=0.755 thresh=0.813 snap=0.806) Exact=0.382 ★
+    E 34 | Val F1=0.815 (basic=0.746 thresh=0.812 snap=0.815) Exact=0.461 ★
+    E 40 | Val F1=0.827 (basic=0.744 thresh=0.827 snap=0.815) Exact=0.359 ★
+    E 42 | Val F1=0.828 (basic=0.760 thresh=0.828 snap=0.820) Exact=0.394 ★
+    E 44 | Val F1=0.830 (basic=0.689 thresh=0.830 snap=0.824) Exact=0.380 ★
+    E 60 | Val F1=0.805 (basic=0.684 thresh=0.805 snap=0.804) Exact=0.325
+    Result: F1=0.8303 Exact=0.380 (118s)
+
+  ── Config 73/108 ──
+    win=750 lr=0.0003 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.530 thresh=0.702 snap=0.702) Exact=0.116 ★
+    E  2 | Val F1=0.702 (basic=0.518 thresh=0.702 snap=0.700) Exact=0.113 ★
+    E  3 | Val F1=0.708 (basic=0.510 thresh=0.708 snap=0.706) Exact=0.122 ★
+    E  4 | Val F1=0.718 (basic=0.490 thresh=0.718 snap=0.714) Exact=0.079 ★
+    E  5 | Val F1=0.743 (basic=0.503 thresh=0.743 snap=0.737) Exact=0.145 ★
+    E  6 | Val F1=0.780 (basic=0.613 thresh=0.775 snap=0.780) Exact=0.265 ★
+    E  8 | Val F1=0.783 (basic=0.442 thresh=0.783 snap=0.782) Exact=0.254 ★
+    E 12 | Val F1=0.785 (basic=0.598 thresh=0.783 snap=0.785) Exact=0.370 ★
+    E 13 | Val F1=0.789 (basic=0.658 thresh=0.789 snap=0.786) Exact=0.376 ★
+    E 20 | Val F1=0.765 (basic=0.496 thresh=0.765 snap=0.754) Exact=0.265
+    E 30 | Val F1=0.808 (basic=0.614 thresh=0.808 snap=0.806) Exact=0.410 ★
+    E 40 | Val F1=0.820 (basic=0.678 thresh=0.820 snap=0.818) Exact=0.397 ★
+    E 60 | Val F1=0.760 (basic=0.573 thresh=0.760 snap=0.748) Exact=0.324
+    Result: F1=0.8197 Exact=0.397 (99s)
+
+  ── Config 74/108 ──
+    win=750 lr=0.0003 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.300 thresh=0.703 snap=0.703) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.435 thresh=0.702 snap=0.702) Exact=0.118
+    E  3 | Val F1=0.703 (basic=0.414 thresh=0.703 snap=0.701) Exact=0.113
+    E  4 | Val F1=0.707 (basic=0.399 thresh=0.707 snap=0.702) Exact=0.100 ★
+    E  5 | Val F1=0.720 (basic=0.433 thresh=0.720 snap=0.717) Exact=0.086 ★
+    E  6 | Val F1=0.732 (basic=0.502 thresh=0.731 snap=0.732) Exact=0.175 ★
+    E  7 | Val F1=0.754 (basic=0.512 thresh=0.754 snap=0.753) Exact=0.172 ★
+    E 10 | Val F1=0.760 (basic=0.583 thresh=0.760 snap=0.755) Exact=0.222 ★
+    E 11 | Val F1=0.769 (basic=0.589 thresh=0.769 snap=0.766) Exact=0.270 ★
+    E 13 | Val F1=0.774 (basic=0.619 thresh=0.774 snap=0.773) Exact=0.286 ★
+    E 16 | Val F1=0.779 (basic=0.655 thresh=0.779 snap=0.771) Exact=0.277 ★
+    E 20 | Val F1=0.772 (basic=0.633 thresh=0.772 snap=0.770) Exact=0.299
+    E 39 | Val F1=0.790 (basic=0.634 thresh=0.790 snap=0.790) Exact=0.370 ★
+    E 40 | Val F1=0.775 (basic=0.598 thresh=0.775 snap=0.772) Exact=0.265
+    E 47 | Val F1=0.798 (basic=0.676 thresh=0.798 snap=0.796) Exact=0.390 ★
+    E 60 | Val F1=0.761 (basic=0.604 thresh=0.761 snap=0.757) Exact=0.238
+    Result: F1=0.7979 Exact=0.390 (109s)
+
+  ── Config 75/108 ──
+    win=750 lr=0.0003 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.537 thresh=0.702 snap=0.697) Exact=0.098 ★
+    E  2 | Val F1=0.702 (basic=0.514 thresh=0.702 snap=0.701) Exact=0.118
+    E  3 | Val F1=0.703 (basic=0.517 thresh=0.703 snap=0.702) Exact=0.116 ★
+    E  4 | Val F1=0.706 (basic=0.492 thresh=0.706 snap=0.704) Exact=0.104 ★
+    E  5 | Val F1=0.707 (basic=0.519 thresh=0.707 snap=0.705) Exact=0.102 ★
+    E  6 | Val F1=0.713 (basic=0.541 thresh=0.713 snap=0.695) Exact=0.077 ★
+    E  7 | Val F1=0.726 (basic=0.551 thresh=0.726 snap=0.707) Exact=0.093 ★
+    E  8 | Val F1=0.753 (basic=0.514 thresh=0.744 snap=0.753) Exact=0.240 ★
+    E  9 | Val F1=0.755 (basic=0.607 thresh=0.755 snap=0.755) Exact=0.184 ★
+    E 12 | Val F1=0.756 (basic=0.485 thresh=0.756 snap=0.751) Exact=0.190 ★
+    E 16 | Val F1=0.766 (basic=0.607 thresh=0.766 snap=0.764) Exact=0.254 ★
+    E 20 | Val F1=0.750 (basic=0.538 thresh=0.750 snap=0.748) Exact=0.218
+    E 30 | Val F1=0.786 (basic=0.584 thresh=0.786 snap=0.781) Exact=0.281 ★
+    E 31 | Val F1=0.794 (basic=0.561 thresh=0.787 snap=0.794) Exact=0.338 ★
+    E 40 | Val F1=0.765 (basic=0.470 thresh=0.765 snap=0.757) Exact=0.188
+    E 60 | Val F1=0.772 (basic=0.546 thresh=0.772 snap=0.762) Exact=0.150
+    Result: F1=0.7935 Exact=0.338 (86s)
+
+  ── Config 76/108 ──
+    win=750 lr=0.0003 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.450 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.703 (basic=0.468 thresh=0.703 snap=0.701) Exact=0.118 ★
+    E  3 | Val F1=0.702 (basic=0.508 thresh=0.702 snap=0.701) Exact=0.084
+    E  5 | Val F1=0.704 (basic=0.401 thresh=0.704 snap=0.696) Exact=0.102 ★
+    E  7 | Val F1=0.706 (basic=0.484 thresh=0.706 snap=0.704) Exact=0.073 ★
+    E  8 | Val F1=0.708 (basic=0.456 thresh=0.708 snap=0.695) Exact=0.070 ★
+    E  9 | Val F1=0.723 (basic=0.515 thresh=0.723 snap=0.715) Exact=0.093 ★
+    E 10 | Val F1=0.736 (basic=0.424 thresh=0.735 snap=0.736) Exact=0.193 ★
+    E 12 | Val F1=0.738 (basic=0.461 thresh=0.738 snap=0.736) Exact=0.179 ★
+    E 13 | Val F1=0.763 (basic=0.546 thresh=0.763 snap=0.759) Exact=0.186 ★
+    E 20 | Val F1=0.753 (basic=0.537 thresh=0.753 snap=0.753) Exact=0.254
+    E 27 | Val F1=0.793 (basic=0.505 thresh=0.793 snap=0.786) Exact=0.317 ★
+    E 40 | Val F1=0.780 (basic=0.691 thresh=0.780 snap=0.774) Exact=0.308
+    E 47 | Val F1=0.794 (basic=0.670 thresh=0.794 snap=0.789) Exact=0.299 ★
+    E 50 | Val F1=0.797 (basic=0.660 thresh=0.797 snap=0.792) Exact=0.338 ★
+    E 60 | Val F1=0.776 (basic=0.648 thresh=0.776 snap=0.772) Exact=0.263
+    E 80 | Val F1=0.757 (basic=0.462 thresh=0.756 snap=0.757) Exact=0.290
+    Result: F1=0.7965 Exact=0.338 (114s)
+
+  ── Config 77/108 ──
+    win=750 lr=0.0003 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.703 (basic=0.403 thresh=0.703 snap=0.700) Exact=0.111 ★
+    E  2 | Val F1=0.702 (basic=0.386 thresh=0.702 snap=0.701) Exact=0.116
+    E  3 | Val F1=0.703 (basic=0.357 thresh=0.703 snap=0.701) Exact=0.116
+    E  4 | Val F1=0.708 (basic=0.422 thresh=0.708 snap=0.700) Exact=0.082 ★
+    E  5 | Val F1=0.718 (basic=0.451 thresh=0.714 snap=0.718) Exact=0.163 ★
+    E  6 | Val F1=0.741 (basic=0.478 thresh=0.739 snap=0.741) Exact=0.200 ★
+    E  7 | Val F1=0.771 (basic=0.500 thresh=0.767 snap=0.771) Exact=0.288 ★
+    E  8 | Val F1=0.782 (basic=0.528 thresh=0.782 snap=0.782) Exact=0.281 ★
+    E 20 | Val F1=0.746 (basic=0.572 thresh=0.746 snap=0.740) Exact=0.227
+    E 38 | Val F1=0.796 (basic=0.659 thresh=0.796 snap=0.794) Exact=0.345 ★
+    E 40 | Val F1=0.797 (basic=0.614 thresh=0.797 snap=0.783) Exact=0.331 ★
+    E 44 | Val F1=0.812 (basic=0.669 thresh=0.809 snap=0.812) Exact=0.379 ★
+    E 49 | Val F1=0.817 (basic=0.641 thresh=0.817 snap=0.811) Exact=0.333 ★
+    E 60 | Val F1=0.783 (basic=0.611 thresh=0.783 snap=0.783) Exact=0.272
+    Result: F1=0.8172 Exact=0.333 (112s)
+
+  ── Config 78/108 ──
+    win=750 lr=0.0003 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.438 thresh=0.702 snap=0.700) Exact=0.113 ★
+    E  2 | Val F1=0.703 (basic=0.407 thresh=0.703 snap=0.702) Exact=0.120 ★
+    E  3 | Val F1=0.704 (basic=0.409 thresh=0.704 snap=0.681) Exact=0.054 ★
+    E  4 | Val F1=0.715 (basic=0.414 thresh=0.715 snap=0.688) Exact=0.032 ★
+    E  6 | Val F1=0.715 (basic=0.383 thresh=0.715 snap=0.691) Exact=0.043 ★
+    E  7 | Val F1=0.741 (basic=0.491 thresh=0.736 snap=0.741) Exact=0.179 ★
+    E  8 | Val F1=0.764 (basic=0.518 thresh=0.764 snap=0.761) Exact=0.181 ★
+    E  9 | Val F1=0.774 (basic=0.549 thresh=0.774 snap=0.768) Exact=0.240 ★
+    E 10 | Val F1=0.790 (basic=0.545 thresh=0.790 snap=0.786) Exact=0.265 ★
+    E 20 | Val F1=0.757 (basic=0.544 thresh=0.757 snap=0.749) Exact=0.254
+    E 35 | Val F1=0.791 (basic=0.640 thresh=0.791 snap=0.783) Exact=0.317 ★
+    E 37 | Val F1=0.792 (basic=0.532 thresh=0.792 snap=0.785) Exact=0.333 ★
+    E 40 | Val F1=0.778 (basic=0.548 thresh=0.778 snap=0.764) Exact=0.299
+    E 45 | Val F1=0.793 (basic=0.604 thresh=0.793 snap=0.787) Exact=0.327 ★
+    E 50 | Val F1=0.815 (basic=0.613 thresh=0.815 snap=0.811) Exact=0.365 ★
+    E 60 | Val F1=0.795 (basic=0.634 thresh=0.795 snap=0.788) Exact=0.379
+    E 80 | Val F1=0.791 (basic=0.646 thresh=0.791 snap=0.785) Exact=0.374
+    Result: F1=0.8154 Exact=0.365 (113s)
+
+  ── Config 79/108 ──
+    win=750 lr=0.0003 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.395 thresh=0.702 snap=0.701) Exact=0.116 ★
+    E  2 | Val F1=0.702 (basic=0.387 thresh=0.702 snap=0.702) Exact=0.109 ★
+    E  3 | Val F1=0.704 (basic=0.358 thresh=0.704 snap=0.702) Exact=0.116 ★
+    E  6 | Val F1=0.704 (basic=0.401 thresh=0.704 snap=0.685) Exact=0.073 ★
+    E  7 | Val F1=0.713 (basic=0.388 thresh=0.713 snap=0.710) Exact=0.086 ★
+    E  8 | Val F1=0.721 (basic=0.450 thresh=0.721 snap=0.720) Exact=0.082 ★
+    E  9 | Val F1=0.733 (basic=0.516 thresh=0.728 snap=0.733) Exact=0.159 ★
+    E 11 | Val F1=0.736 (basic=0.446 thresh=0.736 snap=0.735) Exact=0.166 ★
+    E 13 | Val F1=0.764 (basic=0.478 thresh=0.764 snap=0.762) Exact=0.213 ★
+    E 20 | Val F1=0.755 (basic=0.617 thresh=0.755 snap=0.751) Exact=0.204
+    E 28 | Val F1=0.766 (basic=0.622 thresh=0.766 snap=0.766) Exact=0.283 ★
+    E 29 | Val F1=0.807 (basic=0.650 thresh=0.807 snap=0.801) Exact=0.322 ★
+    E 40 | Val F1=0.799 (basic=0.680 thresh=0.799 snap=0.795) Exact=0.372
+    E 45 | Val F1=0.818 (basic=0.662 thresh=0.818 snap=0.808) Exact=0.413 ★
+    E 60 | Val F1=0.793 (basic=0.702 thresh=0.793 snap=0.786) Exact=0.329
+    Result: F1=0.8175 Exact=0.413 (106s)
+
+  ── Config 80/108 ──
+    win=750 lr=0.0003 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.369 thresh=0.702 snap=0.702) Exact=0.125 ★
+    E  2 | Val F1=0.702 (basic=0.401 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  3 | Val F1=0.702 (basic=0.360 thresh=0.702 snap=0.701) Exact=0.118
+    E  4 | Val F1=0.703 (basic=0.367 thresh=0.703 snap=0.700) Exact=0.107 ★
+    E  5 | Val F1=0.704 (basic=0.375 thresh=0.704 snap=0.704) Exact=0.107 ★
+    E  6 | Val F1=0.706 (basic=0.432 thresh=0.706 snap=0.689) Exact=0.093 ★
+    E  7 | Val F1=0.709 (basic=0.489 thresh=0.709 snap=0.681) Exact=0.052 ★
+    E  8 | Val F1=0.713 (basic=0.478 thresh=0.713 snap=0.681) Exact=0.057 ★
+    E  9 | Val F1=0.722 (basic=0.554 thresh=0.722 snap=0.711) Exact=0.102 ★
+    E 10 | Val F1=0.742 (basic=0.601 thresh=0.742 snap=0.734) Exact=0.159 ★
+    E 11 | Val F1=0.751 (basic=0.581 thresh=0.749 snap=0.751) Exact=0.268 ★
+    E 12 | Val F1=0.751 (basic=0.625 thresh=0.751 snap=0.750) Exact=0.211 ★
+    E 20 | Val F1=0.733 (basic=0.570 thresh=0.733 snap=0.724) Exact=0.166
+    E 26 | Val F1=0.795 (basic=0.607 thresh=0.793 snap=0.795) Exact=0.379 ★
+    E 40 | Val F1=0.767 (basic=0.593 thresh=0.767 snap=0.746) Exact=0.215
+    Result: F1=0.7952 Exact=0.379 (79s)
+
+  ── Config 81/108 ──
+    win=750 lr=0.0003 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.580 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.519 thresh=0.702 snap=0.702) Exact=0.104 ★
+    E  3 | Val F1=0.704 (basic=0.517 thresh=0.704 snap=0.694) Exact=0.093 ★
+    E  4 | Val F1=0.707 (basic=0.500 thresh=0.707 snap=0.701) Exact=0.098 ★
+    E  5 | Val F1=0.712 (basic=0.487 thresh=0.712 snap=0.708) Exact=0.068 ★
+    E  6 | Val F1=0.751 (basic=0.494 thresh=0.739 snap=0.751) Exact=0.215 ★
+    E  7 | Val F1=0.760 (basic=0.534 thresh=0.754 snap=0.760) Exact=0.224 ★
+    E  8 | Val F1=0.779 (basic=0.548 thresh=0.776 snap=0.779) Exact=0.231 ★
+    E  9 | Val F1=0.794 (basic=0.621 thresh=0.792 snap=0.794) Exact=0.306 ★
+    E 20 | Val F1=0.755 (basic=0.577 thresh=0.755 snap=0.741) Exact=0.249
+    E 31 | Val F1=0.795 (basic=0.684 thresh=0.795 snap=0.794) Exact=0.306 ★
+    E 40 | Val F1=0.761 (basic=0.598 thresh=0.761 snap=0.743) Exact=0.256
+    E 60 | Val F1=0.762 (basic=0.580 thresh=0.762 snap=0.752) Exact=0.200
+    Result: F1=0.7946 Exact=0.306 (86s)
+
+  ── Config 82/108 ──
+    win=750 lr=0.0003 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.591 thresh=0.702 snap=0.702) Exact=0.120 ★
+    E  2 | Val F1=0.702 (basic=0.581 thresh=0.702 snap=0.701) Exact=0.118
+    E  3 | Val F1=0.702 (basic=0.563 thresh=0.702 snap=0.701) Exact=0.109
+    E  4 | Val F1=0.703 (basic=0.567 thresh=0.703 snap=0.701) Exact=0.118 ★
+    E  5 | Val F1=0.704 (basic=0.533 thresh=0.704 snap=0.700) Exact=0.111 ★
+    E  8 | Val F1=0.704 (basic=0.495 thresh=0.704 snap=0.700) Exact=0.111 ★
+    E  9 | Val F1=0.708 (basic=0.518 thresh=0.708 snap=0.687) Exact=0.070 ★
+    E 10 | Val F1=0.714 (basic=0.486 thresh=0.712 snap=0.714) Exact=0.156 ★
+    E 11 | Val F1=0.719 (basic=0.495 thresh=0.719 snap=0.707) Exact=0.093 ★
+    E 12 | Val F1=0.733 (basic=0.502 thresh=0.729 snap=0.733) Exact=0.200 ★
+    E 13 | Val F1=0.751 (basic=0.520 thresh=0.750 snap=0.751) Exact=0.227 ★
+    E 14 | Val F1=0.761 (basic=0.532 thresh=0.758 snap=0.761) Exact=0.263 ★
+    E 20 | Val F1=0.745 (basic=0.458 thresh=0.745 snap=0.741) Exact=0.209
+    E 35 | Val F1=0.776 (basic=0.681 thresh=0.776 snap=0.774) Exact=0.315 ★
+    E 40 | Val F1=0.762 (basic=0.621 thresh=0.762 snap=0.746) Exact=0.274
+    E 43 | Val F1=0.783 (basic=0.689 thresh=0.783 snap=0.775) Exact=0.327 ★
+    E 60 | Val F1=0.766 (basic=0.488 thresh=0.766 snap=0.758) Exact=0.363
+    Result: F1=0.7831 Exact=0.327 (103s)
+
+  ── Config 83/108 ──
+    win=750 lr=0.0003 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.325 thresh=0.702 snap=0.702) Exact=0.120 ★
+    E  2 | Val F1=0.702 (basic=0.359 thresh=0.702 snap=0.702) Exact=0.116 ★
+    E  3 | Val F1=0.702 (basic=0.296 thresh=0.702 snap=0.702) Exact=0.118
+    E  9 | Val F1=0.702 (basic=0.303 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E 10 | Val F1=0.704 (basic=0.248 thresh=0.704 snap=0.701) Exact=0.116 ★
+    E 13 | Val F1=0.704 (basic=0.283 thresh=0.704 snap=0.700) Exact=0.116 ★
+    E 15 | Val F1=0.705 (basic=0.272 thresh=0.705 snap=0.701) Exact=0.116 ★
+    E 17 | Val F1=0.705 (basic=0.341 thresh=0.705 snap=0.705) Exact=0.086 ★
+    E 18 | Val F1=0.705 (basic=0.380 thresh=0.705 snap=0.701) Exact=0.113 ★
+    E 20 | Val F1=0.709 (basic=0.379 thresh=0.707 snap=0.709) Exact=0.138 ★
+    E 23 | Val F1=0.712 (basic=0.357 thresh=0.706 snap=0.712) Exact=0.150 ★
+    E 24 | Val F1=0.716 (basic=0.355 thresh=0.708 snap=0.716) Exact=0.159 ★
+    E 26 | Val F1=0.732 (basic=0.408 thresh=0.717 snap=0.732) Exact=0.179 ★
+    E 29 | Val F1=0.779 (basic=0.586 thresh=0.779 snap=0.777) Exact=0.279 ★
+    E 34 | Val F1=0.790 (basic=0.692 thresh=0.790 snap=0.786) Exact=0.324 ★
+    E 40 | Val F1=0.770 (basic=0.564 thresh=0.770 snap=0.764) Exact=0.286
+    E 41 | Val F1=0.795 (basic=0.703 thresh=0.795 snap=0.783) Exact=0.342 ★
+    E 60 | Val F1=0.778 (basic=0.597 thresh=0.778 snap=0.774) Exact=0.329
+    Result: F1=0.7951 Exact=0.342 (101s)
+
+  ── Config 84/108 ──
+    win=750 lr=0.0003 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.369 thresh=0.702 snap=0.702) Exact=0.136 ★
+    E  2 | Val F1=0.703 (basic=0.435 thresh=0.703 snap=0.702) Exact=0.129 ★
+    E  3 | Val F1=0.702 (basic=0.380 thresh=0.702 snap=0.701) Exact=0.113
+    E  5 | Val F1=0.703 (basic=0.408 thresh=0.703 snap=0.678) Exact=0.063 ★
+    E  7 | Val F1=0.705 (basic=0.444 thresh=0.705 snap=0.686) Exact=0.088 ★
+    E 10 | Val F1=0.707 (basic=0.469 thresh=0.707 snap=0.697) Exact=0.102 ★
+    E 13 | Val F1=0.707 (basic=0.493 thresh=0.706 snap=0.707) Exact=0.138 ★
+    E 14 | Val F1=0.709 (basic=0.512 thresh=0.709 snap=0.691) Exact=0.082 ★
+    E 15 | Val F1=0.714 (basic=0.562 thresh=0.714 snap=0.701) Exact=0.091 ★
+    E 16 | Val F1=0.720 (basic=0.516 thresh=0.710 snap=0.720) Exact=0.172 ★
+    E 18 | Val F1=0.734 (basic=0.525 thresh=0.725 snap=0.734) Exact=0.195 ★
+    E 19 | Val F1=0.743 (basic=0.523 thresh=0.733 snap=0.743) Exact=0.209 ★
+    E 20 | Val F1=0.736 (basic=0.568 thresh=0.736 snap=0.733) Exact=0.138
+    E 21 | Val F1=0.748 (basic=0.561 thresh=0.737 snap=0.748) Exact=0.213 ★
+    E 27 | Val F1=0.751 (basic=0.699 thresh=0.751 snap=0.749) Exact=0.143 ★
+    E 28 | Val F1=0.753 (basic=0.572 thresh=0.753 snap=0.749) Exact=0.206 ★
+    E 29 | Val F1=0.782 (basic=0.700 thresh=0.782 snap=0.780) Exact=0.283 ★
+    E 30 | Val F1=0.793 (basic=0.719 thresh=0.792 snap=0.793) Exact=0.347 ★
+    E 37 | Val F1=0.795 (basic=0.609 thresh=0.795 snap=0.787) Exact=0.327 ★
+    E 40 | Val F1=0.788 (basic=0.704 thresh=0.788 snap=0.785) Exact=0.356
+    E 60 | Val F1=0.777 (basic=0.545 thresh=0.777 snap=0.767) Exact=0.290
+    Result: F1=0.7950 Exact=0.327 (95s)
+
+  ── Config 85/108 ──
+    win=750 lr=0.0005 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.705 (basic=0.539 thresh=0.704 snap=0.705) Exact=0.120 ★
+    E  2 | Val F1=0.730 (basic=0.488 thresh=0.724 snap=0.730) Exact=0.177 ★
+    E  3 | Val F1=0.776 (basic=0.560 thresh=0.776 snap=0.771) Exact=0.222 ★
+    E  4 | Val F1=0.785 (basic=0.626 thresh=0.784 snap=0.785) Exact=0.279 ★
+    E 16 | Val F1=0.788 (basic=0.633 thresh=0.786 snap=0.788) Exact=0.345 ★
+    E 18 | Val F1=0.791 (basic=0.553 thresh=0.791 snap=0.790) Exact=0.277 ★
+    E 20 | Val F1=0.764 (basic=0.539 thresh=0.764 snap=0.758) Exact=0.247
+    E 27 | Val F1=0.796 (basic=0.571 thresh=0.796 snap=0.794) Exact=0.333 ★
+    E 31 | Val F1=0.816 (basic=0.637 thresh=0.816 snap=0.813) Exact=0.376 ★
+    E 40 | Val F1=0.783 (basic=0.679 thresh=0.783 snap=0.779) Exact=0.288
+    E 60 | Val F1=0.756 (basic=0.645 thresh=0.756 snap=0.747) Exact=0.324
+    Result: F1=0.8158 Exact=0.376 (87s)
+
+  ── Config 86/108 ──
+    win=750 lr=0.0005 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.463 thresh=0.703 snap=0.681) Exact=0.082 ★
+    E  2 | Val F1=0.709 (basic=0.485 thresh=0.709 snap=0.693) Exact=0.082 ★
+    E  3 | Val F1=0.708 (basic=0.527 thresh=0.708 snap=0.707) Exact=0.075
+    E  4 | Val F1=0.753 (basic=0.546 thresh=0.752 snap=0.753) Exact=0.286 ★
+    E  5 | Val F1=0.790 (basic=0.708 thresh=0.790 snap=0.789) Exact=0.256 ★
+    E  7 | Val F1=0.791 (basic=0.603 thresh=0.791 snap=0.789) Exact=0.347 ★
+    E  8 | Val F1=0.794 (basic=0.579 thresh=0.794 snap=0.793) Exact=0.340 ★
+    E 14 | Val F1=0.802 (basic=0.596 thresh=0.802 snap=0.800) Exact=0.351 ★
+    E 20 | Val F1=0.787 (basic=0.623 thresh=0.787 snap=0.777) Exact=0.329
+    E 28 | Val F1=0.808 (basic=0.628 thresh=0.808 snap=0.793) Exact=0.358 ★
+    E 31 | Val F1=0.808 (basic=0.595 thresh=0.808 snap=0.801) Exact=0.340 ★
+    E 33 | Val F1=0.810 (basic=0.702 thresh=0.810 snap=0.803) Exact=0.433 ★
+    E 35 | Val F1=0.829 (basic=0.672 thresh=0.828 snap=0.829) Exact=0.426 ★
+    E 36 | Val F1=0.832 (basic=0.754 thresh=0.832 snap=0.826) Exact=0.458 ★
+    E 40 | Val F1=0.799 (basic=0.678 thresh=0.799 snap=0.791) Exact=0.342
+    E 60 | Val F1=0.798 (basic=0.693 thresh=0.798 snap=0.796) Exact=0.297
+    Result: F1=0.8322 Exact=0.458 (93s)
+
+  ── Config 87/108 ──
+    win=750 lr=0.0005 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.430 thresh=0.702 snap=0.701) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.425 thresh=0.702 snap=0.701) Exact=0.118
+    E  3 | Val F1=0.702 (basic=0.442 thresh=0.702 snap=0.701) Exact=0.118
+    E  4 | Val F1=0.704 (basic=0.478 thresh=0.704 snap=0.701) Exact=0.088 ★
+    E  5 | Val F1=0.720 (basic=0.531 thresh=0.720 snap=0.715) Exact=0.052 ★
+    E  6 | Val F1=0.737 (basic=0.613 thresh=0.737 snap=0.733) Exact=0.127 ★
+    E  7 | Val F1=0.754 (basic=0.561 thresh=0.754 snap=0.754) Exact=0.224 ★
+    E  9 | Val F1=0.758 (basic=0.447 thresh=0.755 snap=0.758) Exact=0.245 ★
+    E 10 | Val F1=0.778 (basic=0.425 thresh=0.778 snap=0.775) Exact=0.243 ★
+    E 12 | Val F1=0.789 (basic=0.543 thresh=0.789 snap=0.783) Exact=0.268 ★
+    E 16 | Val F1=0.799 (basic=0.581 thresh=0.797 snap=0.799) Exact=0.342 ★
+    E 20 | Val F1=0.790 (basic=0.591 thresh=0.790 snap=0.788) Exact=0.263
+    E 27 | Val F1=0.803 (basic=0.622 thresh=0.803 snap=0.800) Exact=0.283 ★
+    E 31 | Val F1=0.819 (basic=0.645 thresh=0.814 snap=0.819) Exact=0.413 ★
+    E 37 | Val F1=0.824 (basic=0.700 thresh=0.816 snap=0.824) Exact=0.415 ★
+    E 40 | Val F1=0.786 (basic=0.719 thresh=0.786 snap=0.775) Exact=0.299
+    E 41 | Val F1=0.841 (basic=0.754 thresh=0.841 snap=0.839) Exact=0.413 ★
+    E 60 | Val F1=0.805 (basic=0.698 thresh=0.805 snap=0.804) Exact=0.302
+    Result: F1=0.8410 Exact=0.413 (100s)
+
+  ── Config 88/108 ──
+    win=750 lr=0.0005 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.703 (basic=0.330 thresh=0.702 snap=0.703) Exact=0.120 ★
+    E  2 | Val F1=0.702 (basic=0.370 thresh=0.702 snap=0.702) Exact=0.118
+    E  3 | Val F1=0.702 (basic=0.342 thresh=0.702 snap=0.701) Exact=0.116
+    E  7 | Val F1=0.719 (basic=0.514 thresh=0.719 snap=0.697) Exact=0.045 ★
+    E  8 | Val F1=0.736 (basic=0.588 thresh=0.736 snap=0.732) Exact=0.152 ★
+    E  9 | Val F1=0.753 (basic=0.611 thresh=0.747 snap=0.753) Exact=0.247 ★
+    E 15 | Val F1=0.794 (basic=0.642 thresh=0.794 snap=0.791) Exact=0.354 ★
+    E 20 | Val F1=0.766 (basic=0.630 thresh=0.766 snap=0.749) Exact=0.254
+    E 28 | Val F1=0.800 (basic=0.724 thresh=0.800 snap=0.799) Exact=0.361 ★
+    E 30 | Val F1=0.814 (basic=0.698 thresh=0.814 snap=0.808) Exact=0.381 ★
+    E 33 | Val F1=0.815 (basic=0.662 thresh=0.815 snap=0.808) Exact=0.383 ★
+    E 40 | Val F1=0.774 (basic=0.588 thresh=0.774 snap=0.762) Exact=0.256
+    E 50 | Val F1=0.816 (basic=0.739 thresh=0.816 snap=0.816) Exact=0.379 ★
+    E 60 | Val F1=0.804 (basic=0.776 thresh=0.804 snap=0.803) Exact=0.381
+    E 80 | Val F1=0.812 (basic=0.779 thresh=0.812 snap=0.810) Exact=0.415
+    Result: F1=0.8157 Exact=0.379 (113s)
+
+  ── Config 89/108 ──
+    win=750 lr=0.0005 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.465 thresh=0.702 snap=0.702) Exact=0.116 ★
+    E  2 | Val F1=0.704 (basic=0.474 thresh=0.704 snap=0.698) Exact=0.104 ★
+    E  3 | Val F1=0.711 (basic=0.483 thresh=0.709 snap=0.711) Exact=0.154 ★
+    E  4 | Val F1=0.732 (basic=0.494 thresh=0.732 snap=0.723) Exact=0.063 ★
+    E  5 | Val F1=0.770 (basic=0.509 thresh=0.770 snap=0.770) Exact=0.240 ★
+    E  6 | Val F1=0.772 (basic=0.545 thresh=0.772 snap=0.771) Exact=0.272 ★
+    E  8 | Val F1=0.778 (basic=0.522 thresh=0.778 snap=0.775) Exact=0.333 ★
+    E  9 | Val F1=0.778 (basic=0.592 thresh=0.778 snap=0.778) Exact=0.367 ★
+    E 10 | Val F1=0.795 (basic=0.658 thresh=0.795 snap=0.793) Exact=0.306 ★
+    E 20 | Val F1=0.776 (basic=0.602 thresh=0.776 snap=0.758) Exact=0.277
+    E 27 | Val F1=0.802 (basic=0.669 thresh=0.802 snap=0.795) Exact=0.395 ★
+    E 33 | Val F1=0.813 (basic=0.690 thresh=0.813 snap=0.807) Exact=0.379 ★
+    E 40 | Val F1=0.801 (basic=0.708 thresh=0.798 snap=0.801) Exact=0.404
+    E 60 | Val F1=0.808 (basic=0.740 thresh=0.808 snap=0.804) Exact=0.374
+    E 62 | Val F1=0.813 (basic=0.753 thresh=0.813 snap=0.806) Exact=0.383 ★
+    E 64 | Val F1=0.818 (basic=0.759 thresh=0.814 snap=0.818) Exact=0.454 ★
+    E 80 | Val F1=0.789 (basic=0.670 thresh=0.785 snap=0.789) Exact=0.345
+    Result: F1=0.8182 Exact=0.454 (132s)
+
+  ── Config 90/108 ──
+    win=750 lr=0.0005 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.701 (basic=0.354 thresh=0.701 snap=0.701) Exact=0.116 ★
+    E  2 | Val F1=0.702 (basic=0.352 thresh=0.702 snap=0.701) Exact=0.061 ★
+    E  3 | Val F1=0.706 (basic=0.364 thresh=0.706 snap=0.702) Exact=0.077 ★
+    E  4 | Val F1=0.711 (basic=0.343 thresh=0.711 snap=0.694) Exact=0.048 ★
+    E  5 | Val F1=0.739 (basic=0.437 thresh=0.737 snap=0.739) Exact=0.206 ★
+    E  6 | Val F1=0.760 (basic=0.417 thresh=0.760 snap=0.754) Exact=0.175 ★
+    E  7 | Val F1=0.763 (basic=0.554 thresh=0.763 snap=0.757) Exact=0.236 ★
+    E 11 | Val F1=0.780 (basic=0.626 thresh=0.780 snap=0.779) Exact=0.342 ★
+    E 13 | Val F1=0.826 (basic=0.706 thresh=0.826 snap=0.824) Exact=0.458 ★
+    E 20 | Val F1=0.759 (basic=0.531 thresh=0.759 snap=0.744) Exact=0.290
+    E 40 | Val F1=0.804 (basic=0.635 thresh=0.803 snap=0.804) Exact=0.404
+    Result: F1=0.8264 Exact=0.458 (61s)
+
+  ── Config 91/108 ──
+    win=750 lr=0.0005 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.704 (basic=0.337 thresh=0.704 snap=0.694) Exact=0.088 ★
+    E  2 | Val F1=0.706 (basic=0.369 thresh=0.706 snap=0.706) Exact=0.109 ★
+    E  3 | Val F1=0.710 (basic=0.383 thresh=0.710 snap=0.707) Exact=0.104 ★
+    E  4 | Val F1=0.722 (basic=0.381 thresh=0.720 snap=0.722) Exact=0.181 ★
+    E  5 | Val F1=0.747 (basic=0.515 thresh=0.741 snap=0.747) Exact=0.202 ★
+    E  6 | Val F1=0.760 (basic=0.338 thresh=0.760 snap=0.754) Exact=0.170 ★
+    E  7 | Val F1=0.771 (basic=0.654 thresh=0.764 snap=0.771) Exact=0.274 ★
+    E  9 | Val F1=0.791 (basic=0.652 thresh=0.791 snap=0.785) Exact=0.295 ★
+    E 20 | Val F1=0.759 (basic=0.455 thresh=0.759 snap=0.738) Exact=0.213
+    E 29 | Val F1=0.791 (basic=0.623 thresh=0.791 snap=0.780) Exact=0.315 ★
+    E 31 | Val F1=0.813 (basic=0.610 thresh=0.813 snap=0.808) Exact=0.426 ★
+    E 40 | Val F1=0.801 (basic=0.649 thresh=0.801 snap=0.794) Exact=0.308
+    E 43 | Val F1=0.813 (basic=0.607 thresh=0.813 snap=0.807) Exact=0.331 ★
+    E 60 | Val F1=0.799 (basic=0.478 thresh=0.799 snap=0.799) Exact=0.322
+    Result: F1=0.8129 Exact=0.331 (103s)
+
+  ── Config 92/108 ──
+    win=750 lr=0.0005 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.465 thresh=0.702 snap=0.701) Exact=0.116 ★
+    E  2 | Val F1=0.702 (basic=0.439 thresh=0.702 snap=0.702) Exact=0.118
+    E  3 | Val F1=0.702 (basic=0.486 thresh=0.702 snap=0.701) Exact=0.118
+    E  4 | Val F1=0.703 (basic=0.414 thresh=0.703 snap=0.701) Exact=0.116 ★
+    E  6 | Val F1=0.707 (basic=0.484 thresh=0.707 snap=0.694) Exact=0.073 ★
+    E  7 | Val F1=0.719 (basic=0.502 thresh=0.719 snap=0.712) Exact=0.057 ★
+    E  8 | Val F1=0.733 (basic=0.643 thresh=0.731 snap=0.733) Exact=0.206 ★
+    E  9 | Val F1=0.757 (basic=0.640 thresh=0.754 snap=0.757) Exact=0.211 ★
+    E 11 | Val F1=0.792 (basic=0.604 thresh=0.789 snap=0.792) Exact=0.302 ★
+    E 20 | Val F1=0.761 (basic=0.581 thresh=0.761 snap=0.750) Exact=0.220
+    E 32 | Val F1=0.797 (basic=0.531 thresh=0.797 snap=0.793) Exact=0.299 ★
+    E 40 | Val F1=0.784 (basic=0.678 thresh=0.784 snap=0.784) Exact=0.288
+    E 41 | Val F1=0.803 (basic=0.703 thresh=0.803 snap=0.791) Exact=0.277 ★
+    E 45 | Val F1=0.821 (basic=0.649 thresh=0.821 snap=0.814) Exact=0.345 ★
+    E 60 | Val F1=0.784 (basic=0.568 thresh=0.784 snap=0.779) Exact=0.263
+    Result: F1=0.8209 Exact=0.345 (107s)
+
+  ── Config 93/108 ──
+    win=750 lr=0.0005 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.373 thresh=0.702 snap=0.701) Exact=0.116 ★
+    E  2 | Val F1=0.703 (basic=0.342 thresh=0.703 snap=0.702) Exact=0.118 ★
+    E  3 | Val F1=0.703 (basic=0.334 thresh=0.703 snap=0.702) Exact=0.113 ★
+    E  4 | Val F1=0.708 (basic=0.313 thresh=0.708 snap=0.707) Exact=0.068 ★
+    E  5 | Val F1=0.718 (basic=0.413 thresh=0.718 snap=0.716) Exact=0.113 ★
+    E  6 | Val F1=0.744 (basic=0.380 thresh=0.744 snap=0.733) Exact=0.147 ★
+    E  7 | Val F1=0.764 (basic=0.429 thresh=0.764 snap=0.761) Exact=0.229 ★
+    E  8 | Val F1=0.769 (basic=0.445 thresh=0.769 snap=0.765) Exact=0.286 ★
+    E 10 | Val F1=0.780 (basic=0.644 thresh=0.780 snap=0.778) Exact=0.322 ★
+    E 20 | Val F1=0.742 (basic=0.531 thresh=0.742 snap=0.733) Exact=0.261
+    E 39 | Val F1=0.785 (basic=0.554 thresh=0.785 snap=0.785) Exact=0.333 ★
+    E 40 | Val F1=0.736 (basic=0.502 thresh=0.735 snap=0.736) Exact=0.263
+    E 49 | Val F1=0.789 (basic=0.622 thresh=0.789 snap=0.789) Exact=0.274 ★
+    E 60 | Val F1=0.734 (basic=0.504 thresh=0.734 snap=0.724) Exact=0.166
+    Result: F1=0.7887 Exact=0.274 (111s)
+
+  ── Config 94/108 ──
+    win=750 lr=0.0005 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.416 thresh=0.702 snap=0.701) Exact=0.122 ★
+    E  2 | Val F1=0.703 (basic=0.399 thresh=0.703 snap=0.701) Exact=0.077 ★
+    E  3 | Val F1=0.706 (basic=0.316 thresh=0.706 snap=0.702) Exact=0.084 ★
+    E  5 | Val F1=0.709 (basic=0.348 thresh=0.709 snap=0.708) Exact=0.082 ★
+    E  6 | Val F1=0.732 (basic=0.403 thresh=0.727 snap=0.732) Exact=0.184 ★
+    E  7 | Val F1=0.764 (basic=0.453 thresh=0.764 snap=0.761) Exact=0.188 ★
+    E 10 | Val F1=0.769 (basic=0.568 thresh=0.769 snap=0.763) Exact=0.317 ★
+    E 13 | Val F1=0.808 (basic=0.661 thresh=0.808 snap=0.805) Exact=0.354 ★
+    E 20 | Val F1=0.765 (basic=0.564 thresh=0.765 snap=0.762) Exact=0.288
+    E 36 | Val F1=0.814 (basic=0.550 thresh=0.814 snap=0.811) Exact=0.408 ★
+    E 40 | Val F1=0.780 (basic=0.543 thresh=0.780 snap=0.774) Exact=0.376
+    E 60 | Val F1=0.703 (basic=0.437 thresh=0.703 snap=0.691) Exact=0.229
+    Result: F1=0.8138 Exact=0.408 (94s)
+
+  ── Config 95/108 ──
+    win=750 lr=0.0005 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.402 thresh=0.702 snap=0.702) Exact=0.122 ★
+    E  2 | Val F1=0.704 (basic=0.400 thresh=0.704 snap=0.699) Exact=0.109 ★
+    E  3 | Val F1=0.705 (basic=0.373 thresh=0.705 snap=0.701) Exact=0.113 ★
+    E  5 | Val F1=0.706 (basic=0.390 thresh=0.706 snap=0.696) Exact=0.113 ★
+    E  6 | Val F1=0.706 (basic=0.371 thresh=0.706 snap=0.697) Exact=0.098 ★
+    E  7 | Val F1=0.712 (basic=0.397 thresh=0.712 snap=0.704) Exact=0.100 ★
+    E  8 | Val F1=0.714 (basic=0.438 thresh=0.714 snap=0.711) Exact=0.104 ★
+    E  9 | Val F1=0.732 (basic=0.433 thresh=0.730 snap=0.732) Exact=0.193 ★
+    E 10 | Val F1=0.760 (basic=0.476 thresh=0.760 snap=0.758) Exact=0.172 ★
+    E 15 | Val F1=0.770 (basic=0.644 thresh=0.769 snap=0.770) Exact=0.286 ★
+    E 18 | Val F1=0.771 (basic=0.677 thresh=0.771 snap=0.768) Exact=0.236 ★
+    E 20 | Val F1=0.763 (basic=0.565 thresh=0.763 snap=0.761) Exact=0.270
+    E 27 | Val F1=0.774 (basic=0.674 thresh=0.774 snap=0.773) Exact=0.304 ★
+    E 28 | Val F1=0.781 (basic=0.580 thresh=0.781 snap=0.761) Exact=0.240 ★
+    E 29 | Val F1=0.803 (basic=0.667 thresh=0.802 snap=0.803) Exact=0.401 ★
+    E 40 | Val F1=0.761 (basic=0.629 thresh=0.761 snap=0.741) Exact=0.156
+    Result: F1=0.8034 Exact=0.401 (84s)
+
+  ── Config 96/108 ──
+    win=750 lr=0.0005 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.482 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.460 thresh=0.702 snap=0.701) Exact=0.116
+    E  3 | Val F1=0.702 (basic=0.500 thresh=0.702 snap=0.701) Exact=0.118
+    E  5 | Val F1=0.705 (basic=0.476 thresh=0.705 snap=0.699) Exact=0.113 ★
+    E  7 | Val F1=0.711 (basic=0.537 thresh=0.709 snap=0.711) Exact=0.141 ★
+    E  8 | Val F1=0.715 (basic=0.529 thresh=0.714 snap=0.715) Exact=0.163 ★
+    E  9 | Val F1=0.732 (basic=0.525 thresh=0.732 snap=0.729) Exact=0.147 ★
+    E 10 | Val F1=0.773 (basic=0.677 thresh=0.765 snap=0.773) Exact=0.288 ★
+    E 11 | Val F1=0.788 (basic=0.641 thresh=0.787 snap=0.788) Exact=0.290 ★
+    E 20 | Val F1=0.767 (basic=0.674 thresh=0.767 snap=0.746) Exact=0.206
+    E 32 | Val F1=0.791 (basic=0.715 thresh=0.791 snap=0.789) Exact=0.313 ★
+    E 33 | Val F1=0.793 (basic=0.566 thresh=0.793 snap=0.786) Exact=0.331 ★
+    E 35 | Val F1=0.797 (basic=0.495 thresh=0.797 snap=0.796) Exact=0.333 ★
+    E 40 | Val F1=0.798 (basic=0.694 thresh=0.798 snap=0.789) Exact=0.365 ★
+    E 42 | Val F1=0.809 (basic=0.542 thresh=0.809 snap=0.804) Exact=0.338 ★
+    E 43 | Val F1=0.839 (basic=0.520 thresh=0.839 snap=0.832) Exact=0.404 ★
+    E 60 | Val F1=0.807 (basic=0.701 thresh=0.807 snap=0.802) Exact=0.274
+    Result: F1=0.8387 Exact=0.404 (104s)
+
+  ── Config 97/108 ──
+    win=750 lr=0.001 drop=0.4 loss=bce mixup=0.0
+    E  1 | Val F1=0.701 (basic=0.423 thresh=0.701 snap=0.701) Exact=0.116 ★
+    E  2 | Val F1=0.707 (basic=0.503 thresh=0.707 snap=0.699) Exact=0.059 ★
+    E  3 | Val F1=0.730 (basic=0.468 thresh=0.730 snap=0.720) Exact=0.161 ★
+    E  4 | Val F1=0.750 (basic=0.567 thresh=0.750 snap=0.742) Exact=0.188 ★
+    E  5 | Val F1=0.809 (basic=0.650 thresh=0.809 snap=0.804) Exact=0.293 ★
+    E 20 | Val F1=0.786 (basic=0.698 thresh=0.786 snap=0.783) Exact=0.247
+    Result: F1=0.8092 Exact=0.293 (50s)
+
+  ── Config 98/108 ──
+    win=750 lr=0.001 drop=0.4 loss=bce mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.442 thresh=0.702 snap=0.700) Exact=0.113 ★
+    E  2 | Val F1=0.703 (basic=0.467 thresh=0.703 snap=0.701) Exact=0.122 ★
+    E  3 | Val F1=0.772 (basic=0.569 thresh=0.762 snap=0.772) Exact=0.263 ★
+    E  4 | Val F1=0.799 (basic=0.659 thresh=0.799 snap=0.799) Exact=0.397 ★
+    E  5 | Val F1=0.802 (basic=0.691 thresh=0.802 snap=0.797) Exact=0.351 ★
+    E  6 | Val F1=0.807 (basic=0.514 thresh=0.807 snap=0.803) Exact=0.297 ★
+    E 14 | Val F1=0.809 (basic=0.543 thresh=0.809 snap=0.803) Exact=0.345 ★
+    E 20 | Val F1=0.787 (basic=0.668 thresh=0.785 snap=0.787) Exact=0.336
+    E 32 | Val F1=0.811 (basic=0.723 thresh=0.811 snap=0.810) Exact=0.345 ★
+    E 40 | Val F1=0.731 (basic=0.527 thresh=0.731 snap=0.716) Exact=0.243
+    E 42 | Val F1=0.815 (basic=0.715 thresh=0.815 snap=0.813) Exact=0.410 ★
+    E 47 | Val F1=0.822 (basic=0.718 thresh=0.819 snap=0.822) Exact=0.433 ★
+    E 60 | Val F1=0.817 (basic=0.739 thresh=0.816 snap=0.817) Exact=0.401
+    E 62 | Val F1=0.823 (basic=0.757 thresh=0.820 snap=0.823) Exact=0.454 ★
+    E 63 | Val F1=0.824 (basic=0.766 thresh=0.822 snap=0.824) Exact=0.422 ★
+    E 64 | Val F1=0.829 (basic=0.765 thresh=0.829 snap=0.826) Exact=0.458 ★
+    E 80 | Val F1=0.797 (basic=0.676 thresh=0.797 snap=0.792) Exact=0.331
+    Result: F1=0.8287 Exact=0.458 (133s)
+
+  ── Config 99/108 ──
+    win=750 lr=0.001 drop=0.4 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.497 thresh=0.702 snap=0.699) Exact=0.107 ★
+    E  2 | Val F1=0.725 (basic=0.554 thresh=0.725 snap=0.720) Exact=0.104 ★
+    E  3 | Val F1=0.749 (basic=0.518 thresh=0.749 snap=0.748) Exact=0.147 ★
+    E  4 | Val F1=0.760 (basic=0.468 thresh=0.760 snap=0.760) Exact=0.188 ★
+    E  5 | Val F1=0.780 (basic=0.609 thresh=0.780 snap=0.779) Exact=0.274 ★
+    E  7 | Val F1=0.789 (basic=0.691 thresh=0.789 snap=0.788) Exact=0.329 ★
+    E 10 | Val F1=0.805 (basic=0.619 thresh=0.805 snap=0.802) Exact=0.381 ★
+    E 11 | Val F1=0.811 (basic=0.613 thresh=0.811 snap=0.806) Exact=0.354 ★
+    E 13 | Val F1=0.823 (basic=0.634 thresh=0.823 snap=0.821) Exact=0.385 ★
+    E 20 | Val F1=0.796 (basic=0.682 thresh=0.796 snap=0.788) Exact=0.268
+    E 35 | Val F1=0.827 (basic=0.758 thresh=0.827 snap=0.823) Exact=0.356 ★
+    E 36 | Val F1=0.833 (basic=0.769 thresh=0.833 snap=0.830) Exact=0.429 ★
+    E 40 | Val F1=0.810 (basic=0.725 thresh=0.809 snap=0.810) Exact=0.444
+    E 60 | Val F1=0.797 (basic=0.725 thresh=0.797 snap=0.797) Exact=0.404
+    Result: F1=0.8327 Exact=0.429 (94s)
+
+  ── Config 100/108 ──
+    win=750 lr=0.001 drop=0.4 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.475 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.704 (basic=0.525 thresh=0.704 snap=0.701) Exact=0.088 ★
+    E  3 | Val F1=0.715 (basic=0.555 thresh=0.715 snap=0.692) Exact=0.057 ★
+    E  4 | Val F1=0.752 (basic=0.674 thresh=0.752 snap=0.747) Exact=0.200 ★
+    E  6 | Val F1=0.758 (basic=0.247 thresh=0.756 snap=0.758) Exact=0.322 ★
+    E  7 | Val F1=0.785 (basic=0.699 thresh=0.781 snap=0.785) Exact=0.383 ★
+    E  9 | Val F1=0.797 (basic=0.635 thresh=0.797 snap=0.795) Exact=0.306 ★
+    E 20 | Val F1=0.777 (basic=0.675 thresh=0.777 snap=0.771) Exact=0.220
+    E 27 | Val F1=0.801 (basic=0.705 thresh=0.801 snap=0.796) Exact=0.243 ★
+    E 34 | Val F1=0.809 (basic=0.672 thresh=0.809 snap=0.808) Exact=0.327 ★
+    E 40 | Val F1=0.792 (basic=0.693 thresh=0.790 snap=0.792) Exact=0.397
+    E 49 | Val F1=0.815 (basic=0.760 thresh=0.815 snap=0.814) Exact=0.424 ★
+    E 56 | Val F1=0.819 (basic=0.763 thresh=0.819 snap=0.816) Exact=0.399 ★
+    E 60 | Val F1=0.796 (basic=0.705 thresh=0.796 snap=0.790) Exact=0.331
+    E 71 | Val F1=0.824 (basic=0.777 thresh=0.824 snap=0.821) Exact=0.395 ★
+    E 74 | Val F1=0.824 (basic=0.790 thresh=0.821 snap=0.824) Exact=0.456 ★
+    E 80 | Val F1=0.831 (basic=0.810 thresh=0.831 snap=0.831) Exact=0.426 ★
+    E100 | Val F1=0.817 (basic=0.705 thresh=0.817 snap=0.812) Exact=0.365
+    Result: F1=0.8313 Exact=0.426 (141s)
+
+  ── Config 101/108 ──
+    win=750 lr=0.001 drop=0.5 loss=bce mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.570 thresh=0.702 snap=0.701) Exact=0.116 ★
+    E  2 | Val F1=0.716 (basic=0.488 thresh=0.716 snap=0.690) Exact=0.061 ★
+    E  3 | Val F1=0.734 (basic=0.499 thresh=0.734 snap=0.723) Exact=0.116 ★
+    E  4 | Val F1=0.779 (basic=0.478 thresh=0.779 snap=0.779) Exact=0.256 ★
+    E  6 | Val F1=0.808 (basic=0.621 thresh=0.808 snap=0.806) Exact=0.358 ★
+    E 14 | Val F1=0.812 (basic=0.540 thresh=0.812 snap=0.810) Exact=0.277 ★
+    E 20 | Val F1=0.740 (basic=0.432 thresh=0.739 snap=0.740) Exact=0.261
+    E 40 | Val F1=0.726 (basic=0.574 thresh=0.726 snap=0.722) Exact=0.259
+    Result: F1=0.8124 Exact=0.277 (61s)
+
+  ── Config 102/108 ──
+    win=750 lr=0.001 drop=0.5 loss=bce mixup=0.2
+    E  1 | Val F1=0.705 (basic=0.466 thresh=0.705 snap=0.694) Exact=0.082 ★
+    E  2 | Val F1=0.712 (basic=0.477 thresh=0.712 snap=0.700) Exact=0.084 ★
+    E  3 | Val F1=0.756 (basic=0.547 thresh=0.756 snap=0.754) Exact=0.100 ★
+    E  4 | Val F1=0.772 (basic=0.539 thresh=0.772 snap=0.769) Exact=0.259 ★
+    E  5 | Val F1=0.820 (basic=0.683 thresh=0.820 snap=0.819) Exact=0.345 ★
+    E 20 | Val F1=0.770 (basic=0.603 thresh=0.770 snap=0.761) Exact=0.181
+    Result: F1=0.8196 Exact=0.345 (48s)
+
+  ── Config 103/108 ──
+    win=750 lr=0.001 drop=0.5 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.511 thresh=0.702 snap=0.701) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.500 thresh=0.702 snap=0.701) Exact=0.118 ★
+    E  3 | Val F1=0.702 (basic=0.443 thresh=0.702 snap=0.701) Exact=0.118 ★
+    E  5 | Val F1=0.706 (basic=0.467 thresh=0.706 snap=0.706) Exact=0.113 ★
+    E  6 | Val F1=0.755 (basic=0.588 thresh=0.748 snap=0.755) Exact=0.200 ★
+    E  7 | Val F1=0.768 (basic=0.578 thresh=0.768 snap=0.768) Exact=0.193 ★
+    E  8 | Val F1=0.781 (basic=0.677 thresh=0.781 snap=0.781) Exact=0.308 ★
+    E 10 | Val F1=0.805 (basic=0.718 thresh=0.804 snap=0.805) Exact=0.385 ★
+    E 13 | Val F1=0.832 (basic=0.585 thresh=0.831 snap=0.832) Exact=0.469 ★
+    E 20 | Val F1=0.822 (basic=0.648 thresh=0.822 snap=0.816) Exact=0.397
+    E 26 | Val F1=0.835 (basic=0.721 thresh=0.831 snap=0.835) Exact=0.503 ★
+    E 40 | Val F1=0.803 (basic=0.724 thresh=0.803 snap=0.796) Exact=0.336
+    Result: F1=0.8352 Exact=0.503 (77s)
+
+  ── Config 104/108 ──
+    win=750 lr=0.001 drop=0.5 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.519 thresh=0.702 snap=0.701) Exact=0.118 ★
+    E  2 | Val F1=0.704 (basic=0.487 thresh=0.704 snap=0.703) Exact=0.116 ★
+    E  3 | Val F1=0.709 (basic=0.526 thresh=0.709 snap=0.701) Exact=0.102 ★
+    E  4 | Val F1=0.730 (basic=0.547 thresh=0.723 snap=0.730) Exact=0.202 ★
+    E  5 | Val F1=0.741 (basic=0.617 thresh=0.737 snap=0.741) Exact=0.229 ★
+    E  6 | Val F1=0.772 (basic=0.690 thresh=0.772 snap=0.765) Exact=0.277 ★
+    E  8 | Val F1=0.793 (basic=0.695 thresh=0.791 snap=0.793) Exact=0.354 ★
+    E 12 | Val F1=0.794 (basic=0.634 thresh=0.794 snap=0.791) Exact=0.281 ★
+    E 20 | Val F1=0.782 (basic=0.578 thresh=0.782 snap=0.774) Exact=0.213
+    E 29 | Val F1=0.813 (basic=0.663 thresh=0.813 snap=0.812) Exact=0.274 ★
+    E 34 | Val F1=0.820 (basic=0.712 thresh=0.819 snap=0.820) Exact=0.397 ★
+    E 39 | Val F1=0.827 (basic=0.745 thresh=0.825 snap=0.827) Exact=0.417 ★
+    E 40 | Val F1=0.772 (basic=0.644 thresh=0.772 snap=0.771) Exact=0.283
+    E 60 | Val F1=0.795 (basic=0.695 thresh=0.795 snap=0.795) Exact=0.340
+    Result: F1=0.8274 Exact=0.417 (96s)
+
+  ── Config 105/108 ──
+    win=750 lr=0.001 drop=0.6 loss=bce mixup=0.0
+    E  1 | Val F1=0.704 (basic=0.338 thresh=0.704 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.709 (basic=0.374 thresh=0.709 snap=0.706) Exact=0.088 ★
+    E  3 | Val F1=0.732 (basic=0.409 thresh=0.732 snap=0.721) Exact=0.143 ★
+    E  4 | Val F1=0.785 (basic=0.558 thresh=0.777 snap=0.785) Exact=0.272 ★
+    E  6 | Val F1=0.818 (basic=0.614 thresh=0.818 snap=0.816) Exact=0.349 ★
+    E 20 | Val F1=0.774 (basic=0.544 thresh=0.773 snap=0.774) Exact=0.401
+    Result: F1=0.8184 Exact=0.349 (51s)
+
+  ── Config 106/108 ──
+    win=750 lr=0.001 drop=0.6 loss=bce mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.455 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.701 (basic=0.418 thresh=0.701 snap=0.701) Exact=0.118
+    E  3 | Val F1=0.704 (basic=0.423 thresh=0.704 snap=0.704) Exact=0.118 ★
+    E  4 | Val F1=0.706 (basic=0.384 thresh=0.706 snap=0.700) Exact=0.109 ★
+    E  5 | Val F1=0.733 (basic=0.463 thresh=0.733 snap=0.723) Exact=0.166 ★
+    E  6 | Val F1=0.765 (basic=0.574 thresh=0.765 snap=0.765) Exact=0.288 ★
+    E  7 | Val F1=0.803 (basic=0.603 thresh=0.803 snap=0.801) Exact=0.322 ★
+    E 16 | Val F1=0.804 (basic=0.583 thresh=0.804 snap=0.801) Exact=0.349 ★
+    E 20 | Val F1=0.802 (basic=0.576 thresh=0.802 snap=0.798) Exact=0.349
+    E 26 | Val F1=0.811 (basic=0.596 thresh=0.811 snap=0.810) Exact=0.372 ★
+    E 40 | Val F1=0.747 (basic=0.476 thresh=0.747 snap=0.736) Exact=0.261
+    E 42 | Val F1=0.814 (basic=0.744 thresh=0.814 snap=0.808) Exact=0.367 ★
+    E 60 | Val F1=0.794 (basic=0.679 thresh=0.794 snap=0.785) Exact=0.340
+    Result: F1=0.8136 Exact=0.367 (101s)
+
+  ── Config 107/108 ──
+    win=750 lr=0.001 drop=0.6 loss=focal mixup=0.0
+    E  1 | Val F1=0.702 (basic=0.491 thresh=0.702 snap=0.701) Exact=0.116 ★
+    E  2 | Val F1=0.702 (basic=0.415 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  3 | Val F1=0.702 (basic=0.456 thresh=0.702 snap=0.701) Exact=0.116
+    E  4 | Val F1=0.703 (basic=0.432 thresh=0.703 snap=0.701) Exact=0.116 ★
+    E  5 | Val F1=0.706 (basic=0.469 thresh=0.706 snap=0.697) Exact=0.116 ★
+    E  6 | Val F1=0.710 (basic=0.506 thresh=0.710 snap=0.703) Exact=0.111 ★
+    E  7 | Val F1=0.758 (basic=0.623 thresh=0.758 snap=0.756) Exact=0.227 ★
+    E 11 | Val F1=0.774 (basic=0.636 thresh=0.774 snap=0.771) Exact=0.354 ★
+    E 12 | Val F1=0.779 (basic=0.700 thresh=0.779 snap=0.778) Exact=0.277 ★
+    E 13 | Val F1=0.782 (basic=0.626 thresh=0.782 snap=0.776) Exact=0.281 ★
+    E 15 | Val F1=0.791 (basic=0.558 thresh=0.791 snap=0.775) Exact=0.274 ★
+    E 19 | Val F1=0.796 (basic=0.540 thresh=0.796 snap=0.791) Exact=0.249 ★
+    E 20 | Val F1=0.793 (basic=0.476 thresh=0.793 snap=0.785) Exact=0.313
+    E 30 | Val F1=0.797 (basic=0.607 thresh=0.797 snap=0.792) Exact=0.209 ★
+    E 34 | Val F1=0.807 (basic=0.550 thresh=0.807 snap=0.804) Exact=0.245 ★
+    E 40 | Val F1=0.801 (basic=0.662 thresh=0.801 snap=0.788) Exact=0.313
+    E 41 | Val F1=0.824 (basic=0.633 thresh=0.824 snap=0.820) Exact=0.265 ★
+    E 44 | Val F1=0.825 (basic=0.671 thresh=0.825 snap=0.820) Exact=0.351 ★
+    E 47 | Val F1=0.828 (basic=0.748 thresh=0.828 snap=0.826) Exact=0.395 ★
+    E 60 | Val F1=0.794 (basic=0.615 thresh=0.791 snap=0.794) Exact=0.327
+    Result: F1=0.8283 Exact=0.395 (109s)
+
+  ── Config 108/108 ──
+    win=750 lr=0.001 drop=0.6 loss=focal mixup=0.2
+    E  1 | Val F1=0.702 (basic=0.419 thresh=0.702 snap=0.702) Exact=0.118 ★
+    E  2 | Val F1=0.702 (basic=0.453 thresh=0.702 snap=0.702) Exact=0.118
+    E  3 | Val F1=0.702 (basic=0.439 thresh=0.702 snap=0.702) Exact=0.118
+    E  7 | Val F1=0.703 (basic=0.460 thresh=0.703 snap=0.702) Exact=0.111 ★
+    E  8 | Val F1=0.706 (basic=0.587 thresh=0.706 snap=0.704) Exact=0.111 ★
+    E  9 | Val F1=0.743 (basic=0.677 thresh=0.737 snap=0.743) Exact=0.179 ★
+    E 11 | Val F1=0.746 (basic=0.404 thresh=0.746 snap=0.741) Exact=0.211 ★
+    E 12 | Val F1=0.790 (basic=0.707 thresh=0.790 snap=0.785) Exact=0.317 ★
+    E 20 | Val F1=0.770 (basic=0.712 thresh=0.768 snap=0.770) Exact=0.306
+    E 27 | Val F1=0.826 (basic=0.770 thresh=0.826 snap=0.825) Exact=0.351 ★
+    E 40 | Val F1=0.798 (basic=0.659 thresh=0.798 snap=0.792) Exact=0.342
+    Result: F1=0.8255 Exact=0.351 (81s)
+
+======================================================================
+  GRID SEARCH RESULTS
+======================================================================
+
+  Rank      F1   Exact   Win       LR   Drop    Loss   Mix
+  ────────────────────────────────────────────────────
+     1  0.8448  0.449   500  0.00100  0.40   focal  0.2
+     2  0.8447  0.443   500  0.00100  0.60   focal  0.0
+     3  0.8435  0.443   500  0.00100  0.40   focal  0.0
+     4  0.8410  0.413   750  0.00050  0.40   focal  0.0
+     5  0.8408  0.490   500  0.00100  0.50     bce  0.2
+     6  0.8400  0.481   500  0.00100  0.50   focal  0.2
+     7  0.8387  0.404   750  0.00050  0.60   focal  0.2
+     8  0.8367  0.427   500  0.00030  0.40   focal  0.2
+     9  0.8352  0.427   500  0.00100  0.40     bce  0.0
+    10  0.8352  0.503   750  0.00100  0.50   focal  0.0
+
+  BEST MODEL: F1=0.8448 Exact=0.449
+  Config: {'batch_size': 64, 'n_conv': 4, 'use_swa': True, 'use_tta': True, 'window': 500, 'stride': 125, 'lr': 0.001, 'wd': 0.0005, 'dropout': 0.4, 'hidden': 96, 'loss': 'focal', 'focal_gamma': 2.0, 'label_smooth': 0.05, 'mixup': 0.2}
+
+  Per-zone results:
+  Zone                      F1  Threshold
+  ──────────────────────────────────────
+  palm                  0.859  0.50
+  thumb                 0.920  0.52
+  index_tip             0.923  0.20
+  index_seg             0.712  0.48
+  middle_tip            0.877  0.34
+  middle_seg            0.775  0.52
+  ring_tip              0.899  0.38
+  ring_seg              0.791  0.46
+  pinky_tip             0.902  0.36
+  pinky_seg             0.791  0.42
+  ──────────────────────────────────────
+  MACRO                 0.845
+
+  Model saved → checkpoints_v4/best_model_v4.pt
+  Grid results → checkpoints_v4/grid_search_results.csv
+=== Done: Wed Apr 22 01:29:44 EDT 2026 ===
